@@ -1,0 +1,613 @@
+/*学生档案管理系统*/
+
+/*  *************************************************
+
+	*软件工程 4 班 			2020/12
+
+	*    组员       负责函数                               行数
+		王占泽 : creat(44) del_all(28) read(14) main(30)   116
+		王骞   : mod(82) del(34)                           116
+		卢鹏飞 : find(137)                                 137
+		范明俊 : login(31) menu(39) print(20) save(17)     107
+
+	*指导教师:徐林 
+
+	*包含功能:
+		录入基本信息 
+		显示基本信息 
+		保存基本信息 
+		删除基本信息 
+		修改基本信息 
+		查询基本信息 
+		删除基本信息 
+		导入基本信息 
+
+	*主要函数:
+		login(31)
+		menu(39)
+		creat(44)
+		print(20)
+		save(17)
+		del(34)
+		mod(82)
+		find(137)
+		del_all(28)
+		read(14)
+		main(30)
+*/
+/*头文件以及宏定义*/
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define KEY "/"//定义密码常量""内为密码
+
+/*定义结构体*/
+struct student
+{
+	long num;
+	char name[20];
+	char sex[10];
+	int age;
+	char bz[40];
+	struct student *next;//占10字节内存 
+};
+typedef struct student people;//声明 struct student 为 people 
+
+/*定义全局变量*/
+//static int n=0;
+int i,j,n,num2,num3,age3,k,m;/*  m供find和mod函数中switch语句使用 ,n供计数使用*/
+char name3[20],sex3[20],bz3[20],ch; 
+FILE *fp=NULL,*temp=NULL;//文件指针,前者供文件操作用,后者供删除所有已录入信息用
+
+/*主要函数*/
+int login()  //登陆函数
+{
+	char key[20];
+	printf("\n");
+	printf("\t\t╔═══════════════════════════════════════╗\n");
+	printf("\t\t║             请输入系统密码!           ║\n");
+	printf("\t\t╚═══════════════════════════════════════╝\n");
+	do
+	{
+		printf("\n\n\t         ");
+		scanf("%s",key);
+		if((strcmp(KEY,key))==0)
+		{
+			system("cls");
+			printf("\t               password correct ,welcome !\n");
+			return 1;  //当密码正确时，返回1，进入系统
+		}
+		if((strcmp("quit",key))==0)
+		{
+			system("cls");
+			printf("\t             thanks for using this program !\n");
+			return 0;  //当输入quit时，返回0，退出系统
+		}
+		system("cls");
+		printf("\n");
+		printf("\t\t╔═════════════════════════════════════════╗\n");
+		printf("\t\t║  password incorrect,please input again! ║\n");
+		printf("\t\t║  if you want to quit,please input quit! ║\n");
+		printf("\t\t║     or you can just press Ctrl+C !      ║\n");
+		printf("\t\t╚═════════════════════════════════════════╝\n\n");
+	}while(1);//重复循环,重新输入密码，直到函数有返回值(即输入正确或退出系统)为止
+}
+
+//制表符:│┍┐┓┖┙┎┑└┗┚▔─▔▔━▁┃┄┇┊┋┈┅┆┉┌┏┒┕┘┛├┟┢┥┨┫
+//┮┱┝┠┣┦┩┬┯┲┞┡┤┧┪┭┰┳┴┷┺┽╀╃╆╉┵┸┻┾╁╄╇╊┶┹┼┿╂╅╈╋
+//═╓╖╙╜╟╢╥║╔╗╚╝╠╣╦╒╕╘╛╞╡╤╧╨╫╮╱ ├┤│┌┐└┘─┈┄
+//  ---  ——
+
+int menu()  //菜单  
+{
+	int c;
+	printf("\t\t╔═══════════════════════════════════════╗\n");
+	printf("\t\t║          欢迎进入档案管理系统！       ║\n");
+	printf("\t\t╠═══════════════════════════════════════╣\n");
+	printf("\t\t║                                       ║\n");
+	printf("\t\t╟----------1.录入学生的基本信息---------╢\n");
+	printf("\t\t║                                       ║\n");
+	printf("\t\t╟----------2.显示学生的基本信息---------╢\n");
+	printf("\t\t║                                       ║\n");
+	printf("\t\t╟----------3.保存学生的基本信息---------╢\n");
+	printf("\t\t║                                       ║\n");
+	printf("\t\t╟----------4.删除学生的基本信息---------╢\n");
+	printf("\t\t║                                       ║\n");
+	printf("\t\t╟----------5.修改学生的基本信息---------╢\n");
+	printf("\t\t║                                       ║\n");
+	printf("\t\t╟----------6.查询学生的基本信息---------╢\n");
+	printf("\t\t║                                       ║\n");
+	printf("\t\t╟----------7.删除所有的基本信息---------╢\n");
+	printf("\t\t║                                       ║\n");
+	printf("\t\t╟----------8.读取文件内基本信息---------╢\n");
+	printf("\t\t║                                       ║\n");
+	printf("\t\t╟----------0.退出系统-------------------╢\n");
+	printf("\t\t║                                       ║\n");
+	printf("\t\t╚═══════════════════════════════════════╝\n");
+	printf("\t\t请选择您要进行的功能(1~8) ");
+//	do
+//	{
+//		scanf("%d",&c);
+//		printf("%d",(c < 1|| c > 8));
+//		if(c < 1|| c > 8)
+//		{
+//			printf("\t\t\t输入有误,请重新输入!\n");
+//		}
+//	}while(c > 0 && c < 9); 
+	scanf("%d",&c);
+	getchar();
+	return c;
+}
+
+people *creat(people *head) //录入信息函数
+{
+	people *p1,*p2;
+	n=0;
+	p1=p2=(people *)malloc(sizeof(people));//分配所需空间
+	printf("\n");
+	printf("\t\t╔═══════════════════════════════════════╗\n");
+	printf("\t\t║                录入信息               ║\n");
+	printf("\t\t╚═══════════════════════════════════════╝\n\n");
+	printf("请输入学生信息学号，姓名，性别，年龄，备注（键入学生学号为0时结束）\n");
+	while(1)  //为1表真，p2->next不为0；
+	{
+		p1=(people *)malloc(sizeof(people));//进行内存分配
+		printf("请输入:");
+		scanf("%d",&p1->num);
+		if(p1->num==0)  //判断学生的学号是否为0，如果为0则停止输入数据；
+		{
+			break;
+		}	
+		scanf("%s%s%d%s",p1->name,p1->sex,&p1->age,p1->bz);
+		n=n+1;
+		if(n==1)
+		{
+			head=p1;//存入初始地址 ,以便函数结束后返回 
+		}
+		else
+		{
+			p2->next=p1;
+		}
+		p2=p1;
+	}
+	p2->next=NULL;
+	system("cls");
+	return(head);
+}
+
+// Student * insertStudent(Student * head)
+//people * createNode()
+//{
+//	people * newStu = (people*)malloc(sizeof(people));
+//	printf("学号:");
+//	scanf("%d",&newStu->num);
+//	printf("姓名:");
+//	scanf("%s",newStu->name);
+//	printf("性别:");
+//	scanf("%s",newStu->sex);
+//	printf("年龄:");
+//	scanf("%d",&newStu->age);
+//	printf("备注:");
+//	scanf("%s",newStu->sex);
+//	newStu->next=NULL;
+//	return newStu;
+//}
+//
+//people *creat(people *head)
+//{
+//	int i,count;
+//	printf("请输入录入的学生人数\n");
+//	scanf("%d",&count);
+//	//获得学生链表的头节点
+//	people *p1= head;
+//	//初始批量录入学生信息
+//	if(head==NULL)
+//	{
+//		for(i = 0;i<count;i++)
+//		{
+//			printf("==============输入第%d个学生信息==============》\n",i+1);
+//			people * newNode = createNode();
+//			// scanf("%d%s%s%d%s",p1->num,p1->name,p1->sex,&p1->age,p1->bz);
+//			p1->next = newNode;//p1永远指向最后一位学生，即尾节点
+//			p1 = p1->next;
+//		}
+//	}
+//	else
+//	{
+//		//批量添加学生信息
+//		while(p1)
+//		{
+//			p1 = p1->next;
+//		}
+//		for(i = 0;i<count;i++)
+//		{
+//			printf("==============输入第%d个学生信息==============》\n",i+1);
+//			people * newNode = createNode();//创建存储学生信息的节点
+//			// scanf("%d%s%s%d%s",p1->num,p1->name,p1->sex,&p1->age,p1->bz);
+//			p1->next = newNode;//添加学生
+//			p1 = p1->next;//尾节点后移
+//		}
+//	}
+//	p1->next=NULL;
+//	
+//	return head;//返回头节点
+//}
+
+int print(people *head)  //输出信息函数
+{
+	people *p=NULL;
+	printf("\t\t这里有 %d 个学生的数据信息\n\n",n);
+	p=head;
+	if(head!=NULL)
+	{
+		do
+		{
+			printf("\t\t学号:%d\t姓名:%s\t性别:%s\t年龄:%d\t备注:%s\n",p->num,p->name,p->sex,p->age,p->bz);
+			p=p->next;
+		}while(p!=NULL);
+	}
+//	else
+//	{
+//		return 0;
+//	}
+	printf("\n");
+//	getchar();
+//	system("cls"); 
+}
+
+int save(people *p) //保存信息函数
+{
+//	FILE *fp;
+	if((fp=fopen("stud.dat","ab"))==NULL)//若文件不存在 则新建数据文件
+	{
+		printf("open file fail,but we creat a new one!\n");
+		fp=fopen("stud.dat","wb");
+	}
+	fp=fopen("stud.dat","ab");
+	do
+	{
+		fwrite(p,sizeof(people),1,fp);
+		p=p->next;
+	}while(p!=NULL);
+	fclose(fp);
+	printf("\n\t\t\t\t保存成功!\n\n");
+	return 0;
+}
+
+people *del(people *head)//删除信息函数
+{
+	people *p1,*p2;
+	printf("\n");
+	printf("\t\t╔═══════════════════════════════════════╗\n");
+	printf("\t\t║                删除信息               ║\n");
+	printf("\t\t╚═══════════════════════════════════════╝\n\n");
+	printf("\t\t请输入要删除学生的学号\n");
+	printf("\n\t         ");
+	scanf("%d",&num2);
+	p1=head;
+	if(head->num==num2)
+	{
+		head=head->next;
+		free(p1);
+		n--;
+	}
+	else
+	{
+		p2=head;
+		while(p2->num!=num2&&p2->next!=NULL)
+		{
+			p1=p2;
+			p2=p2->next;
+		}
+		if(p2->num==num2)
+		{
+			p1->next=p2->next;
+			n--;
+		}
+		printf("\t\tdelete:%ld\n",num2);
+	}
+	printf("\t\t\t删除成功!\n\n");
+	return (head);
+}
+
+int mod(people *head); //修改信息函数
+people *modify(people *head)
+{
+	if(login()==0)
+	{
+		return 0;
+	}
+	else
+	{
+		people *p1;
+		j=0;
+		p1=(people *)malloc(sizeof(people));
+		printf("\t\t\t请输入你要更改的学号\n");
+		scanf("%d",&num2);
+		printf("\t\t\t学号\n");
+		scanf("%d",&num3);
+		printf("\t\t\t姓名\n");
+		scanf("%s",name3);
+		printf("\t\t\t性别\n");
+		scanf("%s",sex3);
+		printf("\t\t\t年龄\n");
+		scanf("%d",&age3);
+		printf("\t\t\t备注\n");
+		scanf("%s",bz3);
+		p1=head;
+		if(head->num==num2)
+		{
+			head->num=num3;
+			strcpy(head->name,name3);
+			strcpy(head->sex,sex3);
+			head->age=age3;
+			strcpy(head->bz,bz3);
+			j=1;
+		}
+		else
+		{
+			p1=head->next;
+			if(p1!=NULL)
+			{
+				while(p1->num!=num2)
+				{
+					p1=p1->next;
+				}
+				p1->num=num2;
+				strcpy(p1->name,name3);
+				strcpy(p1->sex,sex3);
+				p1->age=age3;
+				strcpy(p1->bz,bz3);
+				j=1;
+			}
+		}
+		if(j==0)
+		{
+			printf("\t\t\t更改失败\n");
+		}
+		else
+		{
+			printf("\t\t\t更改成功\n");
+		}
+	}
+	system("cls");
+	mod(head);
+}
+int mod(people *head)
+{
+	printf("\n");
+	printf("\t\t╔═══════════════════════════════════════╗\n");
+	printf("\t\t║                修改信息               ║\n");
+	printf("\t\t╚═══════════════════════════════════════╝\n\n");
+	printf("\t\t\t请选择\n");
+	printf("\t\t\t1:按学号修改学生信息\n");
+	printf("\t\t\t2:输出修改后的学生信息\n");
+	printf("\t\t\t3:返回主菜单\n");
+	scanf("%d",&m);
+	switch(m)
+	{
+	case 1:head=modify(head);break;
+	case 2:print(head);break;
+	case 3:menu();break;
+	default:printf("\t\t\tinput error!\n");
+	mod(head);
+	}
+}
+
+int find(people *head);
+int find1(people *head)  //以学号方式查找
+{
+	people *p1;
+	p1=(people *)malloc(sizeof(people));
+	printf("\t\t\t请输入你要查询的学生学号\n");
+	scanf("%d",&num2);
+	system("cls");
+	p1=head;
+	while(p1!=NULL)
+	{
+		if(p1->num==num2)
+		{
+			k=1;
+			printf("\t\t\t学号:%d\t姓名:%s\t性别:%s\t年龄:%d\t备注:%s\n\n",p1->num,p1->name,p1->sex,p1->age,p1->bz);
+			break;
+		}
+		p1=p1->next;
+	}
+	if(k==0)
+	{
+		printf("\t\t\t没有查询到您要找的学生信息\n\n");
+	}
+	else
+	{
+		printf("\t\t\t这就是您要找的学生信息\n\n");
+	}
+	find(head);
+}
+int find2(people *head)  //以姓名方式查找
+{
+	people *p1;
+	p1=(people *)malloc(sizeof(people));
+	printf("\t\t\t请输入您要查询的学生姓名\n");
+	scanf("%s",name3);
+	system("cls");
+	p1=head;
+	while(p1!=NULL)
+	{
+		if((strcmp(p1->name,name3))==0)
+		{
+			k=1;
+			printf("\t\t\t学号:%d\t姓名:%s\t性别:%s\t年龄:%d\t备注:%s\n\n",p1->num,p1->name,p1->sex,p1->age,p1->bz);
+			break;
+		}
+		p1=p1->next;
+	}
+	if(k==0)
+	{
+		printf("\t\t\t没有找到该学生信息\n\n");
+	}
+	else
+	{
+		printf("\t\t\t这就是您要查询的学生信息\n\n");
+	}
+	find(head);
+}
+int find3(people *head)  //以性别方式查找
+{
+	people *p1;
+	p1=(people *)malloc(sizeof(people));
+	printf("\t\t\t请输入你要查询的学生的性别\n");
+	scanf("%s",sex3);
+	system("cls");
+	p1=head;
+	while(p1!=NULL)
+	{
+		if((strcmp(p1->sex,sex3))==0)
+		{
+			k=1;
+			printf("\t\t\t学号:%d\t姓名:%s\t性别:%s\t年龄:%d\t备注:%s\n\n",p1->num,p1->name,p1->sex,p1->age,p1->bz);
+			break;
+		}
+		p1=p1->next;
+	}
+	if(k==0)
+	{
+		printf("\t\t\t没有找到该学生信息\n\n");
+	}
+	else
+	{
+		printf("\t\t\t这就是您要查询的学生的信息\n\n");
+	}
+	find(head);
+}
+int find4(people *head)  //以年龄方式查找
+{
+	people *p1;
+	p1=(people *)malloc(sizeof(people));
+	printf("\t\t\t请输入您要查询的学生的年龄\n");
+	scanf("%d",&age3);
+	system("cls");
+	p1=head;
+	while(p1!=NULL)
+	{
+		if(p1->age==age3)
+		{
+			k=1;
+			printf("\t\t\t学号:%d\t姓名:%s\t性别:%s\t年龄:%d\t备注:%s\n\n",p1->num,p1->name,p1->sex,p1->age,p1->bz);
+			break;
+		}
+		p1=p1->next;
+	}
+	if(k==0)
+	{
+		printf("\t\t\t没有找到该学生的信息\n\n");
+	}
+	else
+	{
+		printf("\t\t\t这就是您要找的学生的信息\n\n");
+	}
+	find(head);
+}
+int find(people *head)
+
+{
+	printf("\n");
+	printf("\t\t╔═══════════════════════════════════════╗\n");
+	printf("\t\t║                查找信息               ║\n");
+	printf("\t\t╚═══════════════════════════════════════╝\n\n");
+	printf("\t\t\t请选择您要查询学生信息的方式\n");
+	printf("\t\t\t1:按学生学号查询\n");
+	printf("\t\t\t2:按学生姓名查询\n");
+	printf("\t\t\t3:按学生性别查询\n");
+	printf("\t\t\t4:按学生年龄查询\n");
+	printf("\t\t\t5:返回主菜单\n");
+	printf("\n\n\t         ");
+	scanf("%d",&m);
+	switch(m)
+	{
+	case 1:find1(head);break;
+	case 2:find2(head);break;
+	case 3:find3(head);break;
+	case 4:find4(head);break;
+	case 5:system("cls");return 0;
+	default:printf("\t\t\tinput error,please input again\n");
+	}
+}
+
+int del_all()//删除已录入数据函数
+{
+	char ch;
+	if(login()==0)//安全性验证
+	{
+		return 0;
+	}
+	system("cls");
+	printf("\n"); 
+	printf("\t\t╔═══════════════════════════════════════╗\n");
+	printf("\t\t║              删除所有信息             ║\n");
+	printf("\t\t╚═══════════════════════════════════════╝\n\n");
+	printf("\n\t\t\t确认删除?(确认:t,取消:f)\n\n");
+	printf("\n\n\t         ");
+	scanf("%s",&ch);
+	if(ch=='t')
+	{
+		temp=fopen("stud.dat","wb");
+		system("cls");
+		printf("\t\t\t\t删除成功!\n\n");
+		fclose(temp);
+		return 0;
+	}
+	else
+	{
+		printf("\t\t\t\t删除取消!\n\n");
+		return 0;
+	}
+}
+
+
+people *read() //读取文件函数 
+{
+	people *p1=NULL,*p2=NULL;
+	p2=p1=(people *)malloc(sizeof(people));	
+	fp=fopen("stud.dat","rb");
+	do
+	{
+		fread(p1,sizeof(people),1,fp);
+		p1=p1->next;
+	}while(p1->next!=NULL);
+	fclose(fp);
+	p2->next=NULL;
+	printf("\n\t\t\t\t读取成功!\n\n");
+	return p2;
+}
+
+
+int main()  //主函数
+{
+	people *phead=NULL;//将phead指针初始化为空指针,否则在未录入时进行主要函数操作,系统将无法判断其合法性; 
+	if(login()==0)
+	{
+		return 0;
+	}
+	printf("\n");
+//	printf("%d",sizeof(people));
+//	phead=read();
+	while(1)
+	{
+//		system("cls");
+//printf("%d",menu());
+		switch(menu())
+		{
+			case 1: system("cls"); phead=creat(phead);    break;
+			case 2: system("cls"); print(phead);     break;
+			case 3: system("cls"); save(phead);      break;
+			case 4: system("cls"); phead=del(phead); break;
+			case 5: system("cls"); mod(phead);       break;
+			case 6: system("cls"); find(phead);      break;
+			case 7: system("cls"); del_all();        break;
+			case 8: system("cls"); read();     break;
+			case 0: system("cls"); printf("\t\t\t欢迎使用，再见！\n");       return 0;
+			default:system("cls"); printf("\n\t\t\t输入有错，请重新输入\n\n");
+		}
+	}
+	return 0;
+}

@@ -1,0 +1,31 @@
+
+assert 1>2 #“断言”，当这个关键字后边的条件为假的肘候，程序自动崩溃并抛出 Assertionerror的异常
+
+列表增删查改:
+    增  添加单一元素 .append()    添加到列表末尾
+                  .insert(i,a) i为添加位置,a为所添加元素
+       添加可迭代元素 .extend() 添加到列表末尾
+    删  del a[1] 删除列表中指定下标的元素
+        .remove('a') 删除指定元素值,如果有多个,只删除第一个
+        .pop() 根据下标删除
+
+
+字典:
+    创建:
+        Dict = {key : value,}
+        Dict = dict(key = value,)
+        Dict = ([(key, value),])
+        Dict = {k : v for k,v in zip(keys, values)}
+    获取元素:
+        dict.get(key) /  dict[key]  获取key对应的value, 前者在访问不存在的key时不会报错, 会返回设置的默认值(default)
+        dict.items()  返回一个包含所有(键,值)的列表
+        dict.keys()   返回一个包含字典所有key的列表
+        dict.values() 返回一个包含字典所有value的列表
+    添加:
+        dict.[key] = value  若key已存在, 泽修改现有key的值
+    更新:
+        dict.update(dict1)  使用dict1来对字典进行更新
+    删除:
+        dict.pop(key)  删除并返回key对应的值
+        dict.popitem() 随机删除并返回一个键值对
+        dict.clear()   清空字典

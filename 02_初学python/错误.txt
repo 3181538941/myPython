@@ -1,0 +1,215 @@
+Microsoft Windows [版本 10.0.18363.1016]
+(c) 2019 Microsoft Corporation。保留所有权利。
+
+C:\Users\林深雾起>pip install pyinstaller
+Collecting pyinstaller
+  Downloading https://files.pythonhosted.org/packages/82/96/21ba3619647bac2b34b4996b2dbbea8e74a703767ce24192899d9153c058/pyinstaller-4.0.tar.gz (3.5MB)
+    100% |████████████████████████████████| 3.5MB 117kB/s
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... error
+    Complete output from command c:\users\林深雾起\appdata\local\programs\python\python37\python.exe c:\users\林深雾起\appdata\local\programs\python\python37\lib\site-packages\pip\_vendor\pep517\_in_process.py prepare_metadata_for_build_wheel C:\Users\林深雾起\AppData\Local\Temp\tmpdk93bjbk:
+    running dist_info
+    creating C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller\pip-wheel-metadata\pyinstaller.egg-info
+    writing C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller\pip-wheel-metadata\pyinstaller.egg-info\PKG-INFO
+    writing dependency_links to C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller\pip-wheel-metadata\pyinstaller.egg-info\dependency_links.txt
+    writing entry points to C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller\pip-wheel-metadata\pyinstaller.egg-info\entry_points.txt
+    writing requirements to C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller\pip-wheel-metadata\pyinstaller.egg-info\requires.txt
+    writing top-level names to C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller\pip-wheel-metadata\pyinstaller.egg-info\top_level.txt
+    writing manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller\pip-wheel-metadata\pyinstaller.egg-info\SOURCES.txt'
+    reading manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller\pip-wheel-metadata\pyinstaller.egg-info\SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xc1 in position 0: invalid start byte (sitecustomize.py, line 7)
+    warning: no files found matching 'pyinstaller-gui.py'
+    no previously-included directories found matching 'bootloader\build'
+    no previously-included directories found matching 'bootloader\.waf-*'
+    no previously-included directories found matching 'bootloader\.waf3-*'
+    no previously-included directories found matching 'bootloader\waf-*'
+    no previously-included directories found matching 'bootloader\waf3-*'
+    no previously-included directories found matching 'bootloader\_sdks'
+    no previously-included directories found matching 'bootloader\.vagrant'
+    warning: no previously-included files found matching 'bootloader\.lock-waf*'
+    no previously-included directories found matching 'doc\source'
+    no previously-included directories found matching 'doc\_build'
+    warning: no previously-included files matching '*.tmp' found under directory 'doc'
+    warning: no files found matching 'news\_template.rst'
+    no previously-included directories found matching 'news'
+    no previously-included directories found matching 'old'
+    no previously-included directories found matching 'scripts'
+    no previously-included directories found matching 'tests\scripts'
+    no previously-included directories found matching '.github'
+    warning: no previously-included files found matching '.*'
+    warning: no previously-included files found matching '*.yml'
+    warning: no previously-included files found matching '*~'
+    warning: no previously-included files found matching '.directory'
+    writing manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller\pip-wheel-metadata\pyinstaller.egg-info\SOURCES.txt'
+    creating 'C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller\pip-wheel-metadata\pyinstaller.dist-info'
+    error: invalid command 'bdist_wheel'
+
+    ----------------------------------------
+Command "c:\users\林深雾起\appdata\local\programs\python\python37\python.exe c:\users\林深雾起\appdata\local\programs\python\python37\lib\site-packages\pip\_vendor\pep517\_in_process.py prepare_metadata_for_build_wheel C:\Users\林深雾起\AppData\Local\Temp\tmpdk93bjbk" failed with error code 1 in C:\Users\林深雾起\AppData\Local\Temp\pip-install-82hzv09o\pyinstaller
+You are using pip version 19.0.3, however version 20.2.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\Users\林深雾起>python -m pip install --upgrade pip
+Collecting pip
+  Using cached https://files.pythonhosted.org/packages/5a/4a/39400ff9b36e719bdf8f31c99fe1fa7842a42fa77432e584f707a5080063/pip-20.2.2-py2.py3-none-any.whl
+Installing collected packages: pip
+  Found existing installation: pip 19.0.3
+    Uninstalling pip-19.0.3:
+      Successfully uninstalled pip-19.0.3
+Successfully installed pip-20.2.2
+
+C:\Users\林深雾起>pip install pyinstaller
+Collecting pyinstaller
+  Using cached pyinstaller-4.0.tar.gz (3.5 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... error
+    ERROR: Command errored out with exit status 1:
+     command: 'c:\users\林深雾起\appdata\local\programs\python\python37\python.exe' 'c:\users\林深雾起\appdata\local\programs\python\python37\lib\site-packages\pip\_vendor\pep517\_in_process.py' prepare_metadata_for_build_wheel 'C:\Users\林深雾起\AppData\Local\Temp\tmpqp7m0wft'
+         cwd: C:\Users\林深雾起\AppData\Local\Temp\pip-install-awszy0px\pyinstaller
+    Complete output (37 lines):
+    running dist_info
+    creating C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-hevfkxp_\pyinstaller.egg-info
+    writing C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-hevfkxp_\pyinstaller.egg-info\PKG-INFO
+    writing dependency_links to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-hevfkxp_\pyinstaller.egg-info\dependency_links.txt
+    writing entry points to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-hevfkxp_\pyinstaller.egg-info\entry_points.txt
+    writing requirements to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-hevfkxp_\pyinstaller.egg-info\requires.txt
+    writing top-level names to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-hevfkxp_\pyinstaller.egg-info\top_level.txt
+    writing manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-hevfkxp_\pyinstaller.egg-info\SOURCES.txt'
+    reading manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-hevfkxp_\pyinstaller.egg-info\SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xc1 in position 0: invalid start byte (sitecustomize.py, line 7)
+    warning: no files found matching 'pyinstaller-gui.py'
+    no previously-included directories found matching 'bootloader\build'
+    no previously-included directories found matching 'bootloader\.waf-*'
+    no previously-included directories found matching 'bootloader\.waf3-*'
+    no previously-included directories found matching 'bootloader\waf-*'
+    no previously-included directories found matching 'bootloader\waf3-*'
+    no previously-included directories found matching 'bootloader\_sdks'
+    no previously-included directories found matching 'bootloader\.vagrant'
+    warning: no previously-included files found matching 'bootloader\.lock-waf*'
+    no previously-included directories found matching 'doc\source'
+    no previously-included directories found matching 'doc\_build'
+    warning: no previously-included files matching '*.tmp' found under directory 'doc'
+    warning: no files found matching 'news\_template.rst'
+    no previously-included directories found matching 'news'
+    no previously-included directories found matching 'old'
+    no previously-included directories found matching 'scripts'
+    no previously-included directories found matching 'tests\scripts'
+    no previously-included directories found matching '.github'
+    warning: no previously-included files found matching '.*'
+    warning: no previously-included files found matching '*.yml'
+    warning: no previously-included files found matching '*~'
+    warning: no previously-included files found matching '.directory'
+    writing manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-hevfkxp_\pyinstaller.egg-info\SOURCES.txt'
+    creating 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-hevfkxp_\pyinstaller.dist-info'
+    error: invalid command 'bdist_wheel'
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'c:\users\林深雾起\appdata\local\programs\python\python37\python.exe' 'c:\users\林深雾起\appdata\local\programs\python\python37\lib\site-packages\pip\_vendor\pep517\_in_process.py' prepare_metadata_for_build_wheel 'C:\Users\林深雾起\AppData\Local\Temp\tmpqp7m0wft' Check the logs for full command output.
+
+C:\Users\林深雾起>pip3 install pyinstaller
+Collecting pyinstaller
+  Using cached pyinstaller-4.0.tar.gz (3.5 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... error
+    ERROR: Command errored out with exit status 1:
+     command: 'c:\users\林深雾起\appdata\local\programs\python\python37\python.exe' 'c:\users\林深雾起\appdata\local\programs\python\python37\lib\site-packages\pip\_vendor\pep517\_in_process.py' prepare_metadata_for_build_wheel 'C:\Users\林深雾起\AppData\Local\Temp\tmp0an_9qyn'
+         cwd: C:\Users\林深雾起\AppData\Local\Temp\pip-install-vaqpmc88\pyinstaller
+    Complete output (37 lines):
+    running dist_info
+    creating C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-t8w0i_kc\pyinstaller.egg-info
+    writing C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-t8w0i_kc\pyinstaller.egg-info\PKG-INFO
+    writing dependency_links to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-t8w0i_kc\pyinstaller.egg-info\dependency_links.txt
+    writing entry points to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-t8w0i_kc\pyinstaller.egg-info\entry_points.txt
+    writing requirements to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-t8w0i_kc\pyinstaller.egg-info\requires.txt
+    writing top-level names to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-t8w0i_kc\pyinstaller.egg-info\top_level.txt
+    writing manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-t8w0i_kc\pyinstaller.egg-info\SOURCES.txt'
+    reading manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-t8w0i_kc\pyinstaller.egg-info\SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xc1 in position 0: invalid start byte (sitecustomize.py, line 7)
+    warning: no files found matching 'pyinstaller-gui.py'
+    no previously-included directories found matching 'bootloader\build'
+    no previously-included directories found matching 'bootloader\.waf-*'
+    no previously-included directories found matching 'bootloader\.waf3-*'
+    no previously-included directories found matching 'bootloader\waf-*'
+    no previously-included directories found matching 'bootloader\waf3-*'
+    no previously-included directories found matching 'bootloader\_sdks'
+    no previously-included directories found matching 'bootloader\.vagrant'
+    warning: no previously-included files found matching 'bootloader\.lock-waf*'
+    no previously-included directories found matching 'doc\source'
+    no previously-included directories found matching 'doc\_build'
+    warning: no previously-included files matching '*.tmp' found under directory 'doc'
+    warning: no files found matching 'news\_template.rst'
+    no previously-included directories found matching 'news'
+    no previously-included directories found matching 'old'
+    no previously-included directories found matching 'scripts'
+    no previously-included directories found matching 'tests\scripts'
+    no previously-included directories found matching '.github'
+    warning: no previously-included files found matching '.*'
+    warning: no previously-included files found matching '*.yml'
+    warning: no previously-included files found matching '*~'
+    warning: no previously-included files found matching '.directory'
+    writing manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-t8w0i_kc\pyinstaller.egg-info\SOURCES.txt'
+    creating 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-t8w0i_kc\pyinstaller.dist-info'
+    error: invalid command 'bdist_wheel'
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'c:\users\林深雾起\appdata\local\programs\python\python37\python.exe' 'c:\users\林深雾起\appdata\local\programs\python\python37\lib\site-packages\pip\_vendor\pep517\_in_process.py' prepare_metadata_for_build_wheel 'C:\Users\林深雾起\AppData\Local\Temp\tmp0an_9qyn' Check the logs for full command output.
+
+C:\Users\林深雾起>python -m pip install --upgrade pip
+Requirement already up-to-date: pip in c:\users\林深雾起\appdata\local\programs\python\python37\lib\site-packages (20.2.2)
+
+C:\Users\林深雾起>pip install pyinstaller
+Collecting pyinstaller
+  Using cached pyinstaller-4.0.tar.gz (3.5 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... error
+    ERROR: Command errored out with exit status 1:
+     command: 'c:\users\林深雾起\appdata\local\programs\python\python37\python.exe' 'c:\users\林深雾起\appdata\local\programs\python\python37\lib\site-packages\pip\_vendor\pep517\_in_process.py' prepare_metadata_for_build_wheel 'C:\Users\林深雾起\AppData\Local\Temp\tmpyi_b3f3j'
+         cwd: C:\Users\林深雾起\AppData\Local\Temp\pip-install-nenjxs2k\pyinstaller
+    Complete output (37 lines):
+    running dist_info
+    creating C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-6rodo_ab\pyinstaller.egg-info
+    writing C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-6rodo_ab\pyinstaller.egg-info\PKG-INFO
+    writing dependency_links to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-6rodo_ab\pyinstaller.egg-info\dependency_links.txt
+    writing entry points to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-6rodo_ab\pyinstaller.egg-info\entry_points.txt
+    writing requirements to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-6rodo_ab\pyinstaller.egg-info\requires.txt
+    writing top-level names to C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-6rodo_ab\pyinstaller.egg-info\top_level.txt
+    writing manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-6rodo_ab\pyinstaller.egg-info\SOURCES.txt'
+    reading manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-6rodo_ab\pyinstaller.egg-info\SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xc1 in position 0: invalid start byte (sitecustomize.py, line 7)
+    warning: no files found matching 'pyinstaller-gui.py'
+    no previously-included directories found matching 'bootloader\build'
+    no previously-included directories found matching 'bootloader\.waf-*'
+    no previously-included directories found matching 'bootloader\.waf3-*'
+    no previously-included directories found matching 'bootloader\waf-*'
+    no previously-included directories found matching 'bootloader\waf3-*'
+    no previously-included directories found matching 'bootloader\_sdks'
+    no previously-included directories found matching 'bootloader\.vagrant'
+    warning: no previously-included files found matching 'bootloader\.lock-waf*'
+    no previously-included directories found matching 'doc\source'
+    no previously-included directories found matching 'doc\_build'
+    warning: no previously-included files matching '*.tmp' found under directory 'doc'
+    warning: no files found matching 'news\_template.rst'
+    no previously-included directories found matching 'news'
+    no previously-included directories found matching 'old'
+    no previously-included directories found matching 'scripts'
+    no previously-included directories found matching 'tests\scripts'
+    no previously-included directories found matching '.github'
+    warning: no previously-included files found matching '.*'
+    warning: no previously-included files found matching '*.yml'
+    warning: no previously-included files found matching '*~'
+    warning: no previously-included files found matching '.directory'
+    writing manifest file 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-6rodo_ab\pyinstaller.egg-info\SOURCES.txt'
+    creating 'C:\Users\林深雾起\AppData\Local\Temp\pip-modern-metadata-6rodo_ab\pyinstaller.dist-info'
+    error: invalid command 'bdist_wheel'
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'c:\users\林深雾起\appdata\local\programs\python\python37\python.exe' 'c:\users\林深雾起\appdata\local\programs\python\python37\lib\site-packages\pip\_vendor\pep517\_in_process.py' prepare_metadata_for_build_wheel 'C:\Users\林深雾起\AppData\Local\Temp\tmpyi_b3f3j' Check the logs for full command output.
