@@ -2,7 +2,8 @@
 # -*- coding:utf-8 -*-
 # @author LeoWang
 # @date 2021/12/31
-# @file re.py
+# @file retest.py
+
 # word = """
 # '1_马克思基本原理试题库(选择题)2021_leo.doc',
 # '2021-2022-1期末公共基础课考试时间表(1).xls',
@@ -19,6 +20,7 @@
 
 import re
 import os
+import sys
 import random
 import time
 
@@ -36,8 +38,19 @@ def readFIle(path):
     print(end - begin)
     return fileNameList
 
+def getFileList():
+    list = os.listdir(os.getcwd())
+    print(list)
 
-readFIle(path)
+
+
+# readFIle(path)
+getFileList()
+
+# import requests
+# url=r'https://v1.jinrishici.com/' #需要爬数据的网址
+# page=requests.Session().get(url)
+# print(page.text)
 
 
 # for i in fileNameList:
@@ -53,3 +66,11 @@ readFIle(path)
 # list1=random.sample(list(range(1,101)),20)
 # print(list1)
 # 取20个随机的,不重复的文件(使用random模块) 将其放到val文件夹内, 其余放到train文件夹内
+
+# arg = sys.argv
+# print(arg)
+
+
+
+
+
