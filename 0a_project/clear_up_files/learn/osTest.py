@@ -43,4 +43,26 @@ def getsize(path):
 
 getsize(path)
 
-os.symlink('osTest.py','linkos')
+# 如果 path 是 现有的 常规文件，则返回 True。本方法会跟踪符号链接，因此，对于同一路径，islink() 和 isfile() 都可能为 True。
+os.path.isfile(path)
+# 如果 path 是 现有的 目录，则返回 True。本方法会跟踪符号链接，因此，对于同一路径，islink() 和 isdir() 都可能为 True。
+os.path.isdir(path)
+# 如果 path 指向的 现有 目录条目是一个符号链接，则返回 True。如果 Python 运行时不支持符号链接，则总是返回 False。
+os.path.islink(path)
+
+def join():
+    # 智能地拼接一个或多个路径部分。 返回值是 path 和 *paths 的所有成员的拼接，
+    # 其中每个非空部分后面都紧跟一个目录分隔符，最后一个部分除外，这意味着如果最后一个部分为空，则结果将以分隔符结尾。
+    # 如果某个部分为绝对路径，则之前的所有部分会被丢弃并从绝对路径部分开始继续拼接。
+    os.path.join(path, *paths)
+
+# 将路径 path 拆分为一对，即 (head, tail)，其中，tail 是路径的最后一部分，而 head 里是除最后部分外的所有内容。
+# tail 部分不会包含斜杠，如果 path 以斜杠结尾，则 tail 将为空。
+# 如果 path 中没有斜杠，head 将为空。如果 path 为空，则 head 和 tail 均为空。
+# head 末尾的斜杠会被去掉，除非它是根目录（即它仅包含一个或多个斜杠）。
+# 在所有情况下，join(head, tail) 指向的位置都与 path 相同（但字符串可能不同）。另请参见函数 dirname() 和 basename()。
+os.path.split(path)
+
+# 将路径 path 拆分为一对，即 (drive, tail)，其中 drive 是挂载点或空字符串。在没有驱动器概念的系统上，drive 将始终为空字符串。
+# 在所有情况下，drive + tail 都与 path 相同。
+os.path.splitdrive(path)
