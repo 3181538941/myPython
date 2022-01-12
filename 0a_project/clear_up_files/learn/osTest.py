@@ -17,8 +17,7 @@ def mkdir():
     # 创建一个名为 path 的目录
     os.mkdir('temp')
     # 递归目录创建函数。与 mkdir() 类似，但会自动创建到达最后一级目录所需要的中间目录。
-    os.makedirs('T/t/t')
-
+    os.makedirs('T/t/t/T/t/t/T/t/t/T/t/t/T/t/t')
 def rmsth():
     # 移除（删除）文件 path。 如果 path 是目录，则会引发 IsADirectoryError。
     os.remove('t.py')
