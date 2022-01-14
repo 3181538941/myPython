@@ -8,41 +8,47 @@ from pprint import pprint
 
 
 class ViewFile(object):
-    def __init__(self, path, **kwargs):
+    def __init__(self, path, kwargs):
         self.allFile = {}
         self.path = path
-        self.clean(path, **kwargs)
+        self.hasMoved = []
+        self.clean(path, kwargs)
 
-    def clean(self, path, **kwargs):
+    def viewTarget(self,dirPath):
+        pass
+        # todo view the goal dir and list files to judge
+        fileList = os.listdir(dirPath)
+        return fileList
+
+    def clean(self, path, kwargs):
         fileList = os.listdir(path)
         for item in fileList:
             absPath = os.path.join(path, item)
+            # todo walk
             if os.path.isdir(absPath):
                 # todo append dirName
-                self.viewFile(absPath, **kwargs)
-                pass
+                self.clean(absPath, kwargs)
             else:
-                # file = os.path.split(absPath)[1]
-                # todo move
                 for typ in kwargs.keys():
                     if item.endswith(typ):
                         if typ not in self.allFile.keys():
                             self.allFile[typ] = []
                         self.allFile[typ].append(item)
-
-                        # os.popen(rf'move {absPath} {kwargs[typ]}')
+                        if item not in self.viewTarget(kwargs[typ]):
+                            os.popen(rf'move {absPath} {kwargs[typ]}')
+                            self.hasMoved.append(item)
 
 
 # path = r'F:\03_Important\Python\0a_project\clear_up_files'
 path = r'E:\Download'
 
 dic = {'exe': r'E:\Download\exes',
-       'zip': '',
-       'rar': ''}
+       'zip': r'E:\Download\Compressed',
+       'rar': r'E:\Download\Compressed'}
 
-# list = ViewFile(path,**dic)
+list = ViewFile(path, dic)
 # pprint(list.allFile)
-
+pprint(list.hasMoved)
 
 import tkinter as tk
 from PIL import Image, ImageTk
@@ -51,7 +57,7 @@ x = 0
 
 
 class GUI:
-    def click(self,step):
+    def click(self, step):
         global x
         x += step
         print(x)
