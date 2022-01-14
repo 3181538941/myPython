@@ -52,7 +52,7 @@ class ViewFile(object):
                     return 1
             return 0
 
-        for typ in kwargs.keys():  # 按文件类型循环
+        for typ in kwargs.keys():  # 按文件类型循环(文件扫描过程)
             for dirPath, dirNames, fileNames in os.walk(path):
                 for file in fileNames:  # 在dirPath文件夹内循环
                     if dirPath != kwargs[typ] and isInKey(file, typ):  # 要查找的文件类型不在选定文件夹内
@@ -64,8 +64,8 @@ class ViewFile(object):
                     # pprint(dirNames)
                     # pprint(fileNames)
         first = lambda li: [_[0] for _ in li]
-        self.toMoveFlie = first(self.toMove)
-        for item in self.toMove:
+        self.toMoveFile = first(self.toMove)
+        for item in self.toMove: # 移动文件过程
             os.popen(rf'move "{item[3]}" "{kwargs[item[1]]}"')
 
 
@@ -79,7 +79,10 @@ dic = {'exe'       : r'E:\Download\云盘缓存\Executable',
        'zip rar 7z': r'E:\Download\云盘缓存\Compressed'}
 
 list = ViewFile(path, dic)
-pprint(list.allFile)
-print('toMove')
-pprint(list.toMove)
-print(list.toMoveFlie)
+# pprint(list.allFile)
+# print('toMove')
+# pprint(list.toMove)
+for i in dic.keys():
+    print(f'{i} 文件有 {len(list.allFile[i])} 个, 分别为:\n {list.allFile[i]}')
+# print(list.toMoveFile)
+print(f'移动了 {len(list.toMoveFile)} 个文件, 分别为:\n {list.toMoveFile}')
