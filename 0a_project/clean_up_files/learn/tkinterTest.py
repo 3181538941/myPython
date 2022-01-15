@@ -100,7 +100,7 @@ class GUI:
         # 将PIL的Image对象转化为Tk的Image对象
         self.image = ImageTk.PhotoImage(self.img)
         # 将图片对象插入到标签中
-        self.imLable = tk.Label(self.myWindow, image=self.image, height=40, width=50, bg='#dadada')
+        self.imLable = tk.Label(self.myWindow, image=self.image, height=40, width=50, )
         self.imLable.place(relx=0.01, rely=0.01)
         # 添加文本标签
         self.explanation = tk.StringVar()
@@ -152,7 +152,7 @@ class GUI:
         self.entry2.delete(0, len(self.entry2.get()))
         self.entry2.insert(0, self.getEntry1())
 
-        self.img = Image.open(r'13.png')
+        self.img = Image.open(r'terminal.ico')
         # 设定图片大小
         self.img = self.img.resize((50, 50))
         # 将PIL的Image对象转化为Tk的Image对象
