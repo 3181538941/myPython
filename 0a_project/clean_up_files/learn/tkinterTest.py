@@ -14,7 +14,7 @@ class ViewFile(object):
         self.hasMoved = []
         self.clean(path, kwargs)
 
-    def viewTarget(self,dirPath):
+    def viewTarget(self, dirPath):
         pass
         # todo view the goal dir and list files to judge
         fileList = os.listdir(dirPath)
@@ -46,9 +46,9 @@ dic = {'exe': r'E:\Download\exes',
        'zip': r'E:\Download\Compressed',
        'rar': r'E:\Download\Compressed'}
 
-list = ViewFile(path, dic)
-# pprint(list.allFile)
-pprint(list.hasMoved)
+# list = ViewFile(path, dic)
+# # pprint(list.allFile)
+# pprint(list.hasMoved)
 
 import tkinter as tk
 from PIL import Image, ImageTk
@@ -107,18 +107,46 @@ class GUI:
         exists to allow additional image file
         formats to be added easily."""
         tk.Label(myWindow, text=explanation, bg='#dadada').place(x=200, y=100, height=100, width=400)
-        # 创建框架, 用来存放按钮
-        # fra = tk.Frame(myWindow, bg='#e0e0df')
-        fra = tk.Frame(myWindow)
         # 插入按钮对象
         from tkinter import ttk
 
+        # 创建框架, 用来存放按钮
+        # fra = tk.Frame(myWindow, bg='#e0e0df')
+        fra = tk.Frame(myWindow)
         ttk.Button(fra, text='按一下1', command=self.st1, style="Accent.TButton").place(relwidth=0.45, relheight=1)
         ttk.Button(fra, text='按一下2', command=self.st2, style="Toggle.TButton").place(relx=0.5, relwidth=0.45, relheight=1)
         fra.place(x=10, y=250, height=40, width=200)
 
+        fra_entry = tk.Frame(myWindow)
+        lab1 = tk.Label(fra_entry, text='user').place(relheight=0.5, relwidth=.3)
+        lab2 = tk.Label(fra_entry, text='passwd').place(relheight=0.5, rely=0.5, relwidth=.3)
+        self.entry1 = tk.Entry(lab1)
+        self.entry1.place(height=30, width=185, x=302, y=15)
+        self.entry2 = tk.Entry(lab2)
+        self.entry2.place(height=30, width=185, x=302, y=60)
+        fra_entry.place(x=200, height=100, width=300)
+
+        fra2 = tk.Frame(myWindow)
+        ttk.Button(fra2, text='获取user', command=self.getEntry1, style="Accent.TButton").place(y=5,relwidth=1,height=40)
+        ttk.Button(fra2, text='插入', command=self.insertEntry2, style="Toggle.TButton").place(y=55, relwidth=1, height=40)
+        fra2.place(x=500, height=100, width=100)
         # 进入消息循环
         myWindow.mainloop()
+
+    def getEntry1(self):
+        value = self.entry1.get()
+        print(value)
+        return value
+
+    def getEntry2(self):
+        value = self.entry2.get()
+        print(value)
+
+    def insertEntry2(self):
+        self.entry2.delete(0, len(self.entry2.get()))
+        self.entry2.insert(0, self.getEntry1())
+        # self.entry2.delete(0, len(self.entry2.get()))
+        # self.entry2.insert(2, '12345')
 
 
 if __name__ == '__main__':

@@ -1,5 +1,7 @@
 import os
-from pprint import pprint
+from abc import ABCMeta, abstractmethod
+
+
 
 
 class ViewFile(object):
@@ -65,8 +67,9 @@ class ViewFile(object):
                     # pprint(fileNames)
         first = lambda li: [_[0] for _ in li]
         self.toMoveFile = first(self.toMove)
-        for item in self.toMove: # 移动文件过程
+        for item in self.toMove:  # 移动文件过程
             os.popen(rf'move "{item[3]}" "{kwargs[item[1]]}"')
+
 
 
 # path = r'F:\03_Important\Python\0a_project\clear_up_files'
@@ -80,7 +83,7 @@ dic = {'exe'       : r'E:\Download\云盘缓存\Executable',
 
 list = ViewFile(path, dic)
 # pprint(list.allFile)
-# print('toMove')
+# print('toMove')+
 # pprint(list.toMove)
 for i in dic.keys():
     print(f'{i} 文件有 {len(list.allFile[i])} 个, 分别为:\n {list.allFile[i]}')
