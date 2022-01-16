@@ -7,6 +7,7 @@
 from tkinter import *
 from tkinter import ttk
 from tkinter.filedialog import askdirectory
+from util import *
 
 
 
@@ -67,10 +68,7 @@ class GUI(object):
         self.root.mainloop()
     def judgePathEntry(self):
         path = self.showDirPathEntry.get()
-        if path != '':
-            print('111')
-        else:
-            print('000')
+        print('111' if isDir(path) else '000')
 
     def chooseDir(self):
         self.workDir = askdirectory()
@@ -78,5 +76,7 @@ class GUI(object):
         self.showDirPathEntry.delete(0, len(self.showDirPathEntry.get()))
         self.showDirPathEntry.insert(0, self.workDir)
 
-gui = GUI()
+
+if __name__ == '__main__':
+    gui = GUI()
 # gui.chooseDir()

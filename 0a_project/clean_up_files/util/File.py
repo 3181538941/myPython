@@ -7,8 +7,6 @@
 import os
 
 
-
-
 class ViewFile(object):
     def __init__(self, path, kwargs):
         self.allFile = {}
@@ -19,7 +17,7 @@ class ViewFile(object):
                 os.makedirs(p)
         self.path = path
         self.toMove = []  # 需要移动文件列表, [文件名, 所在目录, 绝对路径]
-        self.clean1(path, kwargs)
+        self.clean(path, kwargs)
 
     def viewTarget(self, dirPath):
         pass
@@ -27,25 +25,8 @@ class ViewFile(object):
         fileList = os.listdir(dirPath)
         return fileList
 
-    def clean_old(self, path, kwargs):
-        fileList = os.listdir(path)
-        for item in fileList:
-            absPath = os.path.join(path, item)
-            # todo walk
-            if os.path.isdir(absPath):
-                # todo append dirName
-                self.clean(absPath, kwargs)
-            else:
-                for typ in kwargs.keys():
-                    if item.endswith(typ):
-                        if typ not in self.allFile.keys():
-                            self.allFile[typ] = []
-                        self.allFile[typ].append(item)
-                        if item not in self.viewTarget(kwargs[typ]):
-                            os.popen(rf'move {absPath} {kwargs[typ]}')
-                            self.hasMoved.append(item)
 
-    def clean1(self, path, kwargs):
+    def clean(self, path, kwargs):
 
         def isInKey(file, keyList):
             """
@@ -76,7 +57,6 @@ class ViewFile(object):
             os.popen(rf'move "{item[3]}" "{kwargs[item[1]]}"')
 
 
-
 # path = r'F:\03_Important\Python\0a_project\clear_up_files'
 path = r'E:\Download\云盘缓存'
 
@@ -86,17 +66,21 @@ path = r'E:\Download\云盘缓存'
 dic = {'exe'       : r'E:\Download\云盘缓存\Executable',
        'zip rar 7z': r'E:\Download\云盘缓存\Compressed'}
 
-list = ViewFile(path, dic)
-# pprint(list.allFile)
-# print('toMove')+
-# pprint(list.toMove)
-for i in dic.keys():
-    print(f'{i} 文件有 {len(list.allFile[i])} 个, 分别为:\n {list.allFile[i]}')
-# print(list.toMoveFile)
-print(f'移动了 {len(list.toMoveFile)} 个文件, 分别为:\n {list.toMoveFile}')
 
 def isDir(path):
-    print(path)
+    return os.path.isdir(path)
+
+
+if __name__ == '__main__':
+    list = ViewFile(path, dic)
+    # pprint(list.allFile)
+    # print('toMove')+
+    # pprint(list.toMove)
+    for i in dic.keys():
+        print(f'{i} 文件有 {len(list.allFile[i])} 个, 分别为:\n {list.allFile[i]}')
+    # print(list.toMoveFile)
+    print(f'移动了 {len(list.toMoveFile)} 个文件, 分别为:\n {list.toMoveFile}')
+
 # import re
 # import os
 #
