@@ -10,7 +10,6 @@ from tkinter.filedialog import askdirectory
 from util import *
 
 
-
 class GUI(object):
     def __init__(self):
         self.workDir = None
@@ -46,12 +45,12 @@ class GUI(object):
                                     )
         self.button_choose.place(x=650, y=20, width=120, height=40)
         self.button_test = Button(self.root,
-                                    text='判断',
-                                    command=self.judgePathEntry,
-                                    bd=0,
-                                    bg='#3398ff',
-                                    font=('黑体', 12)
-                                    )
+                                  text='判断',
+                                  command=self.judgePathEntry,
+                                  bd=0,
+                                  bg='#3398ff',
+                                  font=('黑体', 12)
+                                  )
         self.button_test.place(x=650, y=80, width=120, height=40)
         # self.dirPathVar = StringVar()
         # self.showDirPath = Label(self.root, textvariable=self.dirPathVar, bg='#dadada')
@@ -65,7 +64,11 @@ class GUI(object):
                                       font=('小米兰亭Pro', 14),
                                       justify='center')
         self.showDirPathEntry.place(x=150, y=20, height=40, width=470)
+
+        # todo 根据日志文本长度动态改变文本标签的高度, 适当加一下可拖动的进度条
+
         self.root.mainloop()
+
     def judgePathEntry(self):
         path = self.showDirPathEntry.get()
         print('111' if isDir(path) else '000')
