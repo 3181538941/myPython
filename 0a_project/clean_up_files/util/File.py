@@ -8,6 +8,7 @@ import os
 
 
 class ViewFile(object):
+
     def __init__(self, path, kwargs):
         self.allFile = {}
         for typ in kwargs.keys():
@@ -19,18 +20,12 @@ class ViewFile(object):
         self.toMove = []  # 需要移动文件列表, [文件名, 所在目录, 绝对路径]
         self.clean(path, kwargs)
 
-    def viewTarget(self, dirPath):
-        pass
-        # todo view the goal dir and list files to judge
-        fileList = os.listdir(dirPath)
-        return fileList
-
-
     def clean(self, path, kwargs):
 
         def isInKey(file, keyList):
             """
             判断文件是否在文件类型内
+
             :param file: 需要判断的文件名
             :param keyList: 文件类型, type: 用空格分隔的字符串
             :return: 在字符串内返回 True
@@ -44,7 +39,10 @@ class ViewFile(object):
             for dirPath, dirNames, fileNames in os.walk(path):
                 for file in fileNames:  # 在dirPath文件夹内循环
                     if dirPath != kwargs[typ] and isInKey(file, typ):  # 要查找的文件类型不在选定文件夹内
-                        self.toMove.append([file, typ, dirPath, os.path.join(dirPath, file)])
+                        self.toMove.append([file,
+                                            typ,
+                                            dirPath,
+                                            os.path.join(dirPath, file)])
                         # self.toMove.append(file)
                         self.allFile[typ].append(file)
 
@@ -63,8 +61,12 @@ path = r'E:\Download\云盘缓存'
 # dic = {'exe': r'E:\Download\exes',
 #        'zip': r'E:\Download\Compressed',
 #        'rar': r'E:\Download\Compressed'}
-dic = {'exe'       : r'E:\Download\云盘缓存\Executable',
-       'zip rar 7z': r'E:\Download\云盘缓存\Compressed'}
+dic = {'exe'             : r'E:\Download\云盘缓存\Executable',
+       'zip rar 7z'      : r'E:\Download\云盘缓存\Compressed',
+       'png jpg jpeg ico': r'E:\Download\云盘缓存\Pictures'}
+fileTypeNameDic = {'exe'             : '可执行文件',
+                   'zip rar 7z'      : '压缩包',
+                   'png jpg jpeg ico': '图片'}
 
 
 def isDir(path):
@@ -77,7 +79,7 @@ if __name__ == '__main__':
     # print('toMove')+
     # pprint(list.toMove)
     for i in dic.keys():
-        print(f'{i} 文件有 {len(list.allFile[i])} 个, 分别为:\n {list.allFile[i]}')
+        print(f'{fileTypeNameDic[i]}有 {len(list.allFile[i])} 个, 分别为:\n {list.allFile[i]}')
     # print(list.toMoveFile)
     print(f'移动了 {len(list.toMoveFile)} 个文件, 分别为:\n {list.toMoveFile}')
 
