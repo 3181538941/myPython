@@ -9,7 +9,7 @@ import os
 
 class ViewFile(object):
 
-    def __init__(self, path, kwargs, deal='move'):
+    def __init__(self, path, kwargs, deal='move', exceptList=None):
 
         self.allFile = {}
         for typ in kwargs.keys():
@@ -18,6 +18,9 @@ class ViewFile(object):
             if not os.path.isdir(p):  # 路径不是文件夹, 即不存在时 创建文件夹
                 os.makedirs(p)
         self.toMove = []  # 需要移动文件列表, [文件名, 所在目录, 绝对路径]
+        if exceptList == None:
+            exceptList = []
+        self.exceptList = exceptList
         self.clean(path, kwargs, deal)
 
     def clean(self, path, kwargs, deal=None):
@@ -47,36 +50,41 @@ class ViewFile(object):
             #         return 1
             # return 0
 
+        allKey = ''.join(kwargs.keys())
+        key = 0
         for typ in kwargs.keys():  # 按文件类型循环(文件扫描过程)
             for dirPath, dirNames, fileNames in os.walk(path):
                 for file in fileNames:  # 在dirPath文件夹内循环
-                    if dirPath != kwargs[typ] and isInKey(file, typ):  # 要查找的文件类型不在选定文件夹内
+                    # 要查找的文件类型不在目标文件夹内, 文件类型符合要求, 文件不在排除的文件列表内
+                    if dirPath != kwargs[typ] and isInKey(file, typ) and file not in self.exceptList:
+                        # toMove: 文件信息, 二维列表, [[文件名, 文件类型, 文件父路径, 文件绝对路径, 文件目标路径], ]
                         self.toMove.append([file,
                                             typ,
                                             dirPath,
-                                            os.path.join(dirPath, file)])  # toMove: 文件信息, 二维列表, [[文件名, 文件类型, 文件父路径, 文件绝对路径], ]
-
+                                            os.path.join(dirPath, file),
+                                            kwargs[typ]]
+                                           )
                         self.allFile[typ].append(file)
+                    elif dirPath != kwargs['others'] and not isInKey(file, allKey) and key==0:  # 其他文件情况
+                        self.toMove.append([file,
+                                            'others',
+                                            dirPath,
+                                            os.path.join(dirPath, file),
+                                            kwargs['others']]
+                                           )
+                        self.allFile['others'].append(file)
+                        pass
+            key += 1
 
         first = lambda li: [_[0] for _ in li]
         self.toMoveFile = first(self.toMove)  # 需要移动的文件名列表
-        print(self.toMoveFile)
+        # print(self.toMoveFile)
         print(self.toMove)
-        # if deal:
-        #     for item in self.toMove:  # 移动文件过程
-        #         os.popen(rf'{deal} "{item[3]}" "{kwargs[item[1]]}"')  # move 文件绝对路径 该文件类型应放的文件夹
-
-
-# path = r'F:\03_Important\Python\0a_project\clear_up_files'
-path = r'E:\Download\云盘缓存'
-
-dic = {'exe'             : r'E:\Download\云盘缓存\Executable',
-       'zip rar 7z'      : r'E:\Download\云盘缓存\Compressed',
-       'png jpg jpeg ico': r'E:\Download\云盘缓存\Pictures'}
-
-fileTypeNameDic = {'exe'             : '可执行文件',
-                   'zip rar 7z'      : '压缩包',
-                   'png jpg jpeg ico': '图片'}
+        print(self.allFile)
+        if deal:
+            for item in self.toMove:  # 移动文件过程
+                # move 文件绝对路径 该文件类型应放的文件夹
+                os.popen(rf'{deal} "{item[3]}" "{item[4]}"')
 
 
 def isDir(path):
@@ -87,8 +95,24 @@ def isDir(path):
 
 
 if __name__ == '__main__':
-    list = ViewFile(path, dic, 'move')
 
+    # path = r'F:\03_Important\Python\0a_project\clear_up_files'
+    path = r'E:\Download\云盘缓存'
+
+    dic = {'exe'             : r'E:\Download\云盘缓存\Executable',
+           'zip rar 7z'      : r'E:\Download\云盘缓存\Compressed',
+           'png jpg jpeg ico': r'E:\Download\云盘缓存\Pictures',
+           'others'          : r'E:\Download\云盘缓存\Others'}
+
+    fileTypeNameDic = {'exe'             : '可执行文件',
+                       'zip rar 7z'      : '压缩包',
+                       'png jpg jpeg ico': '图片',
+                       'others'          : '其他文件'}
+
+    exceptList = ['云盘缓存.zip']
+
+    list = ViewFile(path, dic, 'move',exceptList=exceptList)
+    list.exceptList = []
     for i in dic.keys():
         print(f'{fileTypeNameDic[i]}有 {len(list.allFile[i])} 个, 分别为:\n {list.allFile[i]}')
     print(f'移动了 {len(list.toMoveFile)} 个文件, 分别为:\n {list.toMoveFile}')
