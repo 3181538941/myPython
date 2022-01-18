@@ -10,22 +10,26 @@ import os
 class ViewFile(object):
 
     def __init__(self, path, kwargs, deal='move', exceptList=None):
-
+        # allFile用来记录扫描出的文件, {'后缀名': ['文件名', '文件名']}
         self.allFile = {}
         for typ in kwargs.keys():
             self.allFile[typ] = []  # 按键初始化self.allFile
+        # 在文件夹不存在时 创建文件夹
         for p in kwargs.values():
-            if not os.path.isdir(p):  # 路径不是文件夹, 即不存在时 创建文件夹
+            if not os.path.isdir(p):
                 os.makedirs(p)
-        self.toMove = []  # 需要移动文件列表, [文件名, 所在目录, 绝对路径]
+        # 需要移动文件列表, [文件名, 所在目录, 绝对路径]
+        self.toMove = []
+        # 要排除的文件
         if exceptList == None:
             exceptList = []
         self.exceptList = exceptList
+        # 调用主要方法
         self.clean(path, kwargs, deal)
 
     def clean(self, path, kwargs, deal=None):
         """
-        核心函数, 移动或复制文件到目标路径
+        核心函数, 扫描符合要求的文件, 记录文件信息, 将其移动或复制文件到目标路径
 
         :param path: 要整理的文件夹路径
         :param kwargs: 键为文件类型值为目标路径的字典
@@ -50,14 +54,15 @@ class ViewFile(object):
             #         return 1
             # return 0
 
+        # allKey: 后缀名字符串, 用来判断其他情况, 放在循环外部防止多次调用浪费资源
         allKey = ''.join(kwargs.keys())
-        key = 0
+        key = 0  # 正常最外层是后缀名循环, 为防止判断其他文件时多次记录, 所以用此变量作为记录
         for typ in kwargs.keys():  # 按文件类型循环(文件扫描过程)
             for dirPath, dirNames, fileNames in os.walk(path):
                 for file in fileNames:  # 在dirPath文件夹内循环
                     # 要查找的文件类型不在目标文件夹内, 文件类型符合要求, 文件不在排除的文件列表内
                     if dirPath != kwargs[typ] and isInKey(file, typ) and file not in self.exceptList:
-                        # toMove: 文件信息, 二维列表, [[文件名, 文件类型, 文件父路径, 文件绝对路径, 文件目标路径], ]
+                        # toMove: 存储文件信息的二维列表, [[文件名, 文件类型, 文件父路径, 文件绝对路径, 文件目标路径], ]
                         self.toMove.append([file,
                                             typ,
                                             dirPath,
@@ -65,7 +70,8 @@ class ViewFile(object):
                                             kwargs[typ]]
                                            )
                         self.allFile[typ].append(file)
-                    elif dirPath != kwargs['others'] and not isInKey(file, allKey) and key==0:  # 其他文件情况
+                    # 其他文件情况, 不在'其他'文件夹内, 不属于给定的任何一种文件类型, 且只在外层第一次循环时记录
+                    elif dirPath != kwargs['others'] and not isInKey(file, allKey) and key == 0:
                         self.toMove.append([file,
                                             'others',
                                             dirPath,
@@ -79,8 +85,8 @@ class ViewFile(object):
         first = lambda li: [_[0] for _ in li]
         self.toMoveFile = first(self.toMove)  # 需要移动的文件名列表
         # print(self.toMoveFile)
-        print(self.toMove)
-        print(self.allFile)
+        # print(self.toMove)
+        # print(self.allFile)
         if deal:
             for item in self.toMove:  # 移动文件过程
                 # move 文件绝对路径 该文件类型应放的文件夹
@@ -111,7 +117,7 @@ if __name__ == '__main__':
 
     exceptList = ['云盘缓存.zip']
 
-    list = ViewFile(path, dic, 'move',exceptList=exceptList)
+    list = ViewFile(path, dic, 'move', exceptList=exceptList)
     list.exceptList = []
     for i in dic.keys():
         print(f'{fileTypeNameDic[i]}有 {len(list.allFile[i])} 个, 分别为:\n {list.allFile[i]}')
