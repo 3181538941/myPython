@@ -94,7 +94,10 @@ class ViewFile(object):
                 # move 文件绝对路径 该文件类型应放的文件夹
                 os.popen(rf'{deal} "{item[3]}" "{item[4]}"')
 
-    def backup(self, path, kwargs):
+
+class BackupFiles(ViewFile):
+
+    def backup(self, path):
 
         def isInKey(file, keyList):
             """
@@ -114,33 +117,36 @@ class ViewFile(object):
             # return 0
 
         # allKey: 后缀名字符串, 用来判断其他情况, 放在循环外部 防止多次调用浪费资源
-        for typ in kwargs.keys():  # 按文件类型循环(文件扫描过程)
+        for typ in self.kwargs.keys():  # 按文件类型循环(文件扫描过程)
             for dirPath, dirNames, fileNames in os.walk(path):
                 for file in fileNames:  # 在dirPath文件夹内循环
                     # 要查找的文件类型不在目标文件夹内, 文件类型符合要求, 文件不在排除的文件列表内
-                    if dirPath != kwargs[typ] and isInKey(file, typ) and file not in self.exceptList:
-                        # toMove: 存储文件信息的二维列表, [[文件名, 文件类型, 文件父路径(不带盘符), 文件绝对路径, 文件目标路径], ]
+                    if dirPath != self.kwargs[typ] and isInKey(file, typ):
+                        noDriveName = os.path.splitdrive(dirPath)[1][1:]
+                        fileAbsPath = os.path.join(dirPath, file)
+                        goalPath = os.path.join(self.kwargs[typ], noDriveName)
+                        # toMove: 存储文件信息的二维列表, [[文件名, 文件类型, 文件父路径, 文件父路径(不带盘符), 文件绝对路径, 文件目标路径], ]
                         self.toMove.append([file,
                                             typ,
-                                            os.path.splitdrive(dirPath)[1][1:],
-                                            os.path.join(dirPath, file),
-                                            kwargs[typ]]
-                                           )
+                                            dirPath,
+                                            noDriveName,
+                                            fileAbsPath,
+                                            goalPath], )
                         self.allFile[typ].append(file)
 
         first = lambda li: [_[0] for _ in li]
         self.toMoveFile = first(self.toMove)  # 需要移动的文件名列表
-        # print(self.toMoveFile)
-        # print(self.toMove)
-        # print(self.allFile)
+        print(self.toMoveFile)
+        print(self.toMove)
+        print(self.allFile)
         for item in self.toMove:  # 移动文件过程
-            if not os.path.isdir(item[2]):
-                os.makedirs(item[2])
-            # move 文件绝对路径 该文件类型应放的文件夹
-            os.popen(rf'copy "{item[3]}" "{item[2]}\{item[0]}"')
+            if not os.path.isdir(item[-1]):
+                os.makedirs(item[-1])
+            # copy 文件绝对路径 该文件类型应放的文件夹
+            os.popen(rf'copy "{item[4]}" "{item[-1]}"')
 
         # 在文件夹不存在时 创建文件夹
-        for p in kwargs.values():
+        for p in self.kwargs.values():
             if not os.path.isdir(p):
                 os.makedirs(p)
 
@@ -153,7 +159,6 @@ def isDir(path):
 
 
 if __name__ == '__main__':
-
     # path = r'F:\03_Important\Python\0a_project\clear_up_files'
     path = r'E:\Download\云盘缓存'
 
@@ -169,7 +174,6 @@ if __name__ == '__main__':
         'png jpg jpeg ico ': r'E:\Backup\Picture',
         'gif'              : r'E:\Backup\GIF',
         'mp4'              : r'E:\Backup\Video',
-
     }
 
     fileTypeNameDic = {
@@ -177,17 +181,22 @@ if __name__ == '__main__':
         'zip rar 7z'      : '压缩包',
         'png jpg jpeg ico': '图片',
         'others'          : '其他文件',
-        'mp4'             : '视频'
+        'mp4'             : '视频',
+        'gif'             : 'GIF'
     }
 
     exceptList = ['云盘缓存.zip']
 
-    test = ViewFile(dic)
+    # test = ViewFile(dic)
+    # # 调用主要方法
+    # test.clean(path, 'move', exceptList=exceptList)
+    # for i in dic.keys():
+    #     print(f'{fileTypeNameDic[i]}有 {len(test.allFile[i])} 个, 分别为:\n {test.allFile[i]}')
+    # print(f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}')
+    BakePath = r'F:\0a.dataout\刘泽'
+    test = BackupFiles(backDic)
     # 调用主要方法
-    test.clean(path, 'move', exceptList=exceptList)
-    for i in dic.keys():
-        print(f'{fileTypeNameDic[i]}有 {len(test.allFile[i])} 个, 分别为:\n {test.allFile[i]}')
-    print(f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}')
+    test.backup(BakePath)
 
 # import re
 # import os
