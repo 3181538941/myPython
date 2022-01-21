@@ -42,9 +42,11 @@ class ViewFile(object):
 # path = r'F:\03_Important\Python\0a_project\clear_up_files'
 path = r'E:\Download'
 
-dic = {'exe': r'E:\Download\exes',
-       'zip': r'E:\Download\Compressed',
-       'rar': r'E:\Download\Compressed'}
+dic = {
+    'exe': r'E:\Download\exes',
+    'zip': r'E:\Download\Compressed',
+    'rar': r'E:\Download\Compressed'
+}
 
 # list = ViewFile(path, dic)
 # # pprint(list.allFile)
@@ -114,12 +116,12 @@ class GUI:
         # 插入按钮对象
         from tkinter import ttk
 
-
         # 创建框架, 用来存放按钮
         # fra = tk.Frame(self.myWindow, bg='#e0e0df')
         fra = tk.Frame(self.myWindow)
         ttk.Button(fra, text='按一下1', command=self.st1, style="Accent.TButton").place(relwidth=0.45, relheight=1)
-        ttk.Button(fra, text='按一下2', command=self.st2, style="Toggle.TButton").place(relx=0.5, relwidth=0.45, relheight=1)
+        ttk.Button(fra, text='按一下2', command=self.st2, style="Toggle.TButton").place(relx=0.5, relwidth=0.45,
+                                                                                     relheight=1)
         fra.place(x=10, y=250, height=40, width=200)
 
         fra_entry = tk.Frame(self.myWindow)
@@ -132,8 +134,10 @@ class GUI:
         fra_entry.place(x=200, height=100, width=300)
 
         fra2 = tk.Frame(self.myWindow)
-        ttk.Button(fra2, text='获取user', command=self.getEntry1, style="Accent.TButton").place(y=5, relwidth=1, height=40)
-        ttk.Button(fra2, text='插入', command=self.insertEntry2, style="Toggle.TButton").place(y=55, relwidth=1, height=40)
+        ttk.Button(fra2, text='获取user', command=self.getEntry1, style="Accent.TButton").place(y=5, relwidth=1,
+                                                                                              height=40)
+        ttk.Button(fra2, text='插入', command=self.insertEntry2, style="Toggle.TButton").place(y=55, relwidth=1,
+                                                                                             height=40)
         fra2.place(x=500, height=100, width=100)
         # 进入消息循环
         self.myWindow.mainloop()
