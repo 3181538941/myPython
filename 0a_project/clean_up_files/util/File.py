@@ -25,8 +25,8 @@ class ViewFile(object):
         核心函数, 扫描符合要求的文件, 记录文件信息, 将其移动或复制文件到目标路径
 
         :param path: 要整理的文件夹路径
-        :param kwargs: 键为文件类型值为目标路径的字典
-        :param deal: 文件处理方式, 默认是
+        :param deal: 文件处理方式, 默认是 move
+        :exception: 排除的文件列表
         :return:
         """
         # 要排除的文件
@@ -35,9 +35,9 @@ class ViewFile(object):
         self.exceptList = exceptList
 
         # 在文件夹不存在时 创建文件夹
-        for p in self.kwargs.values():
-            if not os.path.isdir(p):
-                os.makedirs(p)
+        for each in self.kwargs.values():
+            if not os.path.isdir(each):
+                os.makedirs(each)
 
         def isInKey(file, keyList):
             """
@@ -122,8 +122,11 @@ class BackupFiles(ViewFile):
                 for file in fileNames:  # 在dirPath文件夹内循环
                     # 要查找的文件类型不在目标文件夹内, 文件类型符合要求, 文件不在排除的文件列表内
                     if dirPath != self.kwargs[typ] and isInKey(file, typ):
+                        # 不带盘符的文件名
                         noDriveName = os.path.splitdrive(dirPath)[1][1:]
+                        # 文件的绝对路径
                         fileAbsPath = os.path.join(dirPath, file)
+                        # 文件复制的目标路径
                         goalPath = os.path.join(self.kwargs[typ], noDriveName)
                         # toMove: 存储文件信息的二维列表, [[文件名, 文件类型, 文件父路径, 文件父路径(不带盘符), 文件绝对路径, 文件目标路径], ]
                         self.toMove.append([file,
@@ -136,9 +139,9 @@ class BackupFiles(ViewFile):
 
         first = lambda li: [_[0] for _ in li]
         self.toMoveFile = first(self.toMove)  # 需要移动的文件名列表
-        print(self.toMoveFile)
-        print(self.toMove)
-        print(self.allFile)
+        # print(self.toMoveFile)
+        # print(self.toMove)
+        # print(self.allFile)
         for item in self.toMove:  # 移动文件过程
             if not os.path.isdir(item[-1]):
                 os.makedirs(item[-1])
