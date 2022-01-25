@@ -75,8 +75,8 @@ class GUI(object):
 
     def chooseDir(self):
         self.workDir = askdirectory()
-        # self.showDirPathEntry.set(self.workDir)
-        self.showDirPathEntry.delete(0, len(self.showDirPathEntry.get()))
+        # self.showDirPathEntry.delete(0, len(self.showDirPathEntry.get()))
+        self.showDirPathEntry.delete(0, END)
         self.showDirPathEntry.insert(0, self.workDir)
 
 

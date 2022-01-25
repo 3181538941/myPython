@@ -5,6 +5,7 @@
 # @file File.py
 
 import os
+import shutil
 
 
 class ViewFile(object):
@@ -76,7 +77,7 @@ class ViewFile(object):
                         self.allFile[typ].append(file)
                     # 其他文件情况, 不在'其他'文件夹内, 不属于给定的任何一种文件类型, 且只在外层第一次循环时记录
                     elif dirPath != self.kwargs['others'] \
-                            and not isInKey(file, allKey) \
+                            and not self.isInKey(file, allKey) \
                             and key == 0:
                         self.toMove.append([file,
                                             'others',
@@ -96,7 +97,13 @@ class ViewFile(object):
         if deal:
             for item in self.toMove:  # 移动文件过程
                 # move 文件绝对路径 该文件类型应放的文件夹
-                os.popen(rf'{deal} "{item[3]}" "{item[4]}"')
+                # os.popen(rf'{deal} "{item[3]}" "{item[4]}"')
+                if deal=='move':
+                    shutil.move(item[3],item[4])
+                elif deal=='copy':
+                    shutil.copy(item[3],item[4])
+                else:
+                    print('ERROR')
 
 
 class BackupFiles(ViewFile):
@@ -133,12 +140,9 @@ class BackupFiles(ViewFile):
             if not os.path.isdir(item[-1]):
                 os.makedirs(item[-1])
             # copy 文件绝对路径 该文件类型应放的文件夹
-            os.popen(rf'copy "{item[4]}" "{item[-1]}"')
+            # os.popen(rf'copy "{item[4]}" "{item[-1]}"')
+            shutil.copy(item[4],item[-1])
 
-        # 在文件夹不存在时 创建文件夹
-        for p in self.kwargs.values():
-            if not os.path.isdir(p):
-                os.makedirs(p)
 
 
 def isDir(path):
@@ -177,15 +181,14 @@ if __name__ == '__main__':
 
     exceptList = ['云盘缓存.zip']
 
-    # test = ViewFile(dic)
-    # # 调用主要方法
-    # test.clean(path, 'move', exceptList=exceptList)
-    # for i in dic.keys():
-    #     print(f'{fileTypeNameDic[i]}有 {len(test.allFile[i])} 个, 分别为:\n {test.allFile[i]}')
-    # print(f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}')
+    test = ViewFile(dic)
+    # 调用主要方法
+    test.clean(path, 'copy', exceptList=exceptList)
+    for i in dic.keys():
+        print(f'{fileTypeNameDic[i]}有 {len(test.allFile[i])} 个, 分别为:\n {test.allFile[i]}')
+    print(f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}')
 
     # BakePath = r''
     # test = BackupFiles(backDic)
     # # 调用主要方法
     # test.backup(BakePath)
-
