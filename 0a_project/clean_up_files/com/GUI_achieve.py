@@ -19,7 +19,7 @@ class GUI(object):
         # 初始化Tk
         self.root = Tk()
         # 设置标题
-        self.root.title('fileCleaner')
+        self.root.title('fileTool')
         # 加载tk主题
         self.root.call("source", r"F:\03_Important\Python\0a_project\Azure-ttk-theme-main\azure.tcl")
         self.root.call("set_theme", 'light')

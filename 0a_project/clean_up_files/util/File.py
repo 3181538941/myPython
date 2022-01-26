@@ -20,6 +20,7 @@ class ViewFile(object):
             self.allFile[typ] = []
         # toMove: 存储文件信息的二维列表, [[文件名, 文件类型, 文件父路径, 文件绝对路径, 文件目标路径], ]
         self.toMove = []
+        self.hasDeal = []  # 被操作到的文件
 
     def isInKey(self, file, keyList):
         """
@@ -91,19 +92,26 @@ class ViewFile(object):
 
         first = lambda li: [_[0] for _ in li]
         self.toMoveFile = first(self.toMove)  # 需要移动的文件名列表
+
         # print(self.toMoveFile)
         # print(self.toMove)
         # print(self.allFile)
         if deal:
             for item in self.toMove:  # 移动文件过程
+                global fileName
                 # move 文件绝对路径 该文件类型应放的文件夹
                 # os.popen(rf'{deal} "{item[3]}" "{item[4]}"')
-                if deal=='move':
-                    shutil.move(item[3],item[4])
+                if deal == 'move':
+                    if platform.system() == 'Windows':
+                        fileName = shutil.move(item[3],item[4])
+                    elif platform.system() == 'Linux':
+                        os.popen(rf'mv "{item[3]}" "{item[4]}"')
+                        fileName = item[3]
                 elif deal=='copy':
-                    shutil.copy(item[3],item[4])
+                    fileName = shutil.copy(item[3],item[4])
                 else:
                     print('ERROR')
+                self.hasDeal.append(fileName)
 
 
 class BackupFiles(ViewFile):
@@ -139,9 +147,11 @@ class BackupFiles(ViewFile):
         for item in self.toMove:  # 移动文件过程
             if not os.path.isdir(item[-1]):
                 os.makedirs(item[-1])
+                global fileName
             # copy 文件绝对路径 该文件类型应放的文件夹
             # os.popen(rf'copy "{item[4]}" "{item[-1]}"')
-            shutil.copy(item[4],item[-1])
+            fileName = shutil.copy(item[4],item[-1])
+            self.hasDeal.append(fileName)
 
 
 
@@ -183,7 +193,7 @@ if __name__ == '__main__':
 
     test = ViewFile(dic)
     # 调用主要方法
-    test.clean(path, 'copy', exceptList=exceptList)
+    test.clean(path, 'move', exceptList=exceptList)
     for i in dic.keys():
         print(f'{fileTypeNameDic[i]}有 {len(test.allFile[i])} 个, 分别为:\n {test.allFile[i]}')
     print(f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}')
