@@ -9,8 +9,10 @@
 # todo file
 
 from .File import *
-class ViewFile(ViewFile):
-    pass
+
+
+# class ViewFile(ViewFile):
+#     pass
 
 # def isDir(path):
 #     isDir(path)

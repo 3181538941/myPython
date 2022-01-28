@@ -70,6 +70,7 @@ class GUI(object):
         self.root.mainloop()
 
     def judgePathEntry(self):
+
         path = self.showDirPathEntry.get()
         print('111' if isDir(path) else '000')
 
