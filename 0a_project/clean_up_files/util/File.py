@@ -56,7 +56,7 @@ class ViewFile(object):
 
         # 在文件夹不存在时 创建文件夹
         for each in self.kwargs.values():
-            if not os.path.isdir(each):
+            if not os.path.isdir(each) and each:
                 os.makedirs(each)
 
         # allKey: 后缀名字符串, 用来判断其他情况, 放在循环外部防止多次调用浪费资源
@@ -77,18 +77,11 @@ class ViewFile(object):
                                             self.kwargs[typ]]
                                            )
                         self.allFile[typ].append(file)
-                    # 其他文件情况, 不在'其他'文件夹内, 不属于给定的任何一种文件类型, 且只在外层第一次循环时记录
-                    elif dirPath != self.kwargs['others'] \
-                            and not self.isInKey(file, allKey) \
-                            and key == 0:
-                        self.toMove.append([file,
-                                            'others',
-                                            dirPath,
-                                            os.path.join(dirPath, file),
-                                            self.kwargs['others']]
-                                           )
-                        self.allFile['others'].append(file)
-                        pass
+                    # elif 'others' in list(self.kwargs.keys):
+                    #     # 其他文件情况, 不在'其他'文件夹内, 不属于给定的任何一种文件类型, 且只在外层第一次循环时记录
+                    #     if dirPath != self.kwargs['others'] and not self.isInKey(file, allKey) and key == 0:
+                    #         self.toMove.append([file, 'others', dirPath, os.path.join(dirPath, file), self.kwargs['others']])
+                    #         self.allFile['others'].append(file)
             key += 1
 
         first = lambda li: [_[0] for _ in li]
@@ -104,12 +97,14 @@ class ViewFile(object):
                 # os.popen(rf'{deal} "{item[3]}" "{item[4]}"')
                 if deal == 'move':
                     if platform.system() == 'Windows':
-                        fileName = shutil.move(item[3],item[4])
+                        fileName = shutil.move(item[3], item[4])
                     elif platform.system() == 'Linux':
                         os.popen(rf'mv "{item[3]}" "{item[4]}"')
                         fileName = item[3]
-                elif deal=='copy':
-                    fileName = shutil.copy(item[3],item[4])
+                elif deal == 'copy':
+                    fileName = shutil.copy(item[3], item[4])
+                elif deal == 'test':
+                    fileName = item[3]
                 else:
                     print('ERROR')
                 self.hasDeal.append(fileName)
@@ -151,9 +146,8 @@ class BackupFiles(ViewFile):
                 global fileName
             # copy 文件绝对路径 该文件类型应放的文件夹
             # os.popen(rf'copy "{item[4]}" "{item[-1]}"')
-            fileName = shutil.copy(item[4],item[-1])
+            fileName = shutil.copy(item[4], item[-1])
             self.hasDeal.append(fileName)
-
 
 
 def isDir(path):
@@ -167,13 +161,14 @@ if __name__ == '__main__':
     # path = r'F:\03_Important\Python\0a_project\clear_up_files'
     path = r'E:\Download\云盘缓存'
 
-    dic = {
-        'exe'             : r'E:\Download\云盘缓存\Executable',
-        'zip rar 7z'      : r'E:\Download\云盘缓存\Compressed',
-        'png jpg jpeg ico': r'E:\Download\云盘缓存\Picture',
-        'others'          : r'E:\Download\云盘缓存\Other',
-        'mp4'             : r'E:\Download\云盘缓存\Video'
-    }
+    # dic = {
+    #     'exe'             : r'E:\Download\云盘缓存\Executable',
+    #     'zip rar 7z'      : r'E:\Download\云盘缓存\Compressed',
+    #     'png jpg jpeg ico': r'E:\Download\云盘缓存\Picture',
+    #     'others'          : r'E:\Download\云盘缓存\Other',
+    #     'mp4'             : r'E:\Download\云盘缓存\Video'
+    # }
+    dic = {'': '', 'others': r'E:\Download\云盘缓存\Other', }
 
     backDic = {
         'png jpg jpeg ico ': r'E:\Backup\Picture',
@@ -193,6 +188,7 @@ if __name__ == '__main__':
     exceptList = ['云盘缓存.zip']
 
     test = ViewFile(dic)
+    print(test.allFile)
     # 调用主要方法
     test.clean(path, 'move', exceptList=exceptList)
     for i in dic.keys():
