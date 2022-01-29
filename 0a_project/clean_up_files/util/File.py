@@ -7,7 +7,8 @@
 import os
 import shutil
 import platform
-
+# import openpyxl
+# from openpyxl.styles import Alignment
 
 class ViewFile(object):
 
@@ -68,7 +69,7 @@ class ViewFile(object):
                     # 要查找的文件类型不在目标文件夹内, 文件类型符合要求, 文件不在排除的文件列表内
                     if dirPath != self.kwargs[typ] \
                             and self.isInKey(file, typ) \
-                            and file not in self.exceptList:
+                            and file not in self.exceptList and file:
                         # toMove: 存储文件信息的二维列表, [[文件名, 文件类型, 文件父路径, 文件绝对路径, 文件目标路径], ]
                         self.toMove.append([file,
                                             typ,
@@ -97,12 +98,16 @@ class ViewFile(object):
                 # os.popen(rf'{deal} "{item[3]}" "{item[4]}"')
                 if deal == 'move':
                     if platform.system() == 'Windows':
-                        fileName = shutil.move(item[3], item[4])
+                        os.popen(rf'move "{item[3]}" "{item[4]}"')
                     elif platform.system() == 'Linux':
                         os.popen(rf'mv "{item[3]}" "{item[4]}"')
-                        fileName = item[3]
+                    fileName = item[3]
                 elif deal == 'copy':
-                    fileName = shutil.copy(item[3], item[4])
+                    if platform.system() == 'Windows':
+                        os.popen(rf'copy "{item[3]}" "{item[4]}"')
+                    elif platform.system() == 'Linux':
+                        os.popen(rf'cp "{item[3]}" "{item[4]}"')
+                    fileName = item[3]
                 elif deal == 'test':
                     fileName = item[3]
                 else:
@@ -150,52 +155,103 @@ class BackupFiles(ViewFile):
             self.hasDeal.append(fileName)
 
 
+
 def isDir(path):
     """
     调用 os.path 判断传过来的路径是不是文件夹
     """
     return os.path.isdir(path)
 
+def isFile(file):
+    return os.path.isfile(file)
+
+def outputLogToExcel(file,logList):
+    if isFile(file):
+        wb = openpyxl.load_workbook(file) # 加载工作簿
+    else:
+        wb = openpyxl.Workbook()  # 实例化工作簿对象
+    sheet = wb.active  # 获取活动工作表
+    print(sheet)
+    sheet.title = 'fileLog'  # 为工作表从新命名
+
+    # 添加表头（不需要表头可以不用加）
+    firstLine = ['文件名','文件类型','文件原始路径','文件处理后路径']
+    for col_index, col_item in enumerate(firstLine):
+        sheet.cell(row=1,column=col_index+1,value=col_item)
+
+    sheet.column_dimensions['A'].width = 30
+    sheet.column_dimensions['B'].width = 40
+    sheet.column_dimensions['C'].width = 60
+    sheet.column_dimensions['D'].width = 60
+    # 设置B1中的数据垂直居中和水平居中
+    sheet['A1'].alignment = Alignment(horizontal='center', vertical='center')
+    sheet['B1'].alignment = Alignment(horizontal='center', vertical='center')
+    sheet['C1'].alignment = Alignment(horizontal='center', vertical='center')
+    sheet['D1'].alignment = Alignment(horizontal='center', vertical='center')
+
+    # print(col_index, col_item)
+    import datetime
+    End = sheet.max_row + 2
+    sheet.merge_cells(range_string=f'A{End}:D{End}')
+    sheet[f'A{End}'].alignment = Alignment(horizontal='center', vertical='center')
+    sheet.cell(row=End,column=1,value=datetime.datetime.now())
+    End += 1
+    # # 开始遍历数组
+    for row_index, row_item in enumerate(logList):
+        for col_index, col_item in enumerate(row_item[:-1]):
+                sheet.cell(row=row_index + End, column=col_index + 1, value=col_item)
+
+    # sheet.cell(row=33, column=1 + 1, value='test')
+    print(sheet.max_row )
+    wb.save(file)
+
+
+
+
+
 
 if __name__ == '__main__':
-    # path = r'F:\03_Important\Python\0a_project\clear_up_files'
-    path = r'E:\Download\云盘缓存'
 
-    # dic = {
-    #     'exe'             : r'E:\Download\云盘缓存\Executable',
-    #     'zip rar 7z'      : r'E:\Download\云盘缓存\Compressed',
-    #     'png jpg jpeg ico': r'E:\Download\云盘缓存\Picture',
-    #     'others'          : r'E:\Download\云盘缓存\Other',
-    #     'mp4'             : r'E:\Download\云盘缓存\Video'
+    file = rf"F:\03_Important\Python\0a_project\clean_up_files\com\log.xlsx"
+    outputLogToExcel(file,[])
+    # # path = r'F:\03_Important\Python\0a_project\clear_up_files'
+    # path = r'E:\Download\云盘缓存'
+    #
+    # # dic = {
+    # #     'exe'             : r'E:\Download\云盘缓存\Executable',
+    # #     'zip rar 7z'      : r'E:\Download\云盘缓存\Compressed',
+    # #     'png jpg jpeg ico': r'E:\Download\云盘缓存\Picture',
+    # #     'others'          : r'E:\Download\云盘缓存\Other',
+    # #     'mp4'             : r'E:\Download\云盘缓存\Video'
+    # # }
+    # dic = {'': '', 'others': r'E:\Download\云盘缓存\Other', }
+    #
+    # backDic = {
+    #     'png jpg jpeg ico ': r'E:\Backup\Picture',
+    #     'gif'              : r'E:\Backup\GIF',
+    #     'mp4'              : r'E:\Backup\Video',
     # }
-    dic = {'': '', 'others': r'E:\Download\云盘缓存\Other', }
-
-    backDic = {
-        'png jpg jpeg ico ': r'E:\Backup\Picture',
-        'gif'              : r'E:\Backup\GIF',
-        'mp4'              : r'E:\Backup\Video',
-    }
-
-    fileTypeNameDic = {
-        'exe'             : '可执行文件',
-        'zip rar 7z'      : '压缩包',
-        'png jpg jpeg ico': '图片',
-        'others'          : '其他文件',
-        'mp4'             : '视频',
-        'gif'             : 'GIF'
-    }
-
-    exceptList = ['云盘缓存.zip']
-
-    test = ViewFile(dic)
-    print(test.allFile)
-    # 调用主要方法
-    test.clean(path, 'move', exceptList=exceptList)
-    for i in dic.keys():
-        print(f'{fileTypeNameDic[i]}有 {len(test.allFile[i])} 个, 分别为:\n {test.allFile[i]}')
-    print(f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}')
-
-    # BakePath = r''
-    # test = BackupFiles(backDic)
+    #
+    # fileTypeNameDic = {
+    #     'exe'             : '可执行文件',
+    #     'zip rar 7z'      : '压缩包',
+    #     'png jpg jpeg ico': '图片',
+    #     'others'          : '其他文件',
+    #     'mp4'             : '视频',
+    #     'gif'             : 'GIF'
+    # }
+    #
+    # exceptList = ['云盘缓存.zip']
+    #
+    # test = ViewFile(dic)
+    # print(test.allFile)
     # # 调用主要方法
-    # test.backup(BakePath)
+    # test.clean(path, 'move', exceptList=exceptList)
+    # for i in dic.keys():
+    #     print(f'{fileTypeNameDic[i]}有 {len(test.allFile[i])} 个, 分别为:\n {test.allFile[i]}')
+    # print(f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}')
+    #
+    # # BakePath = r''
+    # # test = BackupFiles(backDic)
+    # # # 调用主要方法
+    # # test.backup(BakePath)

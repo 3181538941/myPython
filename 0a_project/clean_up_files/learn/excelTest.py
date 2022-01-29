@@ -26,15 +26,16 @@ class Excel(object):
         self.wb.save(self.file)
 
     def fileExist(self):
-        self.dirName = os.path.split('./' + self.file)[0]  # 文件父目录名
-        self.fileName = os.path.split(self.file)[1]  # 文件名称
-
-        fileList = os.listdir(self.dirName)  # 文件所在目录下文件列表
-
-        if self.fileName in fileList:
-            return 1
-        else:
-            return 0
+        return os.path.isfile(self.file)
+        # self.dirName = os.path.split('./' + self.file)[0]  # 文件父目录名
+        # self.fileName = os.path.split(self.file)[1]  # 文件名称
+        #
+        # fileList = os.listdir(self.dirName)  # 文件所在目录下文件列表
+        #
+        # if self.fileName in fileList:
+        #     return 1
+        # else:
+        #     return 0
 
     def createNewExcel(self, sheetName=None):
         """

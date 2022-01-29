@@ -15,7 +15,7 @@ class GUI(object):
         self.workDir = None
         self.dicAll = {
             '压缩文件'   : '7z gz rar zip',
-            '可执行文件' : 'exe',
+            '可执行文件'  : 'exe',
             '图片'     : 'png jpg jpeg',
             '文档'     : 'txt doc docx pdf epub',
             '演示文档及表格': 'ppt pptx xls xlsx csv',
@@ -48,7 +48,7 @@ class GUI(object):
         # 设置窗口是否可变长、宽
         self.root.resizable(width='False', height='True')
         # 设置窗口图标
-        self.root.iconbitmap('../learn/terminal.ico')
+        self.root.iconbitmap(r'F:\03_Important\Python\0a_project\clean_up_files\com\lswq.ico')
         self.button_choose = Button(self.root,
                                     text='选择目录',
                                     command=lambda: self.chooseDir(self.showDirPathEntry),
@@ -95,9 +95,13 @@ class GUI(object):
                     indicatoron=False).place(width=60, height=30, x=400, y=126)
 
         Label(self.root,
-              text="匹配规则:",
+              text="文件类型:",
               font=('黑体', 12),
-              ).place(x=0, y=200, height=40, width=120)
+              ).place(x=40, y=200, height=40, width=120)
+        Label(self.root,
+              text="目标路径:",
+              font=('黑体', 12),
+              ).place(x=240, y=200, height=40, width=120)
 
         chosen = self.dicAll.keys()
         chosen = tuple(chosen)
@@ -190,7 +194,7 @@ class GUI(object):
         # 设置窗口是否可变长、宽
         self.mes.resizable(width='True', height='True')
         # 设置窗口图标
-        self.mes.iconbitmap('../learn/terminal.ico')
+        self.mes.iconbitmap(r'F:\03_Important\Python\0a_project\clean_up_files\com\lswq.ico')
 
         # print(self.messageString.get())
 
@@ -242,27 +246,59 @@ class GUI(object):
             self.showInfoGUI('path ERROR', 1)
             return 'Error'
         dicChoose = {
-            self.dicAll[self.typ1.get()] : self.pth1.get(),
-            self.dicAll[self.typ2.get()] : self.pth2.get(),
-            self.dicAll[self.typ3.get()] : self.pth3.get(),
-            self.dicAll[self.typ4.get()] : self.pth4.get()
+            self.dicAll[self.typ1.get()]: self.pth1.get(),
+            self.dicAll[self.typ2.get()]: self.pth2.get(),
+            self.dicAll[self.typ3.get()]: self.pth3.get(),
+            self.dicAll[self.typ4.get()]: self.pth4.get()
         }
         exceptList = ['云盘缓存.zip']
         dealDic = {
-            1: 'test', 2: 'copy'
+            1: 'move', 2: 'copy'
         }
         test = ViewFile(dicChoose)
         # 调用主要方法
         test.clean(self.showDirPathEntry.get(), dealDic[self.dealMode.get()], exceptList=exceptList)
         st = ''
+        dicReset = {
+            '7z gz rar zip'        : '压缩文件',
+            'exe'                  : '可执行文件',
+            'png jpg jpeg'         : '图片',
+            'txt doc docx pdf epub': '文档',
+            'ppt pptx xls xlsx csv': '演示文档及表格',
+            'ico'                  : '图标',
+            'mp4 mkv avi'          : '视频',
+            'gif'                  : 'GIF',
+            'mp3'                  : '音乐',
+            ''                     : '空'
+        }
         # for i in dealDic.keys():
         #     st += (f'{fileTypeNameDic[i]}有 {len(test.allFile[i])} 个, 分别为:\n {test.allFile[i]}\n')
         # self.messageString.set(st + st + f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}\n')
         # print((st+f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}'))
-        info = f'{dicChoose} \n' \
-               f' {test.toMoveFile}' + f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}\n'
-
+        # info = f'{dicChoose} \n' \
+        #        f' {test.toMoveFile}' + f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}\n'
+        info = f'\n\t\t\t处理了 {len(test.hasDeal)} 个文件: \n\n'
+        for fileType in dicChoose.keys():
+            if fileType != '':
+                info += f'{dicReset[fileType]} 有 {len(test.allFile[fileType])} 个, 分别为:\n\t'
+                files = '\n\t'.join(test.allFile[fileType])
+                info += f"{files}\n\n"
+            # f'{list(dicChoose.keys())[1]} 文件有 {len(test.allFile[list(dicChoose.keys())[1]])} 个'
+            # f'{list(dicChoose.keys())[2]} 文件有 {len(test.allFile[list(dicChoose.keys())[2]])} 个'
+            # f'{list(dicChoose.keys())[3]} 文件有 {len(test.allFile[list(dicChoose.keys())[3]])} 个'
         self.showInfoGUI(info)
+
+        # outputLogToExcel(r'.\log.xlsx', test.toMove)
+        import datetime
+        if test.toMove:
+            with open('.\log.txt','a',encoding='utf-8') as log:
+                t = f'\n\n{datetime.datetime.now()}\n'
+                for item in test.toMove:
+                    t += "\t".join(item)
+                    t += '\n'
+
+                log.write(t)
+        # print(test.toMove)
 
 
 if __name__ == '__main__':
