@@ -11,7 +11,9 @@ import platform
 # from openpyxl.styles import Alignment
 
 class ViewFile(object):
-
+    """
+    文件批量归类处理类
+    """
     def __init__(self, kwargs):
         # 存储kwargs
         self.kwargs = kwargs
@@ -116,9 +118,15 @@ class ViewFile(object):
 
 
 class BackupFiles(ViewFile):
-
+    """
+    文件备份类
+    """
     def backup(self, path):
+        """
+        备份文件, 规则在实例化类对象时传递
 
+        :param path: 文件路径, 以此路径为根递归处理
+        """
         # allKey: 后缀名字符串, 用来判断其他情况, 放在循环外部 防止多次调用浪费资源
         for typ in self.kwargs.keys():  # 按文件类型循环(文件扫描过程)
             for dirPath, dirNames, fileNames in os.walk(path):
@@ -157,15 +165,20 @@ class BackupFiles(ViewFile):
 
 
 def isDir(path):
-    """
-    调用 os.path 判断传过来的路径是不是文件夹
-    """
     return os.path.isdir(path)
 
 def isFile(file):
     return os.path.isfile(file)
 
+
 def outputLogToExcel(file,logList):
+    """
+    将日志输出到excel, 因openpyxl调用NumPy, 体量过大, 未采用
+
+    :param file: excel文件路径
+    :param logList: 数据列表
+    :return:
+    """
     if isFile(file):
         wb = openpyxl.load_workbook(file) # 加载工作簿
     else:
@@ -214,6 +227,7 @@ if __name__ == '__main__':
 
     file = rf"F:\03_Important\Python\0a_project\clean_up_files\com\log.xlsx"
     outputLogToExcel(file,[])
+
     # # path = r'F:\03_Important\Python\0a_project\clear_up_files'
     # path = r'E:\Download\云盘缓存'
     #

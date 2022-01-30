@@ -12,7 +12,9 @@ from util import *
 
 class GUI(object):
     def __init__(self):
+        # 工作路径, 程序运行时实际调用的是路径输入框
         self.workDir = None
+        # 文件类型字典
         self.dicAll = {
             '压缩文件'   : '7z gz rar zip',
             '可执行文件'  : 'exe',
@@ -103,24 +105,31 @@ class GUI(object):
               font=('黑体', 12),
               ).place(x=240, y=200, height=40, width=120)
 
+        # 下拉列表内容
         chosen = self.dicAll.keys()
         chosen = tuple(chosen)
+        # 最后一个是空
         end_chosen = len(chosen) - 1
+
+        # 文件类型字符串
         self.typ1 = StringVar()
         self.typ2 = StringVar()
         self.typ3 = StringVar()
         self.typ4 = StringVar()
 
+        # 文件目标字符串
         self.pth1 = StringVar()
         self.pth2 = StringVar()
         self.pth3 = StringVar()
         self.pth4 = StringVar()
 
+        # 文件类型下拉框
         tpyChosen1 = ttk.Combobox(self.root, textvariable=self.typ1, value=chosen, font=('黑体', 10))
         tpyChosen2 = ttk.Combobox(self.root, textvariable=self.typ2, value=chosen, font=('黑体', 10))
         tpyChosen3 = ttk.Combobox(self.root, textvariable=self.typ3, value=chosen, font=('黑体', 10))
         tpyChosen4 = ttk.Combobox(self.root, textvariable=self.typ4, value=chosen, font=('黑体', 10))
 
+        # 目标路径输入框
         pthChosen1 = ttk.Entry(self.root, textvariable=self.pth1, font=('黑体', 10))
         pthChosen2 = ttk.Entry(self.root, textvariable=self.pth2, font=('黑体', 10))
         pthChosen3 = ttk.Entry(self.root, textvariable=self.pth3, font=('黑体', 10))
@@ -132,19 +141,21 @@ class GUI(object):
         tpyChosen3.current(end_chosen)
         tpyChosen4.current(end_chosen)
 
-        # 设置左面4个位置
+        # 设置左面4个文件类型下拉框的位置
         configTpy = {'width': 160, 'height': 35, 'x': 50, }
         tpyChosen1.place(**configTpy, y=250)
         tpyChosen2.place(**configTpy, y=300)
         tpyChosen3.place(**configTpy, y=350)
         tpyChosen4.place(**configTpy, y=400)
 
+        # 设置右面4个文件目标路径输入框的位置
         configPth = {'width': 320, 'height': 35, 'x': 245, }
         pthChosen1.place(**configPth, y=250)
         pthChosen2.place(**configPth, y=300)
         pthChosen3.place(**configPth, y=350)
         pthChosen4.place(**configPth, y=400)
 
+        # 目录选择按钮
         self.pthChoseButton1 = Button(self.root, text='选择目录', command=lambda: self.chooseDir(pthChosen1), bd=0, bg='#00A9FF',
                                       font=('黑体', 10))
         self.pthChoseButton2 = Button(self.root, text='选择目录', command=lambda: self.chooseDir(pthChosen2), bd=0, bg='#00A9FF',
@@ -154,20 +165,22 @@ class GUI(object):
         self.pthChoseButton4 = Button(self.root, text='选择目录', command=lambda: self.chooseDir(pthChosen4), bd=0, bg='#00A9FF',
                                       font=('黑体', 10))
 
+        # 设置4个目录选择按钮的位置
         configPthButton = {'width': 100, 'height': 35, 'x': 600, }
         self.pthChoseButton1.place(**configPthButton, y=250)
         self.pthChoseButton2.place(**configPthButton, y=300)
         self.pthChoseButton3.place(**configPthButton, y=350)
         self.pthChoseButton4.place(**configPthButton, y=400)
 
-        self.button_test = Button(self.root,
+        # 执行程序
+        self.execute = Button(self.root,
                                   text='执行',
                                   command=self.mainProcess,
                                   bd=0,
                                   bg='#F5D413',
                                   font=('黑体', 14)
                                   )
-        self.button_test.place(x=(width - 120) / 2, y=500, width=120, height=40)
+        self.execute.place(x=(width - 120) / 2, y=500, width=120, height=40)
 
         # 进入主循环
         self.root.mainloop()
@@ -241,24 +254,32 @@ class GUI(object):
         var.insert(0, self.workDir)
 
     def mainProcess(self):
-
+        """
+        主要程序, 整理图形化界面用户选择的参数, 调用util.File.ViewFile进行处理
+        :return:
+        """
+        # 判段路径是否有错误
         if not self.judgePathEntry():
             self.showInfoGUI('path ERROR', 1)
             return 'Error'
+        # 整理程序运行参数
         dicChoose = {
             self.dicAll[self.typ1.get()]: self.pth1.get(),
             self.dicAll[self.typ2.get()]: self.pth2.get(),
             self.dicAll[self.typ3.get()]: self.pth3.get(),
             self.dicAll[self.typ4.get()]: self.pth4.get()
         }
-        exceptList = ['云盘缓存.zip']
+        # 排除的文件, 未调用
+        # exceptList = ['云盘缓存.zip']
+        # 转译文件处理模式
         dealDic = {
             1: 'move', 2: 'copy'
         }
+        # 实例化文件处理对象
         test = ViewFile(dicChoose)
         # 调用主要方法
         test.clean(self.showDirPathEntry.get(), dealDic[self.dealMode.get()], exceptList=exceptList)
-        st = ''
+        # 回置字典
         dicReset = {
             '7z gz rar zip'        : '压缩文件',
             'exe'                  : '可执行文件',
@@ -277,6 +298,7 @@ class GUI(object):
         # print((st+f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}'))
         # info = f'{dicChoose} \n' \
         #        f' {test.toMoveFile}' + f'移动了 {len(test.toMoveFile)} 个文件, 分别为:\n {test.toMoveFile}\n'
+        # 处理信息
         info = f'\n\t\t\t处理了 {len(test.hasDeal)} 个文件: \n\n'
         for fileType in dicChoose.keys():
             if fileType != '':
@@ -286,21 +308,21 @@ class GUI(object):
             # f'{list(dicChoose.keys())[1]} 文件有 {len(test.allFile[list(dicChoose.keys())[1]])} 个'
             # f'{list(dicChoose.keys())[2]} 文件有 {len(test.allFile[list(dicChoose.keys())[2]])} 个'
             # f'{list(dicChoose.keys())[3]} 文件有 {len(test.allFile[list(dicChoose.keys())[3]])} 个'
+        # 调用GUI显示处理信息
         self.showInfoGUI(info)
 
+        # 生成日志
         # outputLogToExcel(r'.\log.xlsx', test.toMove)
         import datetime
         if test.toMove:
-            with open('.\log.txt','a',encoding='utf-8') as log:
+            with open('.\log.txt', 'a', encoding='utf-8') as log:
                 t = f'\n\n{datetime.datetime.now()}\n'
                 for item in test.toMove:
                     t += "\t".join(item)
                     t += '\n'
-
                 log.write(t)
         # print(test.toMove)
 
 
 if __name__ == '__main__':
     gui = GUI()
-# gui.chooseDir()
