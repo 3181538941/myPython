@@ -2,9 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6493abbf-3da9-4847-9dca-fd6ce128be71" name="默认变更列表" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/Python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../00_clean_up_files/.idea/clear_up_files.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/.idea/01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/pyEmail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02/.idea/02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学习/mysql.py" afterDir="false" />
+      <change afterPath="$pyproj$/fileScanner/.idea/fileScanner.iml" afterDir="false" />
+      <change afterPath="$pyproj$/package_test/.idea/package_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Depix/.idea/Depix.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../other/.idea/other.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../other/work.py" beforeDir="false" afterPath="$PROJECT_DIR$/../other/work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/01_实操.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/01_实操.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02/py_mysql_leo.py" beforeDir="false" afterPath="$PROJECT_DIR$/02/py_mysql_leo.py" afterDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/com/GUI_achieve.py" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/com/__init__.py" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/com/file_tool.py" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/com/lswq.ico" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/com/lswq.jpeg" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/dist/GUI_achieve.exe" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/learn/excelTest.py" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/learn/osTest.py" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/learn/tkinterTest.py" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/test/retest.py" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/test/temp.py" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/test/toDoTask.py" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/util/File.bak" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/util/File.py" beforeDir="false" />
+      <change beforePath="$pyproj$/clean_up_files/util/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +67,12 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Nao/01_data/00_2021.4_leo/to1'37.py" />
+    <property name="last_opened_file_path" value="$pyproj$/python-for-mysql" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
@@ -184,10 +216,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.File" />
         <item itemvalue="Python.汉诺塔" />
         <item itemvalue="Python.login" />
         <item itemvalue="Python.register" />
-        <item itemvalue="Python.File" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +232,8 @@
       <option name="presentableId" value="Default" />
       <updated>1627544613655</updated>
       <workItem from="1639024975565" duration="104000" />
+      <workItem from="1645265895653" duration="6000" />
+      <workItem from="1645331365998" duration="672000" />
     </task>
     <servers />
   </component>
@@ -213,5 +247,9 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Easy_py$File.coverage" NAME="File 覆盖结果" MODIFIED="1645331595979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02" />
   </component>
 </project>
