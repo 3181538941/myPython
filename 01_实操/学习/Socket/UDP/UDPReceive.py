@@ -4,15 +4,11 @@
 # @date 2022/2/21
 # @file UDPReceive.py
 import socket
-import time
 # 创建 socket 对象, 使用 IPv4, UDP协议
 udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-# 创建 socket 对象, 使用 TCP协议
-# tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # 绑定端口
-add_ = ('',8081)
-udp_socket.bind(add_)
+udp_socket.bind(('',8082))
 
 # 接收数据
 rec = udp_socket.recvfrom(1024)
