@@ -21,5 +21,3 @@ while 1:
 
 # 关闭套接字
 tcp_client.close()
-
-

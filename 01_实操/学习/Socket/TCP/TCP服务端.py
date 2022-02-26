@@ -5,10 +5,11 @@
 # @file TCP服务端.py
 
 import socket
+
 # 创建 socket 对象, 使用 TCP协议
 tcp_server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # 绑定 IP 端口
-address = ("",8081)
+address = ("", 8081)
 tcp_server_socket.bind(address)
 # 开启监听
 # listen方法设置该套接字为被动监听模式, 不能主动发送数据
