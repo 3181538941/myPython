@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/test/data" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (py3)" project-jdk-type="Python SDK" />
   <component name="com.itcodebox.notebooks.projectservice.ProjectUIState">
     <option name="selectedNotebookId" value="1" />
