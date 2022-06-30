@@ -3,8 +3,13 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/01_实操/02" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/03_fromGitHub/python-mini-projects-master" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/03_fromGitHub/算法" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/0a_project/01_实操/02" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/0a_project/lanzouTool" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/0a_project/python-for-mysql" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/0a_project/python-mini-projects-master" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/gits/算法" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/littleProj" vcs="Git" />
   </component>
 </project>

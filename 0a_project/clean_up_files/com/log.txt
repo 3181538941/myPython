@@ -65,3 +65,265 @@ _.zip	7z gz rar zip	E:/Download/云盘缓存\compressed	E:/Download/云盘缓存
 1622462597679.jpg	png jpg jpeg	E:/Download/云盘缓存\pics	E:/Download/云盘缓存\pics\1622462597679.jpg	E:/Download/云盘缓存/pics
 1637049307333.jpg	png jpg jpeg	E:/Download/云盘缓存\pics	E:/Download/云盘缓存\pics\1637049307333.jpg	E:/Download/云盘缓存/pics
 nao行走.png	png jpg jpeg	E:/Download/云盘缓存\pics	E:/Download/云盘缓存\pics\nao行走.png	E:/Download/云盘缓存/pics
+
+
+2022-03-25 11:11:11.189824
+01test.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\01test.exe	E:/Download/云盘缓存/test2
+1.0.0.1051汉化二版原始安装.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\1.0.0.1051汉化二版原始安装.exe	E:/Download/云盘缓存/test2
+13、微软常用运行库合集.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\13、微软常用运行库合集.exe	E:/Download/云盘缓存/test2
+7z2102-x64.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\7z2102-x64.exe	E:/Download/云盘缓存/test2
+BilibiliVideoDownload 3.1.7 中文免费版.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\BilibiliVideoDownload 3.1.7 中文免费版.exe	E:/Download/云盘缓存/test2
+BitDockSetup1.9.9.1320安装版.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\BitDockSetup1.9.9.1320安装版.exe	E:/Download/云盘缓存/test2
+Camera-XPY501AF40ZVA0.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Camera-XPY501AF40ZVA0.exe	E:/Download/云盘缓存/test2
+CCSetup-1.1.2-x64.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\CCSetup-1.1.2-x64.exe	E:/Download/云盘缓存/test2
+ChromeSetup.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\ChromeSetup.exe	E:/Download/云盘缓存/test2
+CloudDriveSetup-X64-1.1.38.1.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\CloudDriveSetup-X64-1.1.38.1.exe	E:/Download/云盘缓存/test2
+Dev-Cpp-5.15c.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Dev-Cpp-5.15c.exe	E:/Download/云盘缓存/test2
+Dev-Cpp-5.15d.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Dev-Cpp-5.15d.exe	E:/Download/云盘缓存/test2
+Dev-Cpp.6.7.5.MinGW-w64.X86_64.GCC.10.3.Setup.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Dev-Cpp.6.7.5.MinGW-w64.X86_64.GCC.10.3.Setup.exe	E:/Download/云盘缓存/test2
+Dev-Cpp.6.7.5.No.Compiler.Setup.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Dev-Cpp.6.7.5.No.Compiler.Setup.exe	E:/Download/云盘缓存/test2
+DevSidecar-1.7.2.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\DevSidecar-1.7.2.exe	E:/Download/云盘缓存/test2
+dingtalk_downloader.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\dingtalk_downloader.exe	E:/Download/云盘缓存/test2
+DropIt_v8.5.1_Setup.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\DropIt_v8.5.1_Setup.exe	E:/Download/云盘缓存/test2
+Everything-1.4.1.1005.x64-Setup.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Everything-1.4.1.1005.x64-Setup.exe	E:/Download/云盘缓存/test2
+exe4j_windows-x64_8_0.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\exe4j_windows-x64_8_0.exe	E:/Download/云盘缓存/test2
+FirPE-V1.8.1.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\FirPE-V1.8.1.exe	E:/Download/云盘缓存/test2
+Git-2.34.1-64-bit.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Git-2.34.1-64-bit.exe	E:/Download/云盘缓存/test2
+IDM_v6.39.8_Repack.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\IDM_v6.39.8_Repack.exe	E:/Download/云盘缓存/test2
+IQIYIsetup_z40.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\IQIYIsetup_z40.exe	E:/Download/云盘缓存/test2
+Iriun WinWebcam-2.6.9.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Iriun WinWebcam-2.6.9.exe	E:/Download/云盘缓存/test2
+jdk-11.0.2_windows-x64_bin.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\jdk-11.0.2_windows-x64_bin.exe	E:/Download/云盘缓存/test2
+LenovoDM_Setup.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\LenovoDM_Setup.exe	E:/Download/云盘缓存/test2
+lghub_installer.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\lghub_installer.exe	E:/Download/云盘缓存/test2
+MediaCreationTool21H2.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\MediaCreationTool21H2.exe	E:/Download/云盘缓存/test2
+MiAIoT_Setup.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\MiAIoT_Setup.exe	E:/Download/云盘缓存/test2
+mindmaster_cn_setup_full5375.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\mindmaster_cn_setup_full5375.exe	E:/Download/云盘缓存/test2
+mingw-17.1-without-git.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\mingw-17.1-without-git.exe	E:/Download/云盘缓存/test2
+Obsidian.0.13.23.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Obsidian.0.13.23.exe	E:/Download/云盘缓存/test2
+OpenCodecSetup64.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\OpenCodecSetup64.exe	E:/Download/云盘缓存/test2
+PortableApps.com_Platform_Setup_17.1.1.paf.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\PortableApps.com_Platform_Setup_17.1.1.paf.exe	E:/Download/云盘缓存/test2
+python-3.9.2-amd64.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\python-3.9.2-amd64.exe	E:/Download/云盘缓存/test2
+python-3.9.9-amd64.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\python-3.9.9-amd64.exe	E:/Download/云盘缓存/test2
+QiMiaoSetup.2.0.3.3.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\QiMiaoSetup.2.0.3.3.exe	E:/Download/云盘缓存/test2
+rufus-3.14.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\rufus-3.14.exe	E:/Download/云盘缓存/test2
+sogou_explorer_11.0.0.33862_7793.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\sogou_explorer_11.0.0.33862_7793.exe	E:/Download/云盘缓存/test2
+speedtest-cn-cli.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\speedtest-cn-cli.exe	E:/Download/云盘缓存/test2
+SunloginRemote_5.3.0.38107.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\SunloginRemote_5.3.0.38107.exe	E:/Download/云盘缓存/test2
+sunlogin_client_lite_1.0.1.43315.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\sunlogin_client_lite_1.0.1.43315.exe	E:/Download/云盘缓存/test2
+sunlogin_client_lite_1.0.1.43315_x64.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\sunlogin_client_lite_1.0.1.43315_x64.exe	E:/Download/云盘缓存/test2
+Twinkle.Tray.v1.13.9.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Twinkle.Tray.v1.13.9.exe	E:/Download/云盘缓存/test2
+typora-setup-x64.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\typora-setup-x64.exe	E:/Download/云盘缓存/test2
+USBCopyer.Debug.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\USBCopyer.Debug.exe	E:/Download/云盘缓存/test2
+USBCopyer.Release.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\USBCopyer.Release.exe	E:/Download/云盘缓存/test2
+USBCopyer.Release.Low-Permissions.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\USBCopyer.Release.Low-Permissions.exe	E:/Download/云盘缓存/test2
+USBCopyer.Release.Net3.5.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\USBCopyer.Release.Net3.5.exe	E:/Download/云盘缓存/test2
+utf-8''RB6aSpsH_aDrive-2.1.1.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\utf-8''RB6aSpsH_aDrive-2.1.1.exe	E:/Download/云盘缓存/test2
+UU-3.11.0.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\UU-3.11.0.exe	E:/Download/云盘缓存/test2
+VNC-Server-6.7.4-Windows.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\VNC-Server-6.7.4-Windows.exe	E:/Download/云盘缓存/test2
+VNC-Viewer-6.21.406-Windows.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\VNC-Viewer-6.21.406-Windows.exe	E:/Download/云盘缓存/test2
+vott-2.2.0-win32.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\vott-2.2.0-win32.exe	E:/Download/云盘缓存/test2
+VSCodeUserSetup-x64-1.63.2.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\VSCodeUserSetup-x64-1.63.2.exe	E:/Download/云盘缓存/test2
+vs_community__162925433.1610498489.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\vs_community__162925433.1610498489.exe	E:/Download/云盘缓存/test2
+Windows10Upgrade9252.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Windows10Upgrade9252.exe	E:/Download/云盘缓存/test2
+Y10D_C1-gdi-64-win8-109.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\Y10D_C1-gdi-64-win8-109.exe	E:/Download/云盘缓存/test2
+格式转换工具-小丸工具箱R236.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\格式转换工具-小丸工具箱R236.exe	E:/Download/云盘缓存/test2
+瑞士军刀uTools-2.4.3.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\瑞士军刀uTools-2.4.3.exe	E:/Download/云盘缓存/test2
+网速管家 Setup 1.6.9.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\网速管家 Setup 1.6.9.exe	E:/Download/云盘缓存/test2
+轻量级录屏oCam_v520.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\轻量级录屏oCam_v520.exe	E:/Download/云盘缓存/test2
+阿里小白羊版Win v2.12.05.exe	exe	E:/Download/云盘缓存\test1	E:/Download/云盘缓存\test1\阿里小白羊版Win v2.12.05.exe	E:/Download/云盘缓存/test2
+
+
+2022-03-25 11:14:05.702654
+0.3.8.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\0.3.8.zip	E:/Download/Compressed
+1.0.9.1.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\1.0.9.1.zip	E:/Download/Compressed
+153656540547007.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\153656540547007.zip	E:/Download/Compressed
+155920961220903.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\155920961220903.zip	E:/Download/Compressed
+777777-main.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\777777-main.zip	E:/Download/Compressed
+Algorithm-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Algorithm-master.zip	E:/Download/Compressed
+apache-tomcat-9.0.50-windows-x64.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\apache-tomcat-9.0.50-windows-x64.zip	E:/Download/Compressed
+Azure-ttk-theme-main.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Azure-ttk-theme-main.zip	E:/Download/Compressed
+Bandizip_7.16.0.0_Horatio Shaw.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Bandizip_7.16.0.0_Horatio Shaw.7z	E:/Download/Compressed
+Bandzip专业破解版.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Bandzip专业破解版.zip	E:/Download/Compressed
+bcel-6.5.0-bin.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\bcel-6.5.0-bin.zip	E:/Download/Compressed
+bcel-6.5.0-src.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\bcel-6.5.0-src.zip	E:/Download/Compressed
+C-LanguageProjectCombat-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\C-LanguageProjectCombat-master.zip	E:/Download/Compressed
+Capture One 21(64bit).rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Capture One 21(64bit).rar	E:/Download/Compressed
+CHM文件制作.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\CHM文件制作.zip	E:/Download/Compressed
+Chrome_92.0.4515.107_Cno（bot）.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Chrome_92.0.4515.107_Cno（bot）.7z	E:/Download/Compressed
+code-server-main.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\code-server-main.zip	E:/Download/Compressed
+commons-dbcp-1.4-bin.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\commons-dbcp-1.4-bin.zip	E:/Download/Compressed
+commons-dbcp2-2.8.0-bin.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\commons-dbcp2-2.8.0-bin.zip	E:/Download/Compressed
+commons-dbutils-1.7-bin.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\commons-dbutils-1.7-bin.zip	E:/Download/Compressed
+commons-io-2.9.0-bin.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\commons-io-2.9.0-bin.zip	E:/Download/Compressed
+CrystalDiskInfo磁盘检测_8.12.4.0_Cno（bot）.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\CrystalDiskInfo磁盘检测_8.12.4.0_Cno（bot）.7z	E:/Download/Compressed
+cstudentmanagesystem-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\cstudentmanagesystem-master.zip	E:/Download/Compressed
+cyycxsjdwb.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\cyycxsjdwb.zip	E:/Download/Compressed
+Depix-main.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Depix-main.zip	E:/Download/Compressed
+Dev-Cpp.6.7.5.GCC.9.2.Portable.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Dev-Cpp.6.7.5.GCC.9.2.Portable.7z	E:/Download/Compressed
+Dev-Cpp.6.7.5.MinGW-w64.X86_64.GCC.10.3.Portable.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Dev-Cpp.6.7.5.MinGW-w64.X86_64.GCC.10.3.Portable.7z	E:/Download/Compressed
+DirectX_Repair标准版_v4.1.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\DirectX_Repair标准版_v4.1.7z	E:/Download/Compressed
+Diskgenius_5.4.2.1239_Horatio Shaw.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Diskgenius_5.4.2.1239_Horatio Shaw.7z	E:/Download/Compressed
+Dism  10.1.1002.1.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Dism  10.1.1002.1.zip	E:/Download/Compressed
+DropIt.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\DropIt.zip	E:/Download/Compressed
+Edgeless Hub_Beta_2.09.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Edgeless Hub_Beta_2.09.7z	E:/Download/Compressed
+Everything_1.4.1.1009_Horatio Shaw.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Everything_1.4.1.1009_Horatio Shaw.7z	E:/Download/Compressed
+example-code-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\example-code-master.zip	E:/Download/Compressed
+geek.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\geek.zip	E:/Download/Compressed
+Gnirehtet_GUI_byCZ_x64_V1.3.0.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Gnirehtet_GUI_byCZ_x64_V1.3.0.7z	E:/Download/Compressed
+gushi_namer-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\gushi_namer-master.zip	E:/Download/Compressed
+h5-shopping-website-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\h5-shopping-website-master.zip	E:/Download/Compressed
+idea_补丁破解.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\idea_补丁破解.zip	E:/Download/Compressed
+iO_Box_Mi_Ext_byCZ_V1.4.1.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\iO_Box_Mi_Ext_byCZ_V1.4.1.7z	E:/Download/Compressed
+java-net-editing-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\java-net-editing-master.zip	E:/Download/Compressed
+keras-yolo4-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\keras-yolo4-master.zip	E:/Download/Compressed
+KeymouseGo-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\KeymouseGo-master.zip	E:/Download/Compressed
+labelImg-master(1).zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\labelImg-master(1).zip	E:/Download/Compressed
+labelImg-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\labelImg-master.zip	E:/Download/Compressed
+LANDrop-latest-win.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\LANDrop-latest-win.zip	E:/Download/Compressed
+lghub_installer(1).rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\lghub_installer(1).rar	E:/Download/Compressed
+lghub_installer.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\lghub_installer.rar	E:/Download/Compressed
+LSPosed-v1.6.2-6152-release.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\LSPosed-v1.6.2-6152-release.zip	E:/Download/Compressed
+magisk-taichi-v7.0.0.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\magisk-taichi-v7.0.0.zip	E:/Download/Compressed
+Material Theme.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Material Theme.zip	E:/Download/Compressed
+MiAssistant-3.2.522.32.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\MiAssistant-3.2.522.32.zip	E:/Download/Compressed
+MiFlash2018-5-28-0.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\MiFlash2018-5-28-0.zip	E:/Download/Compressed
+miflash_pro-3.3.1212.88.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\miflash_pro-3.3.1212.88.zip	E:/Download/Compressed
+miflash_unlock-5.5.1008.26.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\miflash_unlock-5.5.1008.26.zip	E:/Download/Compressed
+miflash_unlock-5.5.224.55.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\miflash_unlock-5.5.224.55.zip	E:/Download/Compressed
+Minimal_ADB_Fastboot_v1.4.3.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Minimal_ADB_Fastboot_v1.4.3.zip	E:/Download/Compressed
+mysql-connector-java-5.1.45.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\mysql-connector-java-5.1.45.zip	E:/Download/Compressed
+mysql-connector-java-5.1.8.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\mysql-connector-java-5.1.8.zip	E:/Download/Compressed
+mysql-connector-java-8.0.24.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\mysql-connector-java-8.0.24.zip	E:/Download/Compressed
+Notepad2_4.2.25.998_王洪峰.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Notepad2_4.2.25.998_王洪峰.7z	E:/Download/Compressed
+Notepad3_5.19.815.2595_Cno.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Notepad3_5.19.815.2595_Cno.7z	E:/Download/Compressed
+obsidian-proxy-github-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\obsidian-proxy-github-master.zip	E:/Download/Compressed
+Office2010_14.0.7015.1000_Oxygen.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Office2010_14.0.7015.1000_Oxygen.7z	E:/Download/Compressed
+OpenSSH-Client_8.1.0.0_Oxygen.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\OpenSSH-Client_8.1.0.0_Oxygen.7z	E:/Download/Compressed
+pcstory5.0.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\pcstory5.0.zip	E:/Download/Compressed
+pcstory_4.5_2020.8.14.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\pcstory_4.5_2020.8.14.zip	E:/Download/Compressed
+Photoshop 2021_22.1.0.0_Horatio Shaw.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Photoshop 2021_22.1.0.0_Horatio Shaw.7z	E:/Download/Compressed
+Photoshop2020_20.1.0.106_草沫柔.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Photoshop2020_20.1.0.106_草沫柔.7z	E:/Download/Compressed
+Posy_Cursors_15069.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Posy_Cursors_15069.rar	E:/Download/Compressed
+PVZ95版.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\PVZ95版.rar	E:/Download/Compressed
+Python-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Python-master.zip	E:/Download/Compressed
+python-mini-projects-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\python-mini-projects-master.zip	E:/Download/Compressed
+Python_3.8.1.0_Copur.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Python_3.8.1.0_Copur.7z	E:/Download/Compressed
+Python_3.8.1150.1013_Fir.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Python_3.8.1150.1013_Fir.7z	E:/Download/Compressed
+QQ_9.0.1.23153_Cno.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\QQ_9.0.1.23153_Cno.7z	E:/Download/Compressed
+Rufus_3.9.0_Cpl.Kerry.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Rufus_3.9.0_Cpl.Kerry.7z	E:/Download/Compressed
+shop-uidemo-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\shop-uidemo-master.zip	E:/Download/Compressed
+sqlyog_x64.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\sqlyog_x64.rar	E:/Download/Compressed
+SSD-Z_2.0.1.6_Cno.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\SSD-Z_2.0.1.6_Cno.7z	E:/Download/Compressed
+student-management-system-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\student-management-system-master.zip	E:/Download/Compressed
+StudentsManageSystem-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\StudentsManageSystem-master.zip	E:/Download/Compressed
+student_manager-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\student_manager-master.zip	E:/Download/Compressed
+Sumatra PDF_3.3.3.0_Cno（bot）.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Sumatra PDF_3.3.3.0_Cno（bot）.7z	E:/Download/Compressed
+Sun-Valley-ttk-theme-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Sun-Valley-ttk-theme-master.zip	E:/Download/Compressed
+tampermonkey-backup-chrome-2021-04-08T11-10-17.304Z.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\tampermonkey-backup-chrome-2021-04-08T11-10-17.304Z.zip	E:/Download/Compressed
+tensorflow-yolov3-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\tensorflow-yolov3-master.zip	E:/Download/Compressed
+the_c_luange-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\the_c_luange-master.zip	E:/Download/Compressed
+thqcyysjcx_4_downcc.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\thqcyysjcx_4_downcc.zip	E:/Download/Compressed
+TOOLS_BY_CZ_V7.32.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\TOOLS_BY_CZ_V7.32.7z	E:/Download/Compressed
+TrafficMonitor_V1.81_x86（网速显示）.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\TrafficMonitor_V1.81_x86（网速显示）.zip	E:/Download/Compressed
+TranslationPlugin-3.0.3.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\TranslationPlugin-3.0.3.zip	E:/Download/Compressed
+TWRP-3.3.2B-0301-XIAOMI8UD-CN-wzsx150-fastboot.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\TWRP-3.3.2B-0301-XIAOMI8UD-CN-wzsx150-fastboot.7z	E:/Download/Compressed
+UltraISO_9.7.1.3519_Gasoline.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\UltraISO_9.7.1.3519_Gasoline.7z	E:/Download/Compressed
+Uninstall tool.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Uninstall tool.rar	E:/Download/Compressed
+USBWriter-1.3.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\USBWriter-1.3.zip	E:/Download/Compressed
+USB设备芯片型号检测工具chipgenius.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\USB设备芯片型号检测工具chipgenius.rar	E:/Download/Compressed
+ventoy-1.0.47-windows.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\ventoy-1.0.47-windows.zip	E:/Download/Compressed
+ventoy-1.0.62-windows.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\ventoy-1.0.62-windows.zip	E:/Download/Compressed
+ventoy-1.0.63-windows.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\ventoy-1.0.63-windows.zip	E:/Download/Compressed
+video-label-tool-master.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\video-label-tool-master.zip	E:/Download/Compressed
+VMTools_10.2.5.3620_Cno.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\VMTools_10.2.5.3620_Cno.7z	E:/Download/Compressed
+VSCode_1.58.2.0_Horatio Shaw.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\VSCode_1.58.2.0_Horatio Shaw.7z	E:/Download/Compressed
+Wechat_3.3.0.0_Horatio Shaw.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Wechat_3.3.0.0_Horatio Shaw.7z	E:/Download/Compressed
+Win10_Insider_Icon.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Win10_Insider_Icon.zip	E:/Download/Compressed
+WPS Office 2019_ 11.1.0.9513_黄式.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\WPS Office 2019_ 11.1.0.9513_黄式.7z	E:/Download/Compressed
+x86_64-5.4.0-release-posix-sjlj-rt_v5-rev0.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\x86_64-5.4.0-release-posix-sjlj-rt_v5-rev0.7z	E:/Download/Compressed
+Xshell6_6.0.111.0_Copur.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\Xshell6_6.0.111.0_Copur.7z	E:/Download/Compressed
+_.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\_.zip	E:/Download/Compressed
+云盘缓存.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\云盘缓存.zip	E:/Download/Compressed
+分区助手_8.3.0.0_Cno.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\分区助手_8.3.0.0_Cno.7z	E:/Download/Compressed
+基于深度学习的 农林识别交流社区平台.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\基于深度学习的 农林识别交流社区平台.zip	E:/Download/Compressed
+天若OCR_1.5.2.0_Horatio.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\天若OCR_1.5.2.0_Horatio.7z	E:/Download/Compressed
+字体 小米兰亭ProGG.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\字体 小米兰亭ProGG.zip	E:/Download/Compressed
+小米11Ultra(Pro)-twrp3.5.1-recovery.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\小米11Ultra(Pro)-twrp3.5.1-recovery.rar	E:/Download/Compressed
+微PE工具包_2.1.0.0_Cno.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\微PE工具包_2.1.0.0_Cno.7z	E:/Download/Compressed
+微软常用运行库合集 2021.10.13 mpyit.com.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\微软常用运行库合集 2021.10.13 mpyit.com.zip	E:/Download/Compressed
+搞机助手_V4.8.3.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\搞机助手_V4.8.3.zip	E:/Download/Compressed
+本程序是法国nao机器人的程序，这个程序是去南京进行机器人跳舞比赛用的程序.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\本程序是法国nao机器人的程序，这个程序是去南京进行机器人跳舞比赛用的程序.zip	E:/Download/Compressed
+植物大战僵尸 珍藏版.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\植物大战僵尸 珍藏版.rar	E:/Download/Compressed
+火绒安全_5.0.62.4_Horatio Shaw.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\火绒安全_5.0.62.4_Horatio Shaw.7z	E:/Download/Compressed
+百度网盘_7.4.3.3_Horatio Shaw.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\百度网盘_7.4.3.3_Horatio Shaw.7z	E:/Download/Compressed
+磁力工具丨微信公众号【谈古科技】.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\磁力工具丨微信公众号【谈古科技】.rar	E:/Download/Compressed
+磁力搜索丨微信公众号【谈古科技】.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\磁力搜索丨微信公众号【谈古科技】.rar	E:/Download/Compressed
+笔记.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\笔记.zip	E:/Download/Compressed
+自动领外卖红包工具教程.rar	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\自动领外卖红包工具教程.rar	E:/Download/Compressed
+软媒 Wifi 助手_1.2.0.0_汪凯.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\软媒 Wifi 助手_1.2.0.0_汪凯.7z	E:/Download/Compressed
+迅雷_11.1.8.1418_Cno.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\迅雷_11.1.8.1418_Cno.7z	E:/Download/Compressed
+迅雷不限速绿色版.zip	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\迅雷不限速绿色版.zip	E:/Download/Compressed
+阿里云盘_2.2.0.0_Horatio Shaw.7z	7z gz rar zip	E:/Download\Compressed	E:/Download\Compressed\阿里云盘_2.2.0.0_Horatio Shaw.7z	E:/Download/Compressed
+01test.exe	exe	E:/Download\exes	E:/Download\exes\01test.exe	E:/Download/exes
+1.0.0.1051汉化二版原始安装.exe	exe	E:/Download\exes	E:/Download\exes\1.0.0.1051汉化二版原始安装.exe	E:/Download/exes
+13、微软常用运行库合集.exe	exe	E:/Download\exes	E:/Download\exes\13、微软常用运行库合集.exe	E:/Download/exes
+7z2102-x64.exe	exe	E:/Download\exes	E:/Download\exes\7z2102-x64.exe	E:/Download/exes
+BilibiliVideoDownload 3.1.7 中文免费版.exe	exe	E:/Download\exes	E:/Download\exes\BilibiliVideoDownload 3.1.7 中文免费版.exe	E:/Download/exes
+BitDockSetup1.9.9.1320安装版.exe	exe	E:/Download\exes	E:/Download\exes\BitDockSetup1.9.9.1320安装版.exe	E:/Download/exes
+Camera-XPY501AF40ZVA0.exe	exe	E:/Download\exes	E:/Download\exes\Camera-XPY501AF40ZVA0.exe	E:/Download/exes
+CCSetup-1.1.2-x64.exe	exe	E:/Download\exes	E:/Download\exes\CCSetup-1.1.2-x64.exe	E:/Download/exes
+ChromeSetup.exe	exe	E:/Download\exes	E:/Download\exes\ChromeSetup.exe	E:/Download/exes
+CloudDriveSetup-X64-1.1.38.1.exe	exe	E:/Download\exes	E:/Download\exes\CloudDriveSetup-X64-1.1.38.1.exe	E:/Download/exes
+Dev-Cpp-5.15c.exe	exe	E:/Download\exes	E:/Download\exes\Dev-Cpp-5.15c.exe	E:/Download/exes
+Dev-Cpp-5.15d.exe	exe	E:/Download\exes	E:/Download\exes\Dev-Cpp-5.15d.exe	E:/Download/exes
+Dev-Cpp.6.7.5.MinGW-w64.X86_64.GCC.10.3.Setup.exe	exe	E:/Download\exes	E:/Download\exes\Dev-Cpp.6.7.5.MinGW-w64.X86_64.GCC.10.3.Setup.exe	E:/Download/exes
+Dev-Cpp.6.7.5.No.Compiler.Setup.exe	exe	E:/Download\exes	E:/Download\exes\Dev-Cpp.6.7.5.No.Compiler.Setup.exe	E:/Download/exes
+DevSidecar-1.7.2.exe	exe	E:/Download\exes	E:/Download\exes\DevSidecar-1.7.2.exe	E:/Download/exes
+dingtalk_downloader.exe	exe	E:/Download\exes	E:/Download\exes\dingtalk_downloader.exe	E:/Download/exes
+DropIt_v8.5.1_Setup.exe	exe	E:/Download\exes	E:/Download\exes\DropIt_v8.5.1_Setup.exe	E:/Download/exes
+Everything-1.4.1.1005.x64-Setup.exe	exe	E:/Download\exes	E:/Download\exes\Everything-1.4.1.1005.x64-Setup.exe	E:/Download/exes
+exe4j_windows-x64_8_0.exe	exe	E:/Download\exes	E:/Download\exes\exe4j_windows-x64_8_0.exe	E:/Download/exes
+FirPE-V1.8.1.exe	exe	E:/Download\exes	E:/Download\exes\FirPE-V1.8.1.exe	E:/Download/exes
+Git-2.34.1-64-bit.exe	exe	E:/Download\exes	E:/Download\exes\Git-2.34.1-64-bit.exe	E:/Download/exes
+IDM_v6.39.8_Repack.exe	exe	E:/Download\exes	E:/Download\exes\IDM_v6.39.8_Repack.exe	E:/Download/exes
+IQIYIsetup_z40.exe	exe	E:/Download\exes	E:/Download\exes\IQIYIsetup_z40.exe	E:/Download/exes
+Iriun WinWebcam-2.6.9.exe	exe	E:/Download\exes	E:/Download\exes\Iriun WinWebcam-2.6.9.exe	E:/Download/exes
+jdk-11.0.2_windows-x64_bin.exe	exe	E:/Download\exes	E:/Download\exes\jdk-11.0.2_windows-x64_bin.exe	E:/Download/exes
+LenovoDM_Setup.exe	exe	E:/Download\exes	E:/Download\exes\LenovoDM_Setup.exe	E:/Download/exes
+lghub_installer.exe	exe	E:/Download\exes	E:/Download\exes\lghub_installer.exe	E:/Download/exes
+MediaCreationTool21H2.exe	exe	E:/Download\exes	E:/Download\exes\MediaCreationTool21H2.exe	E:/Download/exes
+MiAIoT_Setup.exe	exe	E:/Download\exes	E:/Download\exes\MiAIoT_Setup.exe	E:/Download/exes
+mindmaster_cn_setup_full5375.exe	exe	E:/Download\exes	E:/Download\exes\mindmaster_cn_setup_full5375.exe	E:/Download/exes
+mingw-17.1-without-git.exe	exe	E:/Download\exes	E:/Download\exes\mingw-17.1-without-git.exe	E:/Download/exes
+Obsidian.0.13.23.exe	exe	E:/Download\exes	E:/Download\exes\Obsidian.0.13.23.exe	E:/Download/exes
+OpenCodecSetup64.exe	exe	E:/Download\exes	E:/Download\exes\OpenCodecSetup64.exe	E:/Download/exes
+PortableApps.com_Platform_Setup_17.1.1.paf.exe	exe	E:/Download\exes	E:/Download\exes\PortableApps.com_Platform_Setup_17.1.1.paf.exe	E:/Download/exes
+python-3.9.2-amd64.exe	exe	E:/Download\exes	E:/Download\exes\python-3.9.2-amd64.exe	E:/Download/exes
+python-3.9.9-amd64.exe	exe	E:/Download\exes	E:/Download\exes\python-3.9.9-amd64.exe	E:/Download/exes
+QiMiaoSetup.2.0.3.3.exe	exe	E:/Download\exes	E:/Download\exes\QiMiaoSetup.2.0.3.3.exe	E:/Download/exes
+rufus-3.14.exe	exe	E:/Download\exes	E:/Download\exes\rufus-3.14.exe	E:/Download/exes
+sogou_explorer_11.0.0.33862_7793.exe	exe	E:/Download\exes	E:/Download\exes\sogou_explorer_11.0.0.33862_7793.exe	E:/Download/exes
+speedtest-cn-cli.exe	exe	E:/Download\exes	E:/Download\exes\speedtest-cn-cli.exe	E:/Download/exes
+SunloginRemote_5.3.0.38107.exe	exe	E:/Download\exes	E:/Download\exes\SunloginRemote_5.3.0.38107.exe	E:/Download/exes
+sunlogin_client_lite_1.0.1.43315.exe	exe	E:/Download\exes	E:/Download\exes\sunlogin_client_lite_1.0.1.43315.exe	E:/Download/exes
+sunlogin_client_lite_1.0.1.43315_x64.exe	exe	E:/Download\exes	E:/Download\exes\sunlogin_client_lite_1.0.1.43315_x64.exe	E:/Download/exes
+Twinkle.Tray.v1.13.9.exe	exe	E:/Download\exes	E:/Download\exes\Twinkle.Tray.v1.13.9.exe	E:/Download/exes
+typora-setup-x64.exe	exe	E:/Download\exes	E:/Download\exes\typora-setup-x64.exe	E:/Download/exes
+USBCopyer.Debug.exe	exe	E:/Download\exes	E:/Download\exes\USBCopyer.Debug.exe	E:/Download/exes
+USBCopyer.Release.exe	exe	E:/Download\exes	E:/Download\exes\USBCopyer.Release.exe	E:/Download/exes
+USBCopyer.Release.Low-Permissions.exe	exe	E:/Download\exes	E:/Download\exes\USBCopyer.Release.Low-Permissions.exe	E:/Download/exes
+USBCopyer.Release.Net3.5.exe	exe	E:/Download\exes	E:/Download\exes\USBCopyer.Release.Net3.5.exe	E:/Download/exes
+utf-8''RB6aSpsH_aDrive-2.1.1.exe	exe	E:/Download\exes	E:/Download\exes\utf-8''RB6aSpsH_aDrive-2.1.1.exe	E:/Download/exes
+UU-3.11.0.exe	exe	E:/Download\exes	E:/Download\exes\UU-3.11.0.exe	E:/Download/exes
+VNC-Server-6.7.4-Windows.exe	exe	E:/Download\exes	E:/Download\exes\VNC-Server-6.7.4-Windows.exe	E:/Download/exes
+VNC-Viewer-6.21.406-Windows.exe	exe	E:/Download\exes	E:/Download\exes\VNC-Viewer-6.21.406-Windows.exe	E:/Download/exes
+vott-2.2.0-win32.exe	exe	E:/Download\exes	E:/Download\exes\vott-2.2.0-win32.exe	E:/Download/exes
+VSCodeUserSetup-x64-1.63.2.exe	exe	E:/Download\exes	E:/Download\exes\VSCodeUserSetup-x64-1.63.2.exe	E:/Download/exes
+vs_community__162925433.1610498489.exe	exe	E:/Download\exes	E:/Download\exes\vs_community__162925433.1610498489.exe	E:/Download/exes
+Windows10Upgrade9252.exe	exe	E:/Download\exes	E:/Download\exes\Windows10Upgrade9252.exe	E:/Download/exes
+Y10D_C1-gdi-64-win8-109.exe	exe	E:/Download\exes	E:/Download\exes\Y10D_C1-gdi-64-win8-109.exe	E:/Download/exes
+格式转换工具-小丸工具箱R236.exe	exe	E:/Download\exes	E:/Download\exes\格式转换工具-小丸工具箱R236.exe	E:/Download/exes
+瑞士军刀uTools-2.4.3.exe	exe	E:/Download\exes	E:/Download\exes\瑞士军刀uTools-2.4.3.exe	E:/Download/exes
+网速管家 Setup 1.6.9.exe	exe	E:/Download\exes	E:/Download\exes\网速管家 Setup 1.6.9.exe	E:/Download/exes
+轻量级录屏oCam_v520.exe	exe	E:/Download\exes	E:/Download\exes\轻量级录屏oCam_v520.exe	E:/Download/exes
+阿里小白羊版Win v2.12.05.exe	exe	E:/Download\exes	E:/Download\exes\阿里小白羊版Win v2.12.05.exe	E:/Download/exes

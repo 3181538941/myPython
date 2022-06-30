@@ -1,0 +1,8 @@
+2022-03-27_11-01
+1622462597679.jpg	png jpg jpeg	E:/Download/云盘缓存\exe	E:/Download/云盘缓存\exe\1622462597679.jpg	E:/Download/云盘缓存/exe
+1637049307333.jpg	png jpg jpeg	E:/Download/云盘缓存\exe	E:/Download/云盘缓存\exe\1637049307333.jpg	E:/Download/云盘缓存/exe
+nao行走.png	png jpg jpeg	E:/Download/云盘缓存\exe	E:/Download/云盘缓存\exe\nao行走.png	E:/Download/云盘缓存/exe
+Dev-Cpp.6.7.5.No.Compiler.Setup.exe	exe	E:/Download/云盘缓存\exe	E:/Download/云盘缓存\exe\Dev-Cpp.6.7.5.No.Compiler.Setup.exe	E:/Download/云盘缓存/test1
+Git-2.34.1-64-bit.exe	exe	E:/Download/云盘缓存\exe	E:/Download/云盘缓存\exe\Git-2.34.1-64-bit.exe	E:/Download/云盘缓存/test1
+IDM_v6.39.8_Repack.exe	exe	E:/Download/云盘缓存\exe	E:/Download/云盘缓存\exe\IDM_v6.39.8_Repack.exe	E:/Download/云盘缓存/test1
+轻量级录屏oCam_v520.exe	exe	E:/Download/云盘缓存\exe	E:/Download/云盘缓存\exe\轻量级录屏oCam_v520.exe	E:/Download/云盘缓存/test1

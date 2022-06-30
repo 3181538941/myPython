@@ -3,11 +3,18 @@
 # @author LeoWang
 # @date 2022/1/15
 # @file GUI_achieve.py
+"""
+打包命令:
+    pyinstaller --clean -Fw
+    --add-data "./ICOs/main.ico;."  #--add-data "源路径;运行时临时解压文件的路径"
+    ./com/GUI_achieve.py
 
+"""
+from util import *
 from tkinter import *
 from tkinter import ttk
 from tkinter.filedialog import askdirectory
-from util import *
+import os
 
 
 class GUI(object):
@@ -30,14 +37,15 @@ class GUI(object):
         self.showGUI()
         # self.showInfoGUI()
 
+
     def showGUI(self):
         # 初始化Tk
         self.root = Tk()
         # 设置标题
         self.root.title('fileTool')
         # 加载tk主题
-        self.root.call("source", r"F:\03_Important\Python\0a_project\Azure-ttk-theme-main\azure.tcl")
-        self.root.call("set_theme", 'light')
+        # self.root.call("source", r"F:\03_Important\Python\0a_project\Azure-ttk-theme-main\azure.tcl")
+        # self.root.call("set_theme", 'light')
         # 设置窗口大小
         width = 800
         height = 600
@@ -49,8 +57,16 @@ class GUI(object):
         self.root.geometry(f'{width}x{height}+{locateWidth}+{locateHeight}')
         # 设置窗口是否可变长、宽
         self.root.resizable(width='False', height='True')
+
         # 设置窗口图标
-        self.root.iconbitmap(r'F:\03_Important\Python\0a_project\clean_up_files\com\lswq.ico')
+        if getattr(sys, 'frozen', None):
+            basedir = sys._MEIPASS
+        else:
+            basedir = os.path.dirname(__file__)
+        self.icon  = os.path.join(basedir, 'main.ico')
+        # self.root.iconbitmap(r'..\ICOs\main.ico')
+        self.root.iconbitmap(self.icon)
+
         self.button_choose = Button(self.root,
                                     text='选择目录',
                                     command=lambda: self.chooseDir(self.showDirPathEntry),
@@ -174,12 +190,12 @@ class GUI(object):
 
         # 执行程序
         self.execute = Button(self.root,
-                                  text='执行',
-                                  command=self.mainProcess,
-                                  bd=0,
-                                  bg='#F5D413',
-                                  font=('黑体', 14)
-                                  )
+                              text='执行',
+                              command=self.mainProcess,
+                              bd=0,
+                              bg='#F5D413',
+                              font=('黑体', 14)
+                              )
         self.execute.place(x=(width - 120) / 2, y=500, width=120, height=40)
 
         # 进入主循环
@@ -207,7 +223,8 @@ class GUI(object):
         # 设置窗口是否可变长、宽
         self.mes.resizable(width='True', height='True')
         # 设置窗口图标
-        self.mes.iconbitmap(r'F:\03_Important\Python\0a_project\clean_up_files\com\lswq.ico')
+        # self.mes.iconbitmap('../ICOs/main.ico')
+        self.mes.iconbitmap(self.icon)
 
         # print(self.messageString.get())
 
@@ -259,6 +276,7 @@ class GUI(object):
         :return:
         """
         # 判段路径是否有错误
+        # self.showInfoGUI(os.listdir(os.getcwd()))
         if not self.judgePathEntry():
             self.showInfoGUI('path ERROR', 1)
             return 'Error'
@@ -311,17 +329,7 @@ class GUI(object):
         # 调用GUI显示处理信息
         self.showInfoGUI(info)
 
-        # 生成日志
-        # outputLogToExcel(r'.\log.xlsx', test.toMove)
-        import datetime
-        if test.toMove:
-            with open('.\log.txt', 'a', encoding='utf-8') as log:
-                t = f'\n\n{datetime.datetime.now()}\n'
-                for item in test.toMove:
-                    t += "\t".join(item)
-                    t += '\n'
-                log.write(t)
-        # print(test.toMove)
+
 
 
 if __name__ == '__main__':

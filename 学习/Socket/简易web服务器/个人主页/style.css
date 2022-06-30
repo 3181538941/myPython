@@ -1,0 +1,124 @@
+body {
+    width: 1510px;
+    height: 2340px;
+    background-image: url(pics/3.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1510px 100%;
+    background-attachment: fixed;
+}
+
+#logo {
+    width: 800px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(pics/400.png);
+    border-radius: 25px 25px 0 0;
+}
+
+#logo h1 {
+    letter-spacing: 10px;
+    font-family: 楷体;
+    font-size: 50px;
+    color: bisque;
+    text-align: center;
+    line-height: 80px;
+    text-shadow: 0 0 10px #08f7e3d3;
+}
+
+.clear {
+    clear: both;
+}
+
+#js p {
+    color: rgba(182, 23, 153, 0.83);
+    font-family: 幼圆;
+    font-size: 25px;
+}
+
+#tp #d {
+    font-family: 楷体;
+    color: rgb(109, 43, 159);
+    font-size: 20px;
+}
+
+#tp #b {
+    color: rgb(245, 81, 81);
+    font-size: 2px;
+}
+
+h2 {
+    color: rgb(65, 49, 181);
+    font-size: 50px;
+    font-family: 隶书;
+}
+
+.ah p {
+    color: rgba(152, 43, 225, 0.843);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.lb {
+    font-family: 等线;
+    color: rgba(24, 21, 126, 0.714);
+    font-size: 25px;
+}
+
+#wz {
+    color: #27a76e
+}
+
+#wz #hb {
+    color: #0c9ca8
+}
+
+.yg {
+    color: #a38678
+}
+
+.pk {
+    width: 80px;
+}
+
+.tota {
+    width: 100%;
+    height: 300px;
+}
+
+.pics {
+    max-width: 300px;
+    max-height: 300px;
+    vertical-align: middle;
+}
+
+.l {
+    float: left;
+    margin-left: 5%;
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+    border: solid 5px #ffffff;
+    background-color: rgba(174, 190, 163);
+    /* text-align: center; */
+    /* line-height: 300px; */
+}
+
+.to1,
+.to2 {
+    margin-left: 10%;
+    float: left;
+}
+
+.z {
+    width: 300px;
+    height: 150px;
+    vertical-align: middle;
+}
+
+.z .pic {
+    width: 300px;
+    height: 150px;
+    padding: 0px;
+    border: solid 5px #ffffff;
+}

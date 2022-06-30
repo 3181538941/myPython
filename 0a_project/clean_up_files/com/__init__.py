@@ -4,7 +4,6 @@
 # @date 2021/12/9
 # @file __init__.py.py
 
-import re
 # todo 正则表达式
 
 # todo output log

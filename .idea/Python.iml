@@ -3,6 +3,13 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/te/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/0a_project/createEmp_msTable/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/0a_project/Azure-ttk-theme-main" />
+      <excludeFolder url="file://$MODULE_DIR$/0a_project/PyCharmLearningProject" />
+      <excludeFolder url="file://$MODULE_DIR$/0a_project/Sun-Valley-ttk-theme-master" />
+      <excludeFolder url="file://$MODULE_DIR$/03_fromGitHub" />
+      <excludeFolder url="file://$MODULE_DIR$/03_fromGitHub/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/03_fromGitHub/scientificProject/.idea/ZeppelinRemoteNotebooks" />
     </content>
     <orderEntry type="jdk" jdkName="Python 2.7 (Python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

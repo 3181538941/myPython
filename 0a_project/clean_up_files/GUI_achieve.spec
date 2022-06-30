@@ -5,11 +5,12 @@ block_cipher = None
 
 
 a = Analysis(['com\\GUI_achieve.py'],
-             pathex=['F:\\03_Important\\Python\\0a_project\\clean_up_files'],
+             pathex=[],
              binaries=[],
-             datas=[],
+             datas=[('./ICOs/main.ico', 'main')],
              hiddenimports=[],
              hookspath=[],
+             hooksconfig={},
              runtime_hooks=[],
              excludes=[],
              win_no_prefer_redirects=False,
@@ -18,21 +19,22 @@ a = Analysis(['com\\GUI_achieve.py'],
              noarchive=False)
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
+
 exe = EXE(pyz,
           a.scripts,
+          a.binaries,
+          a.zipfiles,
+          a.datas,  
           [],
-          exclude_binaries=True,
           name='GUI_achieve',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          console=False , icon='com\\lswq.ico')
-coll = COLLECT(exe,
-               a.binaries,
-               a.zipfiles,
-               a.datas,
-               strip=False,
-               upx=True,
-               upx_exclude=[],
-               name='GUI_achieve')
+          upx_exclude=[],
+          runtime_tmpdir=None,
+          console=False,
+          disable_windowed_traceback=False,
+          target_arch=None,
+          codesign_identity=None,
+          entitlements_file=None , icon='ICOs\\main.ico')
