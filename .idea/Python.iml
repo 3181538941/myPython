@@ -11,7 +11,7 @@
       <excludeFolder url="file://$MODULE_DIR$/03_fromGitHub/.idea/dataSources" />
       <excludeFolder url="file://$MODULE_DIR$/03_fromGitHub/scientificProject/.idea/ZeppelinRemoteNotebooks" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 2.7 (Python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (py3)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
