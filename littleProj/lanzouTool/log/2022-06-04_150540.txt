@@ -1,0 +1,70 @@
+----------开始处理文件夹: 01_工具----------
+已存在, id为5506472
+02_右键菜单编辑器.zip 已存在
+BitDockSetup1.9.9.1320安装版.exe 已存在
+CCleaner.exe 已存在
+CC助手_Setup-1.1.2-x64.exe 已存在
+CHM文件制作.zip 已存在
+ChromeSetup.exe 已存在
+CloudDriveSetup-X64-1.1.38.1.exe 已存在
+clover3.5.2谨慎.zip 已存在
+DiskGenius Professional 5.1.2.766 + Crack.zip 已存在
+DropIt_v8.5.1_Setup.exe 已存在
+Everything 1.5a.7z 已存在
+Everything-1.4.1.1005.x64-Setup.exe 已存在
+Firefox-latest.exe 已存在
+跳过文件----[GitHubDesktopSetup-x64.exe] 大小: 109.84MB
+GitHub加速DevSidecar-1.7.2.exe 已存在
+GUI_achieveV1.1.exe 已存在
+IDM 6.33.2.zip 已存在
+IDM_v6.39.8_Repack.exe 已存在
+KMCounter.v3.7.zip 已存在
+Listary.exe 已存在
+跳过文件----[miflash_pro_3.3.1212.88_setup.exe] 大小: 149.17MB
+MobaXterm_CHS.rar 已存在
+跳过文件----[Motrix-Setup-1.6.11.exe] 大小: 102.83MB
+npp.7.5.4.Installer.x64.exe 已存在
+PandaOCR_2.72.zip 已存在
+PDF工具PDF_Shaper_Professional_12.1_Portable.7z 已存在
+PotPlayerSetup64_125.exe 已存在
+Q-Dir_Installer_x64_多页文件管理.exe 已存在
+跳过文件----[RAW工具_Capture One 21(64bit).rar] 大小: 367.71MB
+RK_Keyboard_驱动_Setup_V1.0_0522.exe 已存在
+RocketDock-v1.3.5.exe 已存在
+SanDisk文件保险箱V3.01_win.zip 已存在
+Snipaste.zip 已存在
+SoftDownloader.zip 已存在
+TIM3.3.0.21970.exe 已存在
+Typora_1.2.5.zip 已存在
+ventoy-1.0.47-windows.zip 已存在
+跳过文件----[W.P.S.10578.12012.2019.exe] 大小: 191.92MB
+跳过文件----[Waifu2x-Extension-GUI-v2.51.17-Setup_2.exe] 大小: 418.21MB
+跳过文件----[Waifu2x-Extension-GUI-v2.52.16-Portable.7z] 大小: 628.01MB
+winrar-x64-591scp.exe 已存在
+Xftp-7.0.0063p.exe 已存在
+Xshell-7.0.0063.exe 已存在
+专业LOGO设计软件.zip 已存在
+便携版Firefox_98.0.0_tete009_64bit_Portable.7z 已存在
+便携版Google_Chrome_100.0.4896.60_64bit_Portable.7z 已存在
+跳过文件----[便携版Microsoft_Edge_100.0.1185.29_64bit_Portable.7z] 大小: 110.64MB
+修改文件名.exe 已存在
+关闭Win10自动更新.exe 已存在
+内存清理WMOSetup_4.1.6.118.exe 已存在
+分区助手.exe 已存在
+右键文件转换FileConverter-1.2.3-x64-setup.msi 已存在
+右键管理MenuMgr_1.2_Single.exe 已存在
+哔哩哔哩UWP Ver4.3.10_x64.zip 已存在
+跳过文件----[图吧工具箱2020.05绿色版自动解压程序.exe] 大小: 211.05MB
+跳过文件----[图吧工具箱2021.04绿色版自动解压程序.exe] 大小: 176.93MB
+天若OCR文字识别_ncnn.7z 已存在
+小米助手_3.2.522.32_setup.exe 已存在
+微软常用运行库合集 64位_2017.03.11.exe 已存在
+微软常用运行库合集a.exe 已存在
+微软运行库MSVBCRT.AIO.2022.04.09.exe 已存在
+思维导图_mindmaster.exe 已存在
+思维导图_XMind ZEN 2020 (64bit).rar 已存在
+搜狗精简版.exe 已存在
+搜狗输入法v9.6a精简优化版.exe 已存在
+搞机助手_V4.8.3.zip 已存在
+文件分析WizTree_4.08_Portable.7z 已存在
+文件管理器XYplorer_23.00.0100_Portable.7z 已存在

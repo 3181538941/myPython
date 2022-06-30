@@ -1,0 +1,54 @@
+(py3) D:\0a.dataout\test>pyinstrument ./lanzou/lanzou_test.py
+100.00% [########################################] 10.6/10.6MB | lanzou-cmd_x64_v2.6.7.exe
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 12:45:03  Samples:  13199
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 27.507    CPU time: 13.047
+/   _/                      v4.1.1
+
+Program: ./lanzou/lanzou_test.py
+
+27.506 <module>  ..\<string>:1
+   [10 frames hidden]  .., runpy, pkgutil
+      27.503 _run_code  runpy.py:64
+      └─ 27.503 <module>  lanzou_test.py:4
+         ├─ 26.477 scanDir  lanzou_test.py:157
+         │  ├─ 10.872 scanDir  lanzou_test.py:157
+         │  │  ├─ 6.792 scanDir  lanzou_test.py:157
+         │  │  │  ├─ 3.429 getFileMd5  lanzou_test.py:88
+         │  │  │  │  ├─ 2.045 HASH.update  ..\<built-in>:0
+         │  │  │  │  │     [2 frames hidden]  ..
+         │  │  │  │  └─ 1.233 BufferedReader.read  ..\<built-in>:0
+         │  │  │  │        [2 frames hidden]  ..
+         │  │  │  └─ 3.157 workingWithFolders  lanzou_test.py:129
+         │  │  │     ├─ 1.575 get_share_info  lanzou\api\core.py:584
+         │  │  │     │     [174 frames hidden]  lanzou, requests, urllib3, http, sock...
+         │  │  │     └─ 1.529 get_move_folders  lanzou\api\core.py:697
+         │  │  │           [158 frames hidden]  lanzou, requests, urllib3, http, sock...
+         │  │  ├─ 2.406 getFileMd5  lanzou_test.py:88
+         │  │  │  ├─ 1.391 HASH.update  ..\<built-in>:0
+         │  │  │  │     [2 frames hidden]  ..
+         │  │  │  └─ 0.920 BufferedReader.read  ..\<built-in>:0
+         │  │  │        [2 frames hidden]  ..
+         │  │  └─ 1.540 workingWithFolders  lanzou_test.py:129
+         │  │     ├─ 0.766 get_move_folders  lanzou\api\core.py:697
+         │  │     │     [112 frames hidden]  lanzou, requests, urllib3, http, sock...
+         │  │     └─ 0.748 get_share_info  lanzou\api\core.py:584
+         │  │           [86 frames hidden]  lanzou, requests, urllib3, http, sock...
+         │  ├─ 9.903 upload_file  lanzou\api\core.py:902
+         │  │     [241 frames hidden]  lanzou, requests, urllib3, http, ssl,...
+         │  │        8.461 _SSLSocket.write  ..\<built-in>:0
+         │  └─ 5.383 getFileMd5  lanzou_test.py:88
+         │     ├─ 3.246 HASH.update  ..\<built-in>:0
+         │     │     [2 frames hidden]  ..
+         │     └─ 1.915 BufferedReader.read  ..\<built-in>:0
+         │           [2 frames hidden]  ..
+         ├─ 0.484 login_by_cookie  lanzou\api\core.py:147
+         │     [144 frames hidden]  lanzou, requests, urllib3, ssl, .., s...
+         └─ 0.376 <module>  lanzou\api\__init__.py:1
+               [618 frames hidden]  lanzou, requests, urllib3, re, sre_co...
+
+To view this report with different options, run:
+    pyinstrument --load-prev 2022-06-05T12-45-03 [options]
+
+
+(py3) D:\0a.dataout\test>

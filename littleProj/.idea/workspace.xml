@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e74b2e6a-adc7-4951-afb2-7b525c9b4003" name="变更" comment="初次提交, 添加是否使用数据库配置" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/logTest/logTest.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/284b0f07-4b75-4c83-a0eb-2d9debeb8a32/console.sql" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="15" />
+    </hideBySeverity>
+  </component>
+  <component name="ProjectId" id="29Dw6VkN0vDdIcvaaXqWw3OrQuD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../0a_project/clean_up_files" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\a.data\test\MVJPG" />
+      <recent name="D:\0a.dataout\test\lanzou\share" />
+      <recent name="D:\0a.dataout\test\lanzou" />
+      <recent name="D:\0a.dataout\test\data" />
+      <recent name="D:\0a.dataout\test\notebooks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\02_Important\Python\littleProj\win通知" />
+      <recent name="D:\0a.dataout\test" />
+      <recent name="D:\0a.dataout\test\lanzou" />
+      <recent name="D:\0a.dataout\test\lanzou\log" />
+      <recent name="D:\0a.dataout\test\others" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.logTest">
+    <configuration name="爬取微博图片" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="littleProj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬取微博图片.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_proxy_ip" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="littleProj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_proxy_ip.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="inform" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="littleProj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/win通知" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/win通知/inform.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="littleProj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/logTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logTest/logTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="littleProj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MVJPG" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MVJPG/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.logTest" />
+        <item itemvalue="Python.爬取微博图片" />
+        <item itemvalue="Python.get_proxy_ip" />
+        <item itemvalue="Python.inform" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e74b2e6a-adc7-4951-afb2-7b525c9b4003" name="变更" comment="" />
+      <created>1652660793934</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652660793934</updated>
+      <workItem from="1652660795390" duration="4566000" />
+      <workItem from="1652665387470" duration="3373000" />
+      <workItem from="1653117264699" duration="1297000" />
+      <workItem from="1653309257834" duration="13872000" />
+      <workItem from="1653478372124" duration="12242000" />
+      <workItem from="1653693888546" duration="22997000" />
+      <workItem from="1653798851749" duration="1396000" />
+      <workItem from="1653800319305" duration="10423000" />
+      <workItem from="1653872759822" duration="4625000" />
+      <workItem from="1653902894684" duration="1000" />
+      <workItem from="1653906348021" duration="302000" />
+      <workItem from="1653906695197" duration="594000" />
+      <workItem from="1653973508831" duration="3314000" />
+      <workItem from="1653977453169" duration="3039000" />
+      <workItem from="1653988031015" duration="2699000" />
+      <workItem from="1653998616313" duration="849000" />
+      <workItem from="1654055984262" duration="5389000" />
+      <workItem from="1654063965710" duration="4850000" />
+      <workItem from="1654072197297" duration="9479000" />
+      <workItem from="1654148200849" duration="23814000" />
+      <workItem from="1654246563314" duration="33437000" />
+      <workItem from="1654407320014" duration="1883000" />
+      <workItem from="1654491847843" duration="72000" />
+      <workItem from="1654594517321" duration="68000" />
+      <workItem from="1654595834492" duration="15000" />
+      <workItem from="1654612783519" duration="30000" />
+      <workItem from="1654668552702" duration="162000" />
+      <workItem from="1654694676731" duration="159000" />
+      <workItem from="1654700660340" duration="244000" />
+      <workItem from="1654700925211" duration="1685000" />
+      <workItem from="1654854119517" duration="34000" />
+      <workItem from="1654854297830" duration="349000" />
+      <workItem from="1654861884864" duration="356000" />
+      <workItem from="1654864347629" duration="527000" />
+      <workItem from="1654864911156" duration="1481000" />
+      <workItem from="1654942879955" duration="771000" />
+      <workItem from="1655006773462" duration="75000" />
+      <workItem from="1655007351755" duration="46000" />
+      <workItem from="1655285048748" duration="333000" />
+      <workItem from="1655352901330" duration="626000" />
+      <workItem from="1655380345566" duration="32000" />
+      <workItem from="1655463089714" duration="413000" />
+      <workItem from="1655508883834" duration="2192000" />
+      <workItem from="1655515676471" duration="185000" />
+      <workItem from="1655515880487" duration="351000" />
+      <workItem from="1655516262561" duration="715000" />
+      <workItem from="1655517018793" duration="668000" />
+      <workItem from="1655518038845" duration="2304000" />
+      <workItem from="1655543634088" duration="895000" />
+      <workItem from="1655764410194" duration="5847000" />
+      <workItem from="1655809360552" duration="4304000" />
+      <workItem from="1655865402187" duration="30000" />
+      <workItem from="1655900968662" duration="148000" />
+      <workItem from="1655901145958" duration="850000" />
+      <workItem from="1655939925973" duration="10361000" />
+      <workItem from="1655963762606" duration="315000" />
+      <workItem from="1656030923974" duration="71000" />
+      <workItem from="1656070218288" duration="1316000" />
+      <workItem from="1656138517692" duration="7628000" />
+      <workItem from="1656165841183" duration="744000" />
+      <workItem from="1656202018619" duration="16074000" />
+      <workItem from="1656510054510" duration="6020000" />
+      <workItem from="1656544636946" duration="1759000" />
+      <workItem from="1656571361298" duration="932000" />
+      <workItem from="1656577352681" duration="605000" />
+    </task>
+    <task id="LOCAL-00001" summary="初次提交, 添加是否使用数据库配置">
+      <created>1654404879418</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654404879418</updated>
+    </task>
+    <task id="LOCAL-00002" summary="脚本路径变更">
+      <created>1654405048232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654405048232</updated>
+    </task>
+    <task id="LOCAL-00003" summary="初次提交, 添加是否使用数据库配置">
+      <created>1654405267598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654405267598</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="脚本路径变更" />
+    <MESSAGE value="初次提交, 添加是否使用数据库配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="初次提交, 添加是否使用数据库配置" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/test$.coverage" NAME="爬取微博图片 覆盖结果" MODIFIED="1653873077059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$req.coverage" NAME="req 覆盖结果" MODIFIED="1655769105089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/解析教育系统" />
+    <SUITE FILE_PATH="coverage/test$copyTheCAJ.coverage" NAME="copyTheCAJ 覆盖结果" MODIFIED="1654129110992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$test.coverage" NAME="test 覆盖结果" MODIFIED="1655812277784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MVJPG" />
+    <SUITE FILE_PATH="coverage/test$pdf.coverage" NAME="pdf 覆盖结果" MODIFIED="1653704217534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../Anaconda3/envs/py3/Lib/site-packages/office" />
+    <SUITE FILE_PATH="coverage/test$recognition.coverage" NAME="recognition 覆盖结果" MODIFIED="1655515706536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/speechToText" />
+    <SUITE FILE_PATH="coverage/test$Email.coverage" NAME="Email 覆盖结果" MODIFIED="1655901491865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/littleProj$test.coverage" NAME="test 覆盖结果" MODIFIED="1655939974695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MVJPG" />
+    <SUITE FILE_PATH="coverage/test$test__1_.coverage" NAME="test (1) 覆盖结果" MODIFIED="1653988253082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/littleProj$.coverage" NAME="爬取微博图片 覆盖结果" MODIFIED="1656152145480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/littleProj$inform.coverage" NAME="inform 覆盖结果" MODIFIED="1655940770963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/win通知" />
+    <SUITE FILE_PATH="coverage/test$1.coverage" NAME="1 覆盖结果" MODIFIED="1655517348043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/help" />
+    <SUITE FILE_PATH="coverage/littleProj$get_proxy_ip.coverage" NAME="get_proxy_ip 覆盖结果" MODIFIED="1656151321134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$lanzou_test.coverage" NAME="lanzou_test 覆盖结果" MODIFIED="1654397509843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lanzou" />
+    <SUITE FILE_PATH="coverage/littleProj$logTest.coverage" NAME="logTest 覆盖结果" MODIFIED="1656245830076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/logTest" />
+  </component>
+</project>

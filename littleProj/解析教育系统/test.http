@@ -1,0 +1,38 @@
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/mainV_index_loadkb.htmlx?rq=2022-06-20&sjmsValue=E24D1A6BFAD14015BE1727A9BC65F1FD&xnxqid=2021-2022-2
+Accept: text/html, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: keep-alive
+Cookie: JSESSIONID=43F827962C4BD4E7998D41DEBF0D5FA9; iPlanetDirectoryPro=YTtQTT1QAmS04I1H1AVQz1; SERVERID=121; JSESSIONID=A6CBB40BB5BDA8D3ABD257AA1607D0E7; _webvpn_key=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiMjAyMDE1MDIwNDI2IiwiZ3JvdXBzIjpbMV0sImlhdCI6MTY1NTc2NTcxOCwiZXhwIjoxNjU1ODUyMTE4fQ.2i0nOWdGIsbSd5DhfCafzf9me50ugzZdk5UNTCy3TF4; webvpn_username=202015020426%7C1655765718%7Cb20d9b817ba72cd5aa0fe6172bbe772e99583c76
+Host: 10-2-0-102.sslvpn.beihua.edu.cn
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV_new.htmlx?t1=1
+
+rq=2022-06-20&sjmsValue=E24D1A6BFAD14015BE1727A9BC65F1FD&xnxqid=2021-2022-2
+
+###
+POST https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/xk/LoginToXk
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cache-Control: max-age=0
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Cookie: JSESSIONID=43F827962C4BD4E7998D41DEBF0D5FA9; iPlanetDirectoryPro=YTtQTT1QAmS04I1H1AVQz1; SERVERID=121; JSESSIONID=A6CBB40BB5BDA8D3ABD257AA1607D0E7; _webvpn_key=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiMjAyMDE1MDIwNDI2IiwiZ3JvdXBzIjpbMV0sImlhdCI6MTY1NTc2NTEwNCwiZXhwIjoxNjU1ODUxNTA0fQ.e3sBfGw2zskWv7nLpoBe1zUcFdzpXzjJtKHQGJOKXYk; webvpn_username=202015020426%7C1655765104%7Cc112fb773a00b1c21906bf124481313efbece390
+Host: 10-2-0-102.sslvpn.beihua.edu.cn
+Origin: https://10-2-0-102.sslvpn.beihua.edu.cn
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/
+
+loginMethod=LoginToXk&userAccount=202015020426&userPassword=3181538941as&encoded=MjAyMDE1MDIwNDI2%25%25%25MzE4MTUzODk0MWFz
+
+
+###
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: keep-alive
+Cookie: JSESSIONID=43F827962C4BD4E7998D41DEBF0D5FA9; iPlanetDirectoryPro=YTtQTT1QAmS04I1H1AVQz1; SERVERID=121; JSESSIONID=A6CBB40BB5BDA8D3ABD257AA1607D0E7; _webvpn_key=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiMjAyMDE1MDIwNDI2IiwiZ3JvdXBzIjpbMV0sImlhdCI6MTY1NTc2NjQwOSwiZXhwIjoxNjU1ODUyODA5fQ.9fWR4NR9nPc72lBE7jD7O4-WPCD8TAo-1UGX2HSsGlQ; webvpn_username=202015020426%7C1655766409%7C616374ea4106b2671dfd5ef0a1384998f8512161;Host: 10-2-0-102.sslvpn.beihua.edu.cn
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV.htmlx
+
+

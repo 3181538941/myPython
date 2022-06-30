@@ -1,0 +1,240 @@
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: keep-alive
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV.htmlx
+
+<> 2022-06-21T075924.200.html
+
+###
+
+POST https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/xk/LoginToXk
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cache-Control: max-age=0
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Host: 10-2-0-102.sslvpn.beihua.edu.cn
+Origin: https://10-2-0-102.sslvpn.beihua.edu.cn
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/
+
+loginMethod=LoginToXk&userAccount=202015020426&userPassword=3181538941as&encoded=MjAyMDE1MDIwNDI2%25%25%25MzE4MTUzODk0MWFz
+
+<> 2022-06-21T075324.400.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: keep-alive
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV.htmlx
+
+<> 2022-06-21T073101.200.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: keep-alive
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV.htmlx
+
+<> 2022-06-21T073011.200.html
+
+###
+
+POST https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/xk/LoginToXk
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cache-Control: max-age=0
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Host: 10-2-0-102.sslvpn.beihua.edu.cn
+Origin: https://10-2-0-102.sslvpn.beihua.edu.cn
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/
+
+loginMethod=LoginToXk&userAccount=202015020426&userPassword=3181538941as&encoded=MjAyMDE1MDIwNDI2%25%25%25MzE4MTUzODk0MWFz
+
+<> 2022-06-21T072914.400.html
+
+###
+
+POST https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/xk/LoginToXk
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cache-Control: max-age=0
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Host: 10-2-0-102.sslvpn.beihua.edu.cn
+Origin: https://10-2-0-102.sslvpn.beihua.edu.cn
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/
+
+loginMethod=LoginToXk&userAccount=202015020426&userPassword=3181538941as&encoded=MjAyMDE1MDIwNDI2%25%25%25MzE4MTUzODk0MWFz
+
+<> 2022-06-21T072832.400.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: keep-alive
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV.htmlx
+
+<> 2022-06-21T071328.200.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: keep-alive
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV.htmlx
+
+<> 2022-06-21T071241.200.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV.htmlx
+Accept: text/html, */*; q=0.01
+
+<> 2022-06-21T071227.200.html
+
+###
+
+POST https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/xk/LoginToXk
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cache-Control: max-age=0
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Host: 10-2-0-102.sslvpn.beihua.edu.cn
+Origin: https://10-2-0-102.sslvpn.beihua.edu.cn
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/
+
+loginMethod=LoginToXk&userAccount=202015020426&userPassword=3181538941as&encoded=MjAyMDE1MDIwNDI2%25%25%25MzE4MTUzODk0MWFz
+
+<> 2022-06-21T071223.400.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: keep-alive
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV.htmlx
+
+<> 2022-06-21T070856.200.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/mainV_index_loadkb.htmlx?rq=2022-06-20&sjmsValue=E24D1A6BFAD14015BE1727A9BC65F1FD&xnxqid=2021-2022-2
+Accept: text/html, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: keep-alive
+Host: 10-2-0-102.sslvpn.beihua.edu.cn
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV_new.htmlx?t1=1
+
+rq=2022-06-20&sjmsValue=E24D1A6BFAD14015BE1727A9BC65F1FD&xnxqid=2021-2022-2
+
+<> 2022-06-21T070351.200.html
+
+###
+
+POST https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/xk/LoginToXk
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cache-Control: max-age=0
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Host: 10-2-0-102.sslvpn.beihua.edu.cn
+Origin: https://10-2-0-102.sslvpn.beihua.edu.cn
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/
+
+loginMethod=LoginToXk&userAccount=202015020426&userPassword=3181538941as&encoded=MjAyMDE1MDIwNDI2%25%25%25MzE4MTUzODk0MWFz
+
+<> 2022-06-21T065446.400.html
+
+###
+
+POST https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/xk/LoginToXk
+Content-Type: application/x-www-form-urlencoded
+
+loginMethod=LoginToXk&userAccount=202015020426&userPassword=3181538941as&encoded=MjAyMDE1MDIwNDI2%25%25%25MzE4MTUzODk0MWFz
+
+<> 2022-06-21T065326.200.html
+
+###
+
+POST http://localhost:80/api/item
+Content-Type: application/x-www-form-urlencoded
+
+loginMethod=LoginToXk&userAccount=202015020426&userPassword=3181538941as&encoded=MjAyMDE1MDIwNDI2%25%25%25MzE4MTUzODk0MWFz
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: keep-alive
+Host: 10-2-0-102.sslvpn.beihua.edu.cn
+Referer: https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV.htmlx
+
+<> 2022-06-21T064406.200.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: application/json
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/102.0.1245.44
+
+<> 2022-06-21T064116.200.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/framework/xsMainV.htmlx
+
+<> 2022-06-21T064059.200.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: application/json
+
+<> 2022-06-21T063826.200.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+Accept: application/json
+
+<> 2022-06-21T063616.200.html
+
+###
+
+GET https://10-2-0-102.sslvpn.beihua.edu.cn/jsxsd/pyfa/topyfamx
+
+<> 2022-06-21T063437.200.html
+
+###
+

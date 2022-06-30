@@ -1,0 +1,301 @@
+--------------------开始处理文件夹: 01_工具--------------------
+已存在, id为5506472
+02_右键菜单编辑器.zip 已存在
+BitDockSetup1.9.9.1320安装版.exe 已存在
+CCleaner.exe 已存在
+CC助手_Setup-1.1.2-x64.exe 已存在
+CHM文件制作.zip 已存在
+ChromeSetup.exe 已存在
+CloudDriveSetup-X64-1.1.38.1.exe 已存在
+clover3.5.2谨慎.zip 已存在
+DiskGenius Professional 5.1.2.766 + Crack.zip 已存在
+DropIt_v8.5.1_Setup.exe 已存在
+Everything 1.5a.7z 已存在
+Everything-1.4.1.1005.x64-Setup.exe 已存在
+Firefox-latest.exe 已存在
+跳过文件----------[GitHubDesktopSetup-x64.exe] 大小: 109.84MB
+GitHub加速DevSidecar-1.7.2.exe 已存在
+GUI_achieveV1.1.exe 已存在
+IDM 6.33.2.zip 已存在
+IDM_v6.39.8_Repack.exe 已存在
+KMCounter.v3.7.zip 已存在
+Listary.exe 已存在
+跳过文件----------[miflash_pro_3.3.1212.88_setup.exe] 大小: 149.17MB
+MobaXterm_CHS.rar 已存在
+跳过文件----------[Motrix-Setup-1.6.11.exe] 大小: 102.83MB
+npp.7.5.4.Installer.x64.exe 已存在
+PandaOCR_2.72.zip 已存在
+PDF工具PDF_Shaper_Professional_12.1_Portable.7z 已存在
+PotPlayerSetup64_125.exe 已存在
+Q-Dir_Installer_x64_多页文件管理.exe 已存在
+跳过文件----------[RAW工具_Capture One 21(64bit).rar] 大小: 367.71MB
+RK_Keyboard_驱动_Setup_V1.0_0522.exe 已存在
+RocketDock-v1.3.5.exe 已存在
+SanDisk文件保险箱V3.01_win.zip 已存在
+Snipaste.zip 已存在
+SoftDownloader.zip 已存在
+TIM3.3.0.21970.exe 已存在
+Typora_1.2.5.zip 已存在
+ventoy-1.0.47-windows.zip 已存在
+跳过文件----------[W.P.S.10578.12012.2019.exe] 大小: 191.92MB
+跳过文件----------[Waifu2x-Extension-GUI-v2.51.17-Setup_2.exe] 大小: 418.21MB
+跳过文件----------[Waifu2x-Extension-GUI-v2.52.16-Portable.7z] 大小: 628.01MB
+winrar-x64-591scp.exe 已存在
+Xftp-7.0.0063p.exe 已存在
+Xshell-7.0.0063.exe 已存在
+专业LOGO设计软件.zip 已存在
+便携版Firefox_98.0.0_tete009_64bit_Portable.7z 已存在
+便携版Google_Chrome_100.0.4896.60_64bit_Portable.7z 已存在
+跳过文件----------[便携版Microsoft_Edge_100.0.1185.29_64bit_Portable.7z] 大小: 110.64MB
+修改文件名.exe 已存在
+关闭Win10自动更新.exe 已存在
+内存清理WMOSetup_4.1.6.118.exe 已存在
+分区助手.exe 已存在
+右键文件转换FileConverter-1.2.3-x64-setup.msi 已存在
+右键管理MenuMgr_1.2_Single.exe 已存在
+哔哩哔哩UWP Ver4.3.10_x64.zip 已存在
+跳过文件----------[图吧工具箱2020.05绿色版自动解压程序.exe] 大小: 211.05MB
+跳过文件----------[图吧工具箱2021.04绿色版自动解压程序.exe] 大小: 176.93MB
+天若OCR文字识别_ncnn.7z 已存在
+小米助手_3.2.522.32_setup.exe 已存在
+微软常用运行库合集 64位_2017.03.11.exe 已存在
+微软常用运行库合集a.exe 已存在
+微软运行库MSVBCRT.AIO.2022.04.09.exe 已存在
+思维导图_mindmaster.exe 已存在
+思维导图_XMind ZEN 2020 (64bit).rar 已存在
+搜狗精简版.exe 已存在
+搜狗输入法v9.6a精简优化版.exe 已存在
+搞机助手_V4.8.3.zip 已存在
+文件分析WizTree_4.08_Portable.7z 已存在
+文件管理器XYplorer_23.00.0100_Portable.7z 已存在
+星愿浏览器.exe 已存在
+格式工厂.7z 已存在
+格式工厂_setup.exe 已存在
+跳过文件----------[格式转换工具-小丸工具箱R236.exe] 大小: 197.87MB
+游戏下载器_pcstory5.0.zip 已存在
+瑞士军刀uTools-2.4.3.exe 已存在
+电子书格式转换NeatConverter_4.0.1_Portable.7z 已存在
+跳过文件----------[电脑图像工具箱.rar] 大小: 167.55MB
+画图_SAI 2.0.rar 已存在
+禁用win更新WUB_1.6_Single.exe 已存在
+空间扫描工具_spacesniffer_1_3_0_2.zip 已存在
+跳过文件----------[简易视频剪辑_camtasia.7z] 大小: 791.71MB
+罗技驱动.rar 已存在
+腾讯软件管理.exe 已存在
+蜂蜜浏览器_HONEYVIEW-SETUP-V5.35.exe 已存在
+解除文件限制lockhuntersetup_3-4-3.exe 已存在
+跳过文件----------[解除文件限制lockhuntersetup_3-4-3.rar] 大小: 100.08MB
+轻量级录屏oCam_v520.exe 已存在
+迅雷不限速绿色版.zip 已存在
+阿里云盘变本地硬盘64位1.1.58.exe 已存在
+阿里小白羊版Win v2.12.05.exe 已存在
+驱动管理IObit_Driver_Booster_9.2.0.178_Portable.7z 已存在
+鲁大师.exe 已存在
+鼠标键盘统计KMCounter.exe 已存在
+--------------------开始处理文件夹: 01_向日葵--------------------
+已存在, id为5506657
+01_32_sunlogin_client_lite_1.0.1.43315.exe 已存在
+01_64_sunlogin_client_lite_1.0.1.43315_x64.exe 已存在
+01_向日葵_SunloginClient_12.0.1.39931_x64.exe 已存在
+ToDesk_Lite_x64.exe 已存在
+打开, 本机识别码发我.exe 已存在
+--------------------开始处理文件夹: Grub--------------------
+已存在, id为5506663
+Tela-1080p.tar.xz 已存在
+Ubuntu.tar 已存在
+Vimix-1080p.tar.xz 已存在
+--------------------开始处理文件夹: Todesk--------------------
+已存在, id为5506664
+ToDesk_Lite_x64.exe 已存在
+ToDesk_Setup.exe 已存在
+--------------------开始处理文件夹: USB--------------------
+已存在, id为5506667
+Edgeless Hub_Beta_2.09.7z 已存在
+跳过文件----------[PE工具箱.exe] 大小: 220.44MB
+rufus-3.14.exe 已存在
+USBCopyer-master.zip 已存在
+USBWriter.exe 已存在
+ventoy-1.0.47-windows.zip 已存在
+ventoy-1.0.62-windows.zip 已存在
+ventoy-1.0.63-windows.zip 已存在
+--------------------开始处理文件夹: VNC--------------------
+已存在, id为5506674
+--------------------开始处理文件夹: server--------------------
+已存在, id为5506675
+VNC-Server-6.7.4-Linux-x86.deb 已存在
+VNC-Server-6.7.4-Windows.exe 已存在
+--------------------开始处理文件夹: viewer--------------------
+已存在, id为5506678
+VNC-Viewer-6.21.406-Linux-x86.deb 已存在
+VNC-Viewer-6.21.406-Windows.exe 已存在
+--------------------开始处理文件夹: 便携工具--------------------
+已存在, id为5506681
+介绍.md 已存在
+介绍.txt 已存在
+--------------------开始处理文件夹: PDF工具--------------------
+已存在, id为5506682
+CAJViewerPortable.zip 已存在
+PDFXChangeViewer.zip 已存在
+--------------------开始处理文件夹: win优化--------------------
+已存在, id为5506688
+Cacheman_v10.60.zip 已存在
+Dism  .zip 已存在
+Easy Service Optimizer_v1.2.zip 已存在
+OOSU10.zip 已存在
+Process Lasso_Pro.rar 已存在
+ProcessLassoPtach_1.9.7z 已存在
+ReduceMemory.zip 已存在
+TempCleaner.zip 已存在
+--------------------开始处理文件夹: win杂项工具--------------------
+已存在, id为5506690
+CCleanerClassicEdtion_Ver.1.10.20.0501.7z 已存在
+ColorPicker.exe 已存在
+ContextMenuManager.zip 已存在
+DnsJumper.zip 已存在
+ErrorLookup_2.3.3_setup.exe 已存在
+Everything_1.4.1.988_x64.zip 已存在
+FolderPainter.zip 已存在
+RandomPW.zip 已存在
+Unlocker_setup_1.1.2.exe 已存在
+Win R Adde.zip 已存在
+Windows10Manager_3.4.7.0_Portable.7z 已存在
+WindowsDefenderControl_1.6_Green.zip 已存在
+WindowsUpdateBlocker_1.6_Green.zip 已存在
+WiseCare365.zip 已存在
+傲梅分区.zip 已存在
+--------------------开始处理文件夹: win美化--------------------
+已存在, id为5506701
+7tt.exe 已存在
+FliqloScr_3.zip 已存在
+StartIsBack_2.9.9_Setup.zip 已存在
+T-Clock.zip 已存在
+TrafficMonitor_V1.80.1_x64.zip 已存在
+天选姬_TXMascot_B_V1.5.1.zip 已存在
+开始菜单美化小工具_v3.9_v2.zip 已存在
+更换系统字体.zip 已存在
+软媒_Dock_精简版.exe 已存在
+--------------------开始处理文件夹: 下载--------------------
+已存在, id为5506715
+4_2_uTorrent.7z 已存在
+IDM.zip 已存在
+NeatDM_(P).exe 已存在
+XDM.zip 已存在
+迅雷.zip 已存在
+--------------------开始处理文件夹: 卸载--------------------
+已存在, id为5506725
+HiBitUninstaller_2.6.10.100_Single.exe 已存在
+IObit Uninstaller_老毛子重新打包版.zip 已存在
+Uninstall Tool_绿色版.rar 已存在
+--------------------开始处理文件夹: 图片浏览--------------------
+已存在, id为5506734
+Honeyview_5.35_Portable.7z 已存在
+Image Eye.7z 已存在
+JPEGView64.zip 已存在
+Paint.net_4.2.14_Setup.zip 已存在
+ps7.7z 已存在
+--------------------开始处理文件夹: 学习笔记--------------------
+已存在, id为5506737
+draw.io-14.6.13.exe 已存在
+Fluent.Reader.Unpacked.1.0.1.x64.zip 已存在
+--------------------开始处理文件夹: 效率工具--------------------
+已存在, id为5506751
+AirPortal 4.21.2501 ia32.7z 已存在
+CareUEyes.7z 已存在
+Claunch_V4.02.zip 已存在
+Maye_1.2.3_Green.7z 已存在
+MouseInc2.10.21.7z 已存在
+Notepad2_4.21.03r3646_64bit_Green.7z 已存在
+QuickLook_3.6.11_Gneen.7z 已存在
+Snipaste-2.3.5-Beta-x64.zip 已存在
+stickies.7z 已存在
+--------------------开始处理文件夹: 浏览器--------------------
+已存在, id为5506760
+CCleaner Browser v91.0.9927.80ä¸_æ__ç»¿è_²ç__.7z 已存在
+Chrome_89.0.4389.90_64bit_Portable.7z 已存在
+Firefox-89.0.2-2021062215.en-US.win32-tete009-x64-pgo.7z 已存在
+Twinkstar_7.7.1000.2104_64bit_Portable.7z 已存在
+Vivaldi Browser v2.11.1811.47_64bit.7z 已存在
+浏览器一键优化工具(SpeedyFox)2.0.30.155汉化去广告版.rar 已存在
+--------------------开始处理文件夹: 音视频--------------------
+已存在, id为5506785
+FormatFactory_v5.4.5_绿色免安装.exe 已存在
+listen1_2.21.0_64bit_Green.7z 已存在
+MPC-BE.1.5.7.6180.zip 已存在
+MPC-HC.1.9.1.x64.exe 已存在
+MusicPlayer2_V2.71_x64.7z 已存在
+YesPlayMusic_0.3.4_Green.7z 已存在
+网易云音乐_2.7.5.198554_Green.7z 已存在
+--------------------开始处理文件夹: 屏幕拓展工具--------------------
+已存在, id为5506802
+--------------------开始处理文件夹: spacedesk--------------------
+已存在, id为5506803
+spacedesk.apk 已存在
+spacedesk_driver_Win_10_64_v1017_BETA.msi 已存在
+spacedesk_酷友汉化版.apk 已存在
+--------------------开始处理文件夹: Wired_XDisplay--------------------
+已存在, id为5506805
+Splashtop_Wired_XDisplay_Agent_v1.5.8.3.exe 已存在
+Splashtop_Wired_XDisplay_Agent_v1.5.8.3_手机端.apk 已存在
+--------------------开始处理文件夹: 插件包--------------------
+已存在, id为5506808
+Bandizip_7.16.0.0_Horatio Shaw.7z 已存在
+Chrome_92.0.4515.107_Cno（bot）.7z 已存在
+CrystalDiskInfo磁盘检测_8.12.4.0_Cno（bot）.7z 已存在
+Diskgenius_5.4.2.1239_Horatio Shaw.7z 已存在
+Everything_1.4.1.1009_Horatio Shaw.7z 已存在
+Notepad2_4.2.25.998_王洪峰.7z 已存在
+Notepad3_5.19.815.2595_Cno.7z 已存在
+Office2010_14.0.7015.1000_Oxygen.7z 已存在
+OpenSSH-Client_8.1.0.0_Oxygen.7z 已存在
+跳过文件----------[Photoshop 2021_22.1.0.0_Horatio Shaw.7z] 大小: 890.86MB
+跳过文件----------[Photoshop2020_20.1.0.106_草沫柔.7z] 大小: 385.07MB
+Python_3.8.1.0_Copur.7z 已存在
+Python_3.8.1150.1013_Fir.7z 已存在
+QQ_9.0.1.23153_Cno.7z 已存在
+rufus-3.9.exe 已存在
+Rufus_3.9.0_Cpl.Kerry.7z 已存在
+SSD-Z_2.0.1.6_Cno.7z 已存在
+Sumatra PDF_3.3.3.0_Cno（bot）.7z 已存在
+UltraISO_9.7.1.3519_Gasoline.7z 已存在
+VMTools_10.2.5.3620_Cno.7z 已存在
+VSCode_1.58.2.0_Horatio Shaw.7z 已存在
+跳过文件----------[Wechat_3.3.0.0_Horatio Shaw.7z] 大小: 146.74MB
+跳过文件----------[WPS Office 2019_ 11.1.0.9513_黄式.7z] 大小: 154.99MB
+Xshell6_6.0.111.0_Copur.7z 已存在
+分区助手_8.3.0.0_Cno.7z 已存在
+天若OCR_1.5.2.0_Horatio.7z 已存在
+微PE工具包_2.1.0.0_Cno.7z 已存在
+火绒安全_5.0.62.4_Horatio Shaw.7z 已存在
+百度网盘_7.4.3.3_Horatio Shaw.7z 已存在
+软媒 Wifi 助手_1.2.0.0_汪凯.7z 已存在
+迅雷_11.1.8.1418_Cno.7z 已存在
+阿里云盘_2.2.0.0_Horatio Shaw.7z 已存在
+--------------------开始处理文件夹: 激活--------------------
+已存在, id为5506859
+W10_Digital_Activation_1.4.5.3_Single.exe 已存在
+准虚拟化激活码生成器.exe 已存在
+激活工具.rar 已存在
+--------------------开始处理文件夹: MicroKMS神龙版--------------------
+已存在, id为5506861
+MicroKMS神龙版.rar 已存在
+解压密码.txt 已存在
+--------------------开始处理文件夹: Windows10数字权力激活--------------------
+已存在, id为5506862
+Windows 10 数字永久激活工具 v1.3.4.zip 已存在
+解压密码.txt 已存在
+--------------------开始处理文件夹: 三星win7激活工具--------------------
+已存在, id为5506864
+三星笔记本win7激活工具.zip 已存在
+解压密码.txt 已存在
+--------------------开始处理文件夹: 其他win7激活工具--------------------
+已存在, id为5506865
+激活工具.zip 已存在
+解压密码.txt 已存在
+--------------------开始处理文件夹: 通用win7激活--------------------
+已存在, id为5506866
+oem7.zip 已存在
+解压密码及使用方法.txt 已存在
+--------------------开始处理文件夹: 火绒安全--------------------
+已存在, id为5506867
+火绒安全.exe 已存在
+火绒完整版.exe 已存在
