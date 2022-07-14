@@ -26,7 +26,7 @@ def send_content(title, content):
     yag.send('3181538941@qq.com', title, content)
 
 
-path = 'A:\\weibo'
+path = 'D:\\weibo'
 '''采集的站点：
     免费代理IP http://ip.yqie.com/ipproxy.htm
     66免费代理网 http://www.66ip.cn/
@@ -46,7 +46,7 @@ path = 'A:\\weibo'
 proxy_addr = "122.241.72.191:808"
 
 id = input("请输入要爬取的微博ID: ")
-weibo_name = input("请输入要爬取的微博昵称: ")
+weibo_name = ''
 
 proxy_addr_list = ['122.241.72.191:808', '47.101.44.122:80',
                    '116.63.93.172:8081', '42.180.208.43:8070',
@@ -65,23 +65,31 @@ def use_proxy(url, proxy_addr):
     req = urllib.request.Request(url)
     req.add_header("User-Agent",
                    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0")
+    # 创建代理处理器
     proxy = urllib.request.ProxyHandler({'http': proxy_addr})
+    # 创建代理opener
     opener = urllib.request.build_opener(proxy, urllib.request.HTTPHandler)
+    # 安装opener
     urllib.request.install_opener(opener)
+    # 发送请求
     data = urllib.request.urlopen(req).read().decode('utf-8', 'ignore')
     return data
 
 
+# 获取容器编号
 def get_containerid(url):
+    containerid = ''
     data = use_proxy(url, proxy_addr)
     content = json.loads(data).get('data')
     for data in content.get('tabsInfo').get('tabs'):
-        if (data.get('tab_type') == 'weibo'):
+        if data.get('tab_type') == 'weibo':
             containerid = data.get('containerid')
     return containerid
 
 
+# 获取用户信息
 def get_userInfo(id):
+    global weibo_name
     url = 'https://m.weibo.cn/api/container/getIndex?type=uid&value=' + id
     data = use_proxy(url, proxy_addr)
     content = json.loads(data).get('data')
@@ -97,8 +105,10 @@ def get_userInfo(id):
     print("微博昵称：" + name + "\n" + "微博主页地址：" + profile_url + "\n" + "微博头像地址：" + profile_image_url + "\n" + "是否认证：" + str(
         verified) + "\n" + "微博说明：" + description + "\n" + "关注人数：" + str(guanzhu) + "\n" + "粉丝数：" + str(
         fensi) + "\n" + "性别：" + gender + "\n" + "微博等级：" + str(urank) + "\n")
+    return name
 
 
+# 核心逻辑, 爬取图片
 def get_weibo(id, file):
     global pic_num
     i = 1
@@ -221,12 +231,14 @@ def get_weibo2(id, file):
 
 
 if __name__ == "__main__":
+    # 1749127163
+    # 获取基本信息
+    weibo_name = get_userInfo(id)
     # 初始化准备
     if not os.path.isdir(path + weibo_name):
         os.mkdir(path + weibo_name)
     file = path + weibo_name + '\\' + weibo_name + ".txt"
-    # get_userInfo(id)
-    # get_weibo(id, file)
+    get_weibo(id, file)
 
     # # 定时开始
     # goal_time = datetime.time(16, 53, )
@@ -237,7 +249,6 @@ if __name__ == "__main__":
     #         with open(file, 'w') as f:
     #             f.write(txt)
     #         break
-    get_weibo(id, file)
 
     # 爬取完成, 发送邮件
     send_content(
