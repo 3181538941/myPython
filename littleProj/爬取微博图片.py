@@ -13,13 +13,20 @@ import urllib.request
 from tqdm import trange
 from random import choice
 
+"""
+# id = '6103252147'
+# weibo_name = "e68891e698afe78b97e5a4b4e8909de88e89"
+
+id = '5292770234'
+weibo_name = 'Enndme'"""
+
 
 def send_content(title, content):
     yag = yagmail.SMTP(user="leolswq@163.com", password="AVPBLRPCZTUXCYUS", host='smtp.163.com')
     yag.send('3181538941@qq.com', title, content)
 
 
-path = 'D:\\weibo'
+path = 'A:\\weibo'
 '''采集的站点：
     免费代理IP http://ip.yqie.com/ipproxy.htm
     66免费代理网 http://www.66ip.cn/
@@ -35,8 +42,12 @@ path = 'D:\\weibo'
     全网代理IP http://www.goubanjia.com/
     飞龙代理IP http://www.feilongip.com/
 '''
-id = '6103252147'
+# 代理
 proxy_addr = "122.241.72.191:808"
+
+id = input("请输入要爬取的微博ID: ")
+weibo_name = input("请输入要爬取的微博昵称: ")
+
 proxy_addr_list = ['122.241.72.191:808', '47.101.44.122:80',
                    '116.63.93.172:8081', '42.180.208.43:8070',
                    '60.255.151.82:80', '218.2.214.107:80',
@@ -48,7 +59,6 @@ proxy_addr_list = ['122.241.72.191:808', '47.101.44.122:80',
                    '222.74.202.229:80', '58.240.52.114:80']
 
 pic_num = 0
-weibo_name = "我是狗头萝莉"
 
 
 def use_proxy(url, proxy_addr):
@@ -100,11 +110,11 @@ def get_weibo(id, file):
             data = use_proxy(weibo_url, proxy_addr)
             content = json.loads(data).get('data')
             cards = content.get('cards')
-            if (len(cards) > 0):
+            if len(cards) > 0:
                 for j in range(len(cards)):
                     print("-----正在爬取第" + str(i) + "页，第" + str(j) + "条微博------")
                     card_type = cards[j].get('card_type')
-                    if (card_type == 9):
+                    if card_type == 9:
                         mblog = cards[j].get('mblog')
                         attitudes_count = mblog.get('attitudes_count')
                         comments_count = mblog.get('comments_count')
@@ -112,16 +122,16 @@ def get_weibo(id, file):
                         reposts_count = mblog.get('reposts_count')
                         scheme = cards[j].get('scheme')
                         text = mblog.get('text')
-                        if mblog.get('pics') != None:
+                        if mblog.get('pics') is not None:
                             # print(mblog.get('original_pic'))
                             # print(mblog.get('pics'))
                             pic_archive = mblog.get('pics')
                             for _ in range(len(pic_archive)):
                                 pic_num += 1
                                 print(pic_archive[_]['large']['url'])
-                                imgurl = pic_archive[_]['large']['url']
-                                img = requests.get(imgurl)
-                                f = open(path + weibo_name + '\\' + str(pic_num) + str(imgurl[-4:]),
+                                img_url = pic_archive[_]['large']['url']
+                                img = requests.get(img_url)
+                                f = open(path + weibo_name + '\\' + str(pic_num) + str(img_url[-4:]),
                                          'ab')  # 存储图片，多媒体文件需要参数b（二进制文件）
                                 f.write(img.content)  # 多媒体存储content
                                 f.close()
@@ -131,13 +141,12 @@ def get_weibo(id, file):
                             fh.write("微博地址：" + str(scheme) + "\n" + "发布时间：" + str(
                                 created_at) + "\n" + "微博内容：" + text + "\n" + "点赞数：" + str(
                                 attitudes_count) + "\n" + "评论数：" + str(comments_count) + "\n" + "转发数：" + str(
-                                reposts_count) + "\n" + '对应图片序号: ' + str(pic_num) + '\n')
+                                reposts_count) + "\n" + '对应图片截至序号: ' + str(pic_num) + '\n')
                 i += 1
             else:
                 break
         except Exception as e:
             print(e)
-            pass
 
 
 def change_proxy():
@@ -212,9 +221,8 @@ def get_weibo2(id, file):
 
 
 if __name__ == "__main__":
-    if os.path.isdir(path + weibo_name):
-        pass
-    else:
+    # 初始化准备
+    if not os.path.isdir(path + weibo_name):
         os.mkdir(path + weibo_name)
     file = path + weibo_name + '\\' + weibo_name + ".txt"
     # get_userInfo(id)
@@ -229,5 +237,10 @@ if __name__ == "__main__":
     #         with open(file, 'w') as f:
     #             f.write(txt)
     #         break
+    get_weibo(id, file)
 
-    get_weibo2(id, file)
+    # 爬取完成, 发送邮件
+    send_content(
+        f"爬取完成",
+        f"{weibo_name}微博的图片爬取完成, 共爬取{pic_num}张图片"
+    )

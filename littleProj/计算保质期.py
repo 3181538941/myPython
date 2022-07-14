@@ -5,7 +5,9 @@
 # @file 计算保质期.py
 import datetime
 
-produce_date = datetime.datetime.strptime(input('请输入生产日期: (例如20220604): '), '%Y%m%d')
+produce_date = datetime.datetime.strptime(
+    input('请输入生产日期: (例如20220604): '), '%Y%m%d'
+)   
 today = datetime.datetime.now()  # 当前日期
 shelfLife = int(input('请输入保质期(天): '))  # 保质期
 delta = datetime.timedelta(days=shelfLife)  # 保质期时间间隔
