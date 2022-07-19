@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74b2e6a-adc7-4951-afb2-7b525c9b4003" name="变更" comment="更新微博图片爬取脚本">
-      <change afterPath="$PROJECT_DIR$/1.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-07-15T110423.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../学习/多任务/03_协程/01_生成器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../学习/多任务/03_协程/02_yield_from.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../学习/多任务/03_协程/03_协程_await.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../学习/多任务/03_协程/04_协程_EventLoop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../学习/多任务/03_协程/learn_test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../学习/爬虫/qq运动/qq运动.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../学习/爬虫/qq运动/qq运动.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../学习/爬虫/qq运动/test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../学习/爬虫/qq运动/调用api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/爬取微博图片.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬取微博图片.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myJupyter/os_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../myJupyter/os_test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../学习/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../学习/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +277,10 @@
       <workItem from="1657521791461" duration="3050000" />
       <workItem from="1657617112447" duration="2918000" />
       <workItem from="1657708240076" duration="39000" />
-      <workItem from="1657762647299" duration="3774000" />
+      <workItem from="1657762647299" duration="4119000" />
+      <workItem from="1657780315022" duration="386000" />
+      <workItem from="1657854234998" duration="55000" />
+      <workItem from="1657936435845" duration="690000" />
     </task>
     <task id="LOCAL-00001" summary="初次提交, 添加是否使用数据库配置">
       <created>1654404879418</created>
@@ -296,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657763627499</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="更新微博图片爬取脚本">
+      <created>1657766979271</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657766979271</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +338,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>

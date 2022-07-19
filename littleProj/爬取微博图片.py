@@ -15,7 +15,7 @@ from random import choice
 
 """
 # id = '6103252147'
-# weibo_name = "e68891e698afe78b97e5a4b4e8909de88e89"
+# weibo_name = "我是狗头萝莉"
 
 id = '5292770234'
 weibo_name = 'Enndme'"""
