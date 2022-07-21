@@ -5,7 +5,7 @@
 # @file 02_simple_use_ui.py
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, \
     QPlainTextEdit, QMessageBox
-from ui_02_simple import Ui_MainWindow
+from simple_ui import Ui_MainWindow
 import sys
 
 
