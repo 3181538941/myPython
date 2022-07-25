@@ -14,8 +14,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(739, 624)
+        MainWindow.resize(613, 627)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.centralwidget.setFont(font)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
@@ -86,7 +89,7 @@ class Ui_MainWindow(object):
         self.head_table.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         self.head_table.setHorizontalHeaderItem(1, item)
-        self.head_table.horizontalHeader().setVisible(False)
+        self.head_table.horizontalHeader().setVisible(True)
         self.head_table.horizontalHeader().setCascadingSectionResizes(True)
         self.head_table.horizontalHeader().setDefaultSectionSize(150)
         self.head_table.horizontalHeader().setMinimumSectionSize(60)

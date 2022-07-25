@@ -50,3 +50,7 @@ if __name__ == '__main__':
     demo = MainWindow()
     demo.show()
     sys.exit(demo.app.exec_())
+
+
+
+

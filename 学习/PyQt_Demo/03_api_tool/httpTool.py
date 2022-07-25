@@ -12,12 +12,10 @@ import sys
 class MainWindow(QMainWindow):
     def __init__(self):
         # 必须在父类初始化之前调用, 否则返回代码 -1073740791 (0xC0000409)
-        self.app = QApplication(sys.argv)
         super().__init__()
         # 导入UI
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        # self.ui.retranslateUi(self)
 
         # self.ui.comboBox.addItems(['GET', 'POST'])
 
@@ -48,10 +46,10 @@ class MainWindow(QMainWindow):
             f'薪资20000 以上的有：\n{salary_above_20k}\n\n'
             f'薪资20000 以下的有：\n{salary_below_20k}'
         )
-
+  
 
 if __name__ == '__main__':
-    QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
+    app = QApplication(sys.argv)
     demo = MainWindow()
     demo.show()
-    sys.exit(demo.app.exec_())
+    sys.exit(app.exec_())
